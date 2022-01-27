@@ -1,0 +1,176 @@
+.risks-factor-add, .risks-consequences-add {
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        padding: 5px 30px;
+        background: url(../icons/plus-in-circle.svg) left center no-repeat;
+    }
+}
+
+.risks-factor-add {
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        padding: 15px 30px;
+        background: url(../icons/plus-in-circle.svg) left center no-repeat;
+    }
+}
+
+.risks-consequences, .factor-actions {
+    position: relative;
+    padding: 30px;
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__col-wide {
+        margin-bottom: 23px;
+        flex: 0 1 76%;
+    }
+    &__col-narrow {
+        flex: 0 1 20%;
+    }
+    &__col-half {
+        flex: 0 1 48%;
+    }
+    
+    &__subtitle {
+        margin-bottom: 9px;
+        font-size: 19px;
+        color: #787878;
+    }
+    &__title {
+        font-family: $additional-font;
+        font-size: 26px;
+        font-weight: 600;
+        color: #000;
+        @media(max-width: 1100px){
+            font-size: 22px;
+        }
+    }
+    &__process-name {
+        margin-bottom: 8px;
+        font-family: $additional-font;
+        font-size: 20px;
+        color: #000;
+    }
+    &__openmenu {
+        position: absolute;
+        right: 30px;
+        top: 20px;
+        padding-top: -8px;
+        color: #000;
+        background-color: transparent;
+        border: none;
+        font-size: 30px;
+        background-position: top center;
+        cursor: pointer;
+    }
+    &__hidemenu {
+        position: absolute;
+        right: 0;
+        top: 60px;
+    }
+    &__inner {
+        margin-bottom: 23px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__grade-name {
+        font-size: 22px;
+        color: #000;
+        span {
+            font-size: 18px;
+            color: #787878;
+        }
+    }
+    &__grade-control {
+        display: flex;
+        align-items: center;
+    }
+    &__control-btns {
+        margin-right: 13px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__control-up {
+        padding: 4px 7px;
+        background-color: transparent;
+        border: none;
+        background: transparent url(../icons/simple-arrow-up.svg) center center no-repeat;
+        cursor: pointer;
+    }
+    &__control-down {
+        padding: 7px;
+        background-color: transparent;
+        border: none;
+        background: transparent url(../icons/simple-arrow-down.svg) center center no-repeat;
+        cursor: pointer;
+    }
+    &__grade-input {
+        width: 35%;
+        border: none;
+        &::placeholder{
+            font-size: 21px;
+            color: #A3A3A3;
+        }
+    }
+}
+
+.factor-actions {
+    &__col-wide {
+        flex: 0 1 100%;
+    }
+    &__name {
+        font-family: $additional-font;
+        color: #000;
+        font-size: 20px;
+        font-weight: 600;
+        &_wrong {
+            color: $wrong-color;
+        }
+    }
+    &__col-third {
+        margin-bottom: 23px;
+        flex: 0 1 33%;
+    }
+    &__col-half {
+        margin-bottom: 23px;
+    }
+    &__comment {
+        padding: 11px 20px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 18px;
+    }
+    &__descr {
+        font-size: 20px;
+        color: #000;
+        line-height: 28px;
+        display: inline-block;
+    }
+    &__loadmore {
+        display: inline-block;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    &__documents {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__document {
+        padding: 13px 12px 13px 15px;
+        flex: 0 1 30%;
+        border-radius: 18px;
+        transition: .3s linear;
+        cursor: pointer;
+        &:hover {
+            background: #F4F4FF;
+            box-shadow: 0px 9px 30px rgba(0, 0, 0, 0.02);
+        }
+        * {
+            cursor: pointer;
+        }
+    }
+    
+}

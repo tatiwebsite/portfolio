@@ -1,0 +1,290 @@
+
+.settings {
+    &__title {
+        font-family: $additional-font;
+        font-weight: 800;
+        font-size: 30px;
+        color: #000;
+    }
+    &__block {
+        display: flex;
+        @media(max-width:1750px){
+            flex-direction: column;
+        }
+    }
+    &__photo {
+        margin-top: 45px;
+        flex: 0 0 15%;
+        display: flex;
+        justify-content: center;
+    }
+    &__photo-item {
+        width: 204px;
+        height: 204px;
+        border-radius: 100%;
+        position: relative;
+        &:after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 100%;
+        } 
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            object-fit: cover;  
+            position: relative;
+        }
+    }
+    &__add-photo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 66px;
+        height: 66px;
+        background: transparent url(../icons/add-photo.svg) center center no-repeat;
+        z-index: 5;
+        border: none;
+        cursor: pointer;
+    }
+    &__info {
+        flex: 0 0 85%;
+    }
+}
+.settings-contacts, .settings-tags {
+    padding: 30px;
+    &__header {
+        margin-bottom: 22px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__subtitle {
+        font-family: $additional-font;
+        font-weight: 800;
+        font-size: 23px;
+        color: #000;
+    }
+    &__save {
+        font-weight: 600;
+    }
+    &__data {
+        display: flex;
+        @media(max-width:1550px){
+            flex-direction: column;
+        }
+    }
+    &__col_left {
+        margin-right: 30px;
+        flex: 0 0 30%;
+        @media(max-width:1550px){
+            margin-right: 0;
+        }
+    }
+    &__col_right {
+        flex: 0 0 55%;
+        @media(max-width:1550px){
+            flex: 0 0 67%;
+        }
+    }
+    label {
+        margin-bottom: 25px;
+        padding-left: 10px;
+        font-family: $additional-font;
+        font-weight: 600;
+        font-size: 23px;
+        color: #787878;
+    }
+    textarea {
+        padding: 10px 20px;
+        resize: none;
+        margin-top: 7px;
+        height: auto;
+        font-size: 30px;
+        border: 1px transparent;
+        outline: 1px solid #F7F8FC;
+    }
+    &__input {
+        margin-top: 7px;
+        margin-bottom: 25px;
+        width: 100%;
+        padding: 10px 20px;
+        display: block;
+        font-size: 30px;
+        background: #F7F8FC;
+        border-radius: 12px;
+        border: 1px transparent;
+        outline: 1px solid #F7F8FC;
+    }
+}
+
+.settings-tags, .settings-tags-filter {
+    &__section {
+        padding: 11px 9px;
+        background: #F7F8FC;
+        border-radius: 19.5px; 
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+        margin-bottom: 16px;
+        margin-right: 10px;
+        padding: 9px 16px;  
+        border-radius: 28px;
+        border: none;
+        background-color: $accent-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &.hide {
+            display: none;
+        }
+    }
+    &__tag {
+        font-size: 30px;
+        color: #fff;
+        @media(max-width:1450px){
+            font-size: 20px;
+        }
+    }
+    &__close {
+        margin-left: 20px;
+        font-size: 30px;
+        color: #fff;
+        cursor: pointer;
+        @media(max-width:1450px){
+            font-size: 20px;
+        }
+    }
+    &__add-tag {
+        padding: 9px 16px;
+        background-color: transparent;
+        border: none;
+        width: 100%;
+        outline: 1px solid transparent;
+        font-size: 27px;
+        color: #8D8D8D;
+        &::placeholder {
+            font-size: 27px;
+            color: #8D8D8D;
+        }
+    }
+}
+
+.settings-tags-filter {
+    margin-bottom: 10px;
+    background-color: #f3f6ff;
+    box-shadow: none;
+    &__subtitle {
+        margin-bottom: 17px;
+        font-family: 'PT Root UI', sans-serif;
+        font-size: 20px;
+        color: #000;
+    }
+    &__item {
+        margin-bottom: 10px;
+        padding-right: 30px;
+        font-size: 18px;
+        position: relative;
+        color: #fff;
+        span {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+            color: #fff;
+        }
+    }
+    &__section {
+        background-color: #fff;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+    &__search-tags {
+        width: 100%;
+        position: relative;
+    }
+    &__add-tag {
+        font-size: 18px;
+        font-weight: 400;
+        &::placeholder {
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+    
+    &__item-prompt {
+        display: none;
+        padding: 5px 15px;
+        position: absolute;
+        bottom: -40px;
+        left: 20px;
+        background-color: #E5EBFF;
+        border-radius: 19.5px;
+        font-family: $additional-font;
+        font-weight: 500;
+        font-size: 17px;
+        cursor: pointer;
+    }
+    &__item-prompt.active {
+        display: block;
+    }
+}
+
+.settings-password {
+    padding: 30px;
+    &__subtitle {
+        margin-bottom: 22px;
+        font-family: $additional-font;
+        font-weight: 800;
+        font-size: 23px;
+        color: #000;
+    }
+    &__inner {
+        display: flex;
+        @media(max-width:1450px){
+            flex-direction: column;
+        }
+    }
+    &__input {
+        margin-right: 30px;
+        padding: 10px 20px;
+        display: block;
+        background: #F7F8FC;
+        border-radius: 12px;
+        border: 1px transparent;
+        outline: 1px solid #F7F8FC;
+        width: 35%;
+        cursor: pointer;
+        &::placeholder{
+            font-size: 27px;
+        }
+        @media(max-width:1450px){
+            margin-bottom: 20px;
+            padding: 20px;
+            width: 100%;
+        }
+        &_show {
+            background: #F7F8FC url(../icons/look-pass.svg) right 25px center no-repeat;
+        }
+    }
+    &__btn {
+        padding: 14px 54px;
+        font-size: 25px;
+        border-radius: 12px;
+        @media(max-width:1450px){
+            font-size: 20px;
+        }
+    }
+}

@@ -1,0 +1,120 @@
+.risks {
+    &__info {
+        margin-top: 40px;
+    }
+    &__list {
+        padding-left: 0;
+    }
+}
+.risks-item {
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding: 15px 20px 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: 0px 9px 30px rgba(0, 0, 0, 0.03);
+    border-radius: 18px;
+    position: relative;
+    height: auto;
+    &::after {
+        display: none;
+    }
+    @media(max-width: 1550px){
+        padding: 10px 20px;
+    }
+    &__info {
+        @media(max-width: 1300px){
+            flex: 0 1 40%;
+        }
+    }
+    &__link {
+        margin-bottom: 9px;
+        display: block;
+        font-size: 25px;
+        flex: 0 0 46%;
+        text-decoration: none;
+        cursor: pointer;
+        @media(max-width: 1550px){
+            font-size: 20px;
+        }
+    }
+    &__watch {
+        @media(max-width: 1550px){
+            font-size: 20px;
+        }
+    }
+    &__photo {
+        width: 55px;
+        height: 55px;
+        @media(max-width: 1550px){
+            margin-left: 10px;
+            width: 45px;
+            height: 45px;
+        }
+        img {
+            @media(max-width: 1550px){
+                width: 45px;
+                height: 45px;
+            }
+        }
+        @media(max-width: 991px){
+            display: none;
+        }
+    }
+    &__id {
+        font-size: 20px;
+        @media(max-width: 1550px){
+            margin-right: 10px;
+        }
+    }
+    &__status {
+        @media(max-width: 1550px){
+            flex-direction: column;
+        }
+    }
+    &__status-ok {
+        @media(max-width: 1550px){
+            margin-bottom: 7px;
+        }
+    }
+    &__person {
+        font-size: 23px;
+        @media(max-width: 1550px){
+            font-size: 20px;
+        }
+        
+    }
+    &__goal {
+        font-size: 22px;
+        color: #7D7D83;
+        &.hide {
+            display: none;
+        }
+        &.open {
+            display: block;
+        }
+    }
+    &__hidemenu {
+        position: absolute;
+        right: 30px;
+        top: 70%;
+        z-index: 300;
+    }
+}
+
+
+
+.status-level {
+    padding-left: 25px;
+    &_up {
+        background: transparent url(../icons/arrow-up.svg) left center no-repeat;
+    }
+    &_down {
+        background: transparent url(../icons/arrow-down.svg) left center no-repeat;
+    }
+    &__grade {
+        display: block;
+    }
+}

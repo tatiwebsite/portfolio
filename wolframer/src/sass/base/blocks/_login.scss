@@ -1,0 +1,74 @@
+.login {
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/login-bg.png) center center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__logo {
+        margin-top: -70px;
+        display: flex;
+        justify-content: center;
+        svg {
+            margin-bottom: -15px;
+        }
+    }
+}
+
+.login-form {
+    padding: 28.5px;
+    background-color: #fff;
+    border-radius: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 434px;
+    &__title {
+        margin-bottom: 30px;
+        font-family: $additional-font;
+        font-size: 26px;
+        font-weight: 800;
+        color: #000;
+    }
+    &__input {
+        margin-bottom: 15px;
+        padding: 12px 15px;
+        background: #F7F8FC;
+        border-radius: 12px;
+        border: 1px transparent;
+        outline: 1px solid #F7F8FC;
+        width: 100%;
+        font-size: 19px;
+        color: #000;
+        cursor: pointer;
+        &:focus {
+            border: 1px solid #2757FF;
+            background-color: transparent;
+        }
+        &::placeholder {
+            font-size: 19px;
+            color: #838383;
+        }
+    }
+    &__pass {
+        margin-bottom: 25px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__label {
+        margin-bottom: 0!important;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    &__forget {
+        font-size: 14px;
+    }
+    &__enter {
+        width: 100%;
+        text-decoration: none;
+        text-align: center;
+    }
+}

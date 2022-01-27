@@ -1,0 +1,84 @@
+.risk-factors {
+    &__list {
+        padding-left: 0;
+        position: relative;
+        &:after{
+            content: '';
+            width: 1px;
+            height: 0;
+            border-right: 1px dashed black;
+            position: absolute;
+            left: 20px;
+            top: 81px;
+            transition: .3s linear all;
+            z-index: 200;
+            overflow: hidden;
+        }
+    }
+    &__item {
+        list-style-type: none;
+        
+    }
+    &__row {
+        display: flex;
+        align-items: center;
+    }
+    &__open {
+        margin-right: 10px;
+        cursor: pointer;
+        position: relative;
+        z-index: 300;
+        &.active {
+            transform: rotate(90deg);
+        }
+    }
+    &__wrapper {
+        padding: 20px 30px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__subtitle {
+        margin-bottom: 8px;
+        font-size: 22px;
+        color: #787878;
+        
+    }
+    &__name {
+        font-family: $additional-font;
+        font-size: 23px;
+        font-weight: 600;
+        color: #000;
+    }
+    &__status {
+        span {
+            font-size: 21px;
+        }
+    }
+    &__sublist {
+        margin-top: 20px;
+        margin-left: 10px;
+        overflow: hidden;
+        max-height: 0;
+        transition: .3s linear;
+    }
+}
+
+.risk-factors__list.active {
+    &:after {
+        height: calc(100% - 161px);
+    }
+}
+
+
+.factor-content {
+    list-style-type: none;
+    &__subtitle {
+        margin-left: 30px;
+        font-size: 18px;
+        font-weight: 400;
+        color: #787878;
+    }
+    
+}
