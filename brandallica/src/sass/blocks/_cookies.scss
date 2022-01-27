@@ -1,0 +1,126 @@
+.cookies {
+    min-height: 64px;
+    padding: 15px 0;
+    width: 100%;
+    border-top: 2px solid $main-color;
+    position: fixed;
+    left: 0;
+    bottom: -1px;
+    transform: translateY(100%);
+    transition: 0.5s linear;
+    
+    background-color: $light-bg;
+    z-index: 10;
+    &_active {
+        min-height: 64px;
+        padding: 15px 0;
+        width: 100%;
+        border-top: 2px solid $main-color;
+        transform: translateY(0%);
+        transition: 2.5s linear;
+        transition-delay: 6s;
+        z-index: 10;
+        background-color: $light-bg;
+        @media (max-width:576px) {
+            padding: 23px 0;
+            border-top: 2px solid $main-color;
+            border-bottom: 2px solid $main-color;
+            background-color: $light-bg;
+        }
+    }
+    
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width:576px) {
+            flex-direction: column;
+        }
+    }
+    &__info {
+        margin-right: 12px;
+        font-size: 14px;
+        @media (max-width:576px) {
+            margin-right: 0;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        @media (max-width:520px){
+            font-size: 13px;
+            line-height: 19px;
+        }
+        @media (max-width:483px){
+            font-size: 12px;
+            line-height: 18px;
+        }
+        @media (max-width:445px){
+            font-size: 16px;
+            line-height: 24px;
+        }
+        @media (max-width:419px){
+            font-size: 15px;
+            line-height: 22px;
+        }
+        @media (max-width:394px){
+            font-size: 14px;
+            line-height: 21px;
+        }
+        @media (max-width:351px){
+            font-size: 13px;
+            line-height: 19px;
+        }
+        @media (max-width:320px){
+            font-size: 12px;
+            line-height: 17px;
+        }
+        a {
+            cursor: pointer;
+            transition: 0.3s linear;
+            &:hover {
+                cursor: pointer;
+                color: $bright-color; 
+                text-decoration: underline;
+                @media (max-width: 768px) {
+                    cursor: default;
+                    color: $main-color;
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+    &__choice {
+        display: flex;
+        align-items: center;
+        @media (max-width:991px) {
+            margin-left: 15px;
+        }
+        @media (max-width:576px) {
+            margin-top: 23px;
+            margin-left: 0;
+            align-self: flex-start;
+        }
+    }
+    &__agree {
+        margin-right: 40px;
+        margin-left: 16px;
+        font-size: 24px;
+        font-weight: 500;
+        cursor: pointer;
+        text-decoration: none;
+        border: none;
+        outline: none;
+        background-color: $light-bg;
+    }
+    &__not {
+        font-size: 24px;
+        font-weight: 500;
+        opacity: 0.4;
+        cursor: pointer;
+        text-decoration: none;
+        border: none;
+        outline: none;
+        background-color: $light-bg;
+    }
+}
+

@@ -1,0 +1,577 @@
+.promo {
+    margin-top: 46px;
+    padding: 20px 0 44px 0;
+    position: relative;
+    @media (max-width:576px) {
+        margin-top: 43px;
+        padding-bottom: 60px;
+        overflow: hidden;
+    }
+    &__logo {
+        padding: 59px 138px 49px 138px;
+        display: flex;
+        @media (max-width:1280px) {
+            padding: 59px 95px 49px 95px;
+        }
+        @media (max-width:991px) {
+            padding: 27px 26px 27px 26px;
+        }
+        @media (max-width:576px) {
+            padding: 27px 0;
+        }
+    }
+    &__partlogo {
+        height: 196px;
+        width: 105px;
+        overflow: hidden;
+        position: relative;
+        @media (max-width:768px) {
+            height: 140px;
+        }
+        @media (max-width:576px) {
+            height: 99px;
+        }
+        &_4 {
+            width: 119px;
+        }
+        &_5 {
+            width: 180px;
+            @media (max-width: 400px) {
+                display: none;
+            }
+        }
+        &_6 {
+            width: 120px;
+            @media (max-width: 400px) {
+                display: none;
+            }
+        }
+        &_7 {
+            @media (max-width: 400px) {
+                display: none;
+            }
+        }
+        &_8 {
+            @media (max-width: 400px) {
+                display: none;
+            }
+        }
+        &_9 {
+            @media (max-width: 576px) {
+                display: none;
+            }
+        }
+    }
+    &__animate {
+        display: inline-block;
+        position: absolute;
+        font-size: 248px;
+        font-weight: 900;
+        line-height: 0.7;
+        @media (max-width:768px) {
+            font-size: 153px;
+        }
+        @media (max-width:576px) {
+            font-size: 137px;
+        }
+        &_1 {
+            left: 25px;
+            animation: logoAnimate1 10.5s linear infinite;
+            animation-delay: 280ms;
+            animation-timing-function: steps(120, end);
+            @media (max-width:768px) {
+                animation: logoAnimate1Tab 8.5s linear infinite;
+                animation-timing-function: steps(70, end);
+            }
+            @media (max-width:576px) {
+                animation: logoAnimate1Tab 9s linear infinite;
+                animation-timing-function: steps(90, end);
+                animation-delay: 480ms;
+            }
+            @media (max-width:400px) {
+                animation: logoAnimate1Mob 9s linear infinite;
+                animation-timing-function: steps(90, end);
+                animation-delay: 480ms;
+            }
+        }
+        &_2 {
+            left: 18px;
+            animation: logoAnimate2 10.5s linear infinite;
+            animation-delay: 280ms;
+            animation-timing-function: steps(120, end);
+            @media (max-width:768px) {
+                animation: logoAnimate2Tab 8.5s linear infinite;
+                animation-timing-function: steps(70, end);
+            }
+            @media (max-width:576px) {
+                animation: logoAnimate2Tab 9s linear infinite;
+                animation-timing-function: steps(90, end);
+                animation-delay: 480ms;
+            }
+            @media (max-width:400px) {
+                animation: logoAnimate2Mob 9s linear infinite;
+                animation-timing-function: steps(90, end);
+                animation-delay: 480ms;
+            }
+        }
+        &_3 {
+            left: -3px;
+            animation: logoAnimate3 10.5s linear infinite;
+            animation-delay: 280ms;
+            animation-timing-function: steps(120, end);
+            @media (max-width:768px) {
+                animation: logoAnimate3Tab 8.5s linear infinite;
+                animation-timing-function: steps(70, end);
+            }
+            @media (max-width:576px) {
+                animation: logoAnimate3Tab 9s linear infinite;
+                animation-timing-function: steps(90, end);
+                animation-delay: 480ms;
+            }
+            @media (max-width:400px) {
+                animation: logoAnimate3Mob 9s linear infinite;
+                animation-timing-function: steps(90, end);
+                animation-delay: 480ms;
+            }
+        }
+        &_4 {
+            left: -84px;
+            animation: logoAnimate4 10.5s linear infinite;
+            animation-delay: 280ms;
+            animation-timing-function: steps(120, end);
+            @media (max-width:768px) {
+                animation: logoAnimate4Tab 8.5s linear infinite;
+                animation-timing-function: steps(70, end);
+            }
+            @media (max-width:576px) {
+                animation: logoAnimate4Tab 9s linear infinite;
+                animation-timing-function: steps(90, end);
+                animation-delay: 480ms;
+            }
+            @media (max-width:400px) {
+                animation: logoAnimate4Mob 9s linear infinite;
+                animation-timing-function: steps(90, end);
+                animation-delay: 480ms;
+            }
+        }
+        &_5 {
+            left: -166px;
+            animation: logoAnimate5 10.5s linear infinite;
+            animation-delay: 280ms;
+            animation-timing-function: steps(120, end);
+            @media (max-width:768px) {
+                animation: logoAnimate5Tab 8.5s linear infinite;
+                animation-timing-function: steps(70, end);
+            }
+            @media (max-width:576px) {
+                animation: logoAnimate5Tab 9s linear infinite;
+                animation-timing-function: steps(90, end);
+                animation-delay: 480ms;
+            }
+            @media (max-width:400px) {
+                animation: logoAnimate5Mob 9s linear infinite;
+                animation-timing-function: steps(90, end);
+                animation-delay: 480ms;
+            }
+        }
+        &_6 {
+            left: -306px;
+            animation: logoAnimate6 10.5s linear infinite;
+            animation-delay: 280ms;
+            animation-timing-function: steps(120, end);
+            @media (max-width:768px) {
+                animation: logoAnimate6Tab 8.5s linear infinite;
+                animation-timing-function: steps(70, end);
+            }
+            @media (max-width:576px) {
+                animation: logoAnimate6Tab 9s linear infinite;
+                animation-timing-function: steps(90, end);
+                animation-delay: 480ms;
+            }
+        }
+        &_7 {
+            left: -373px;
+            animation: logoAnimate7 10.5s linear infinite;
+            animation-delay: 280ms;
+            animation-timing-function: steps(120, end);
+            @media (max-width:768px) {
+                animation: logoAnimate7Tab 8.5s linear infinite;
+                animation-timing-function: steps(70, end);
+            }
+            @media (max-width:576px) {
+                animation: logoAnimate7Tab 9s linear infinite;
+                animation-timing-function: steps(90, end);
+                animation-delay: 480ms;
+            }
+        }
+        &_8 {
+            left: -491px;
+            animation: logoAnimate8 10.5s linear infinite;
+            animation-delay: 280ms;
+            animation-timing-function: steps(120, end);
+            @media (max-width:768px) {
+                animation: logoAnimate8Tab 8.5s linear infinite;
+                animation-timing-function: steps(70, end);
+            }
+            @media (max-width:576px) {
+                animation: logoAnimate8Tab 9s linear infinite;
+                animation-timing-function: steps(90, end);
+                animation-delay: 480ms;
+            }
+        }
+        &_9 {
+            left: -562px;
+            animation: logoAnimate9 10.5s linear infinite;
+            animation-delay: 280ms;
+            animation-timing-function: steps(120, end);
+            @media (max-width:768px) {
+                animation: logoAnimate9Tab 8.5s linear infinite;
+                animation-timing-function: steps(70, end);
+            }
+        }
+    }
+    &__animatedelay {
+        display: none;
+        position: absolute;
+        font-size: 248px;
+        font-weight: 900;
+        line-height: 0.7;
+        @media (max-width:768px) {
+            font-size: 153px;
+        }
+        @media (max-width:576px) {
+            font-size: 137px;
+        }
+        &_1 {
+            left: 25px;
+            animation: logoAnimate1 10.5s linear infinite;
+            animation-delay: 2.9s;
+
+            animation-timing-function: steps(120, end);
+            @media (max-width:768px) {
+                animation: logoAnimate1Tab 8.5s linear infinite;
+                animation-timing-function: steps(70, end);
+            }
+            @media (max-width:576px) {
+                animation: logoAnimate1Tab 9s linear infinite;
+                animation-timing-function: steps(90, end);
+                animation-delay: 3.1s;
+            }
+            @media (max-width:400px) {
+                animation: logoAnimate1Mob 9s linear infinite;
+                animation-timing-function: steps(90, end);
+                animation-delay: 3.1s;
+            }
+        }
+        &_2 {
+            left: 18px;
+            animation: logoAnimate2 10.5s linear infinite;
+            animation-delay: 2.9s;
+            animation-timing-function: steps(120, end);
+            @media (max-width:768px) {
+                animation: logoAnimate2Tab 8.5s linear infinite;
+                animation-timing-function: steps(70, end);
+            }
+            @media (max-width:576px) {
+                animation: logoAnimate2Tab 9s linear infinite;
+                animation-timing-function: steps(90, end);
+                animation-delay: 3.1s;
+            }
+            @media (max-width:400px) {
+                animation: logoAnimate2Mob 9s linear infinite;
+                animation-timing-function: steps(90, end);
+                animation-delay: 3.1s;
+            }
+        }
+        &_3 {
+            left: -3px;
+            animation: logoAnimate3 10.5s linear infinite;
+            animation-delay: 2.9s;
+            animation-timing-function: steps(120, end);
+            @media (max-width:768px) {
+                animation: logoAnimate3Tab 8.5s linear infinite;
+                animation-timing-function: steps(70, end);
+            }
+            @media (max-width:576px) {
+                animation: logoAnimate3Tab 9s linear infinite;
+                animation-timing-function: steps(90, end);
+                animation-delay: 3.1s;
+            }
+            @media (max-width:400px) {
+                animation: logoAnimate3Mob 9s linear infinite;
+                animation-timing-function: steps(90, end);
+                animation-delay: 3.1s;
+            }
+        }
+        &_4 {
+            left: -84px;
+            animation: logoAnimate4 10.5s linear infinite;
+            animation-delay: 2.9s;
+            animation-timing-function: steps(120, end);
+            @media (max-width:768px) {
+                animation: logoAnimate4Tab 8.5s linear infinite;
+                animation-timing-function: steps(70, end);
+            }
+            @media (max-width:576px) {
+                animation: logoAnimate4Tab 9s linear infinite;
+                animation-timing-function: steps(90, end);
+                animation-delay: 3.1s;
+            }
+            @media (max-width:400px) {
+                animation: logoAnimate4Mob 9s linear infinite;
+                animation-timing-function: steps(90, end);
+                animation-delay: 3.1s;
+            }
+        }
+        &_5 {
+            left: -166px;
+            animation: logoAnimate5 10.5s linear infinite;
+            animation-delay: 2.9s;
+            animation-timing-function: steps(120, end);
+            @media (max-width:768px) {
+                animation: logoAnimate5Tab 8.5s linear infinite;
+                animation-timing-function: steps(70, end);
+            }
+            @media (max-width:576px) {
+                animation: logoAnimate5Tab 9s linear infinite;
+                animation-timing-function: steps(90, end);
+                animation-delay: 3.1s;
+            }
+            @media (max-width:400px) {
+                animation: logoAnimate5Mob 9s linear infinite;
+                animation-timing-function: steps(90, end);
+                animation-delay: 3.1s;
+            }
+        }
+        &_6 {
+            left: -306px;
+            animation: logoAnimate6 10.5s linear infinite;
+            animation-delay: 2.9s;
+            animation-timing-function: steps(120, end);
+            @media (max-width:768px) {
+                animation: logoAnimate6Tab 8.5s linear infinite;
+                animation-timing-function: steps(70, end);
+            }
+            @media (max-width:576px) {
+                animation: logoAnimate6Tab 9s linear infinite;
+                animation-timing-function: steps(90, end);
+                animation-delay: 3.1s;
+            }
+        }
+        &_7 {
+            left: -373px;
+            animation: logoAnimate7 10.5s linear infinite;
+            animation-delay: 2.9s;
+            animation-timing-function: steps(120, end);
+            @media (max-width:768px) {
+                animation: logoAnimate7Tab 8.5s linear infinite;
+                animation-timing-function: steps(70, end);
+            }
+            @media (max-width:576px) {
+                animation: logoAnimate7Tab 9s linear infinite;
+                animation-timing-function: steps(90, end);
+                animation-delay: 3.1s;
+            }
+        }
+        &_8 {
+            left: -491px;
+            animation: logoAnimate8 10.5s linear infinite;
+            animation-delay: 2.9s;
+            animation-timing-function: steps(120, end);
+            @media (max-width:768px) {
+                animation: logoAnimate8Tab 8.5s linear infinite;
+                animation-timing-function: steps(70, end);
+            }
+            @media (max-width:576px) {
+                animation: logoAnimate8Tab 9s linear infinite;
+                animation-timing-function: steps(90, end);
+                animation-delay: 3.1s;
+            }
+        }
+        &_9 {
+            left: -562px;
+            animation: logoAnimate9 10.5s linear infinite;
+            animation-delay: 2.9s;
+            animation-timing-function: steps(120, end);
+            @media (max-width:768px) {
+                animation: logoAnimate9Tab 8.5s linear infinite;
+                animation-timing-function: steps(70, end);
+            }
+        }
+    }
+    &__content {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        @media (max-width:991px) {
+            flex-direction: column;
+        }
+    }
+    &__about {
+        margin-top: 32px;
+        flex: 0 1 47%;
+        display: flex;
+        @media (max-width:1280px) {
+            flex-direction: column;
+        }
+        @media (max-width:991px) {
+            align-items: center;
+        }
+        @media (max-width:576px) {
+            margin-top: 34px;
+        }
+        
+    }
+    &__contacts {
+        margin-right: 23px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 12px;
+        @media (max-width: 1280px) {
+            margin-right: 0;
+        }
+        @media (max-width: 991px) {
+            margin-bottom: 32px;
+        }
+        @media (max-width: 576px) {
+            margin-bottom: 60px;
+        }
+        span {
+            margin-bottom: 12px;
+            font-size: 12px;
+            font-weight: 900;
+            text-transform: uppercase;
+            white-space: nowrap;
+            @media (max-width:991px) {
+                text-align: center;
+            }
+            @media (max-width:576px) {
+                margin-bottom: 16px;
+            }
+        }
+    }
+    &__youtube {
+        margin: 0 9px;
+        @media (max-width:1280px) {
+            align-self: flex-end;
+        }
+        @media (max-width:991px) {
+            align-self: center;
+            display: flex;
+            justify-content: center;
+        }
+        img {
+            max-width: 100%;
+            @media (max-width:991px) {
+                max-width: 337px;
+                max-height: 303px;
+            }
+            @media (max-width:576px) {
+                max-width: 237px;
+                max-height: 203px;
+            }
+        }
+    }
+    &__email {
+        margin-bottom: 2px;
+        font-size: 12px;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: 0.1s linear;
+        &:hover {
+            cursor: pointer;
+            color: $bright-color; 
+            text-decoration: underline;
+            @media (max-width: 768px) {
+                cursor: default;
+                color: $main-color;
+                text-decoration: none;
+            }
+        }
+        @media (max-width: 991px) {
+            text-align: center;
+        }
+    }
+    &__text {
+        flex: 0 1 52%;
+    }
+    &__title {
+        margin-top: 14px;
+        margin-bottom: 0;
+        padding-top: 18px;
+        font-size: 46px;
+        line-height: 52px;
+        @media (max-width:1280px) {
+            font-size: 42px;
+        }
+        @media (max-width:991px) {
+            font-size: 36px;
+            line-height: 45px;
+        }
+        @media (max-width:576px) {
+            margin-top: 27px;
+            font-size: 24px;
+            line-height: 30px;
+        }
+        &_mobilehide {
+            @media (max-width:576px) {
+                display: none;
+            }
+        }
+    }
+    &__subtitlemobile {
+        display: none;
+        @media (max-width:576px) {
+            display: block;
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+    &__wrapper {
+        margin-top: 30px;
+        &_youtube {
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__download {
+        padding: 10px 20px;
+        background-color: $bright-color;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: 900;
+        text-decoration: none;
+        cursor: pointer;
+        transition: 0.3s linear;
+        animation: animateExplore 1.2s ease infinite;
+
+        &:hover {
+            background-color: #f7f7f5;
+            transition: 0.3s linear;
+            box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.2);
+        }
+        @media (max-width:576px){
+           font-size: 16px;
+        }
+    }
+    &__info {
+        margin-top: 13px;
+        font-size: 19px;
+        line-height: 32px;
+        @media (max-width:576px) {
+            margin-top: 16px;
+            font-size: 15px;
+            line-height: 24px;
+        }
+        &_youtube {
+            margin-top: 0;
+            margin-left: 40px;
+            text-transform: uppercase;
+            @media (max-width:576px){
+                margin-left: 20px;
+            }
+        }
+    }
+}
+

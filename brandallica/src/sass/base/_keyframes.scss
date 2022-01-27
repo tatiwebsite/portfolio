@@ -1,0 +1,206 @@
+
+
+@keyframes logoAnimate1 {
+    from { left: 25px; }
+    to { left: -1235px; }
+
+}
+@keyframes logoAnimate2 {
+    from { left: 18px; }
+    to { left: -1192px; }
+}
+
+@keyframes logoAnimate3 {
+    from { left: -3px; }
+    to { left: -1213px; }
+}
+
+@keyframes logoAnimate4 {
+    from { left: -84px; }
+    to { left: -1294px; }
+}
+
+@keyframes logoAnimate5 {
+    from { left: -166px; }
+    to { left: -1376px; }
+}
+
+@keyframes logoAnimate6 {
+    from { left: -306px; }
+    to { left: -1516px; }
+}
+
+@keyframes logoAnimate7 {
+    from { left: -373px; }
+    to { left: -1583px; }
+}
+
+@keyframes logoAnimate8 {
+    from { left: -491px; }
+    to { left: -1700px; }
+}
+
+@keyframes logoAnimate9 {
+    from { left: -562px; }
+    to { left: -1775px; }
+}
+
+
+@keyframes logoAnimate1Tab {
+    from { left: 25px; }
+    to { left: -525px; }
+}
+@keyframes logoAnimate2Tab {
+    from { left: 18px; }
+    to { left: -532px; }
+}
+
+@keyframes logoAnimate3Tab {
+    from { left: -3px; }
+    to { left: -553px; }
+}
+
+@keyframes logoAnimate4Tab {
+    from { left: -84px; }
+    to { left: -634px; }
+}
+
+@keyframes logoAnimate5Tab {
+    from { left: -166px; }
+    to { left: -716px; }
+}
+
+@keyframes logoAnimate6Tab {
+    from { left: -306px; }
+    to { left: -856px; }
+}
+
+@keyframes logoAnimate7Tab {
+    from { left: -373px; }
+to { left: -923px; }
+}
+
+@keyframes logoAnimate8Tab{
+    from { left: -491px; }
+    to { left: -1040px; }
+}
+
+@keyframes logoAnimate9Tab {
+    from { left: -562px; }
+    to { left: -1112px; }
+}
+
+
+@keyframes logoAnimate1Mob {
+    from { left: 25px; }
+    to { left: -820px; }
+}
+@keyframes logoAnimate2Mob {
+    from { left: 18px; }
+    to { left: -830px; }
+}
+
+@keyframes logoAnimate3Mob {
+    from { left: -3px; }
+    to { left: -850px; }
+}
+
+@keyframes logoAnimate4Mob {
+    from { left: -84px; }
+    to { left: -900px; }
+}
+
+@keyframes logoAnimate5Mob {
+    from { left: -166px; }
+    to { left: -950px; }
+}
+
+
+
+
+@keyframes tickerMove {
+    from { transform: translateX(35%); }
+    to { transform: translateX(-9500px); }
+}
+
+@keyframes tickerMoveTablet {
+    from { transform: translateX(35%); }
+    to { transform: translateX(-9500px); }
+}
+
+@keyframes tickerMoveMobile {
+    from { transform: translateX(35%); }
+    to { transform: translateX(-7700px); }
+}
+
+@keyframes tickerMoveYoutube {
+    from { transform: translateX(35%); }
+    to { transform: translateX(-5700px); }
+}
+
+@keyframes tickerMoveTabletYoutube {
+    from { transform: translateX(35%); }
+    to { transform: translateX(-5700px); }
+}
+
+@keyframes tickerMoveMobileYoutube {
+    from { transform: translateX(35%); }
+    to { transform: translateX(-4700px); }
+}
+
+@keyframes welcomeScreen {
+    from {transform: translateY(0);}
+    to {transform: translateY(-100%);}
+}
+
+@keyframes welcomeScreenTitle {
+    0% {opacity: 0;}
+    70% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes welcomeScreenLine {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes outlineAnimateBrand {
+    from {stroke-dashoffset: 510;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes outlineAnimateTeam {
+    from {stroke-dashoffset: 616;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes animateShadowBack {
+    from {
+        transform: matrix(.54,-1,-3,-1.54,505.72,701.18);
+    }
+    to {
+        transform: matrix(.54,-1,-3,-1.54,505.72,701.18);
+    }
+}
+
+@keyframes animateExplore {
+    from {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,116 @@
+.header {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width:768px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &_youtube {
+            justify-content: flex-end;
+        }
+    }
+    &__lang {
+        align-items: center;
+        &:hover {
+            cursor: pointer;
+        }
+        @media (max-width:768px) {
+            order: 2;
+        }
+    }
+    
+    &__langname {
+        margin-right: 17px;
+        font-size: 24px;
+        color: #524e4e87;
+        transition: 0.2s linear;
+        &:hover {
+            cursor: default;
+            color: $bright-color; 
+            text-decoration: underline;
+            @media (max-width:768px) {
+                color: #524e4e87;
+                text-decoration: none;
+            }
+        }
+        @media (max-width:768px) {
+            margin-right: 0;
+            color: #524e4e87;
+        }
+    }
+    &__checkname {
+        display: none;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 7px solid $main-color;
+        transition: 0.2s linear;
+        &:hover {
+            cursor: pointer;
+            border-top: 7px solid $bright-color;
+            transform: rotate(180deg);
+            @media (max-width: 768px) {
+                cursor: default;
+                color: $main-color;
+                text-decoration: none;
+            }
+         }
+    }
+    &__home {
+        font-size: 24px;
+        text-decoration: none;
+        transition: 0.2s linear;
+        &:hover {
+           cursor: pointer;
+           color: $bright-color; 
+           text-decoration: underline;
+            @media (max-width: 768px) {
+                cursor: default;
+                color: $main-color;
+                text-decoration: none;
+            }
+        }
+        @media (max-width:768px) {
+            margin-bottom: 15px;
+        }
+       
+    }
+    &__contacts {
+        font-size: 24px;
+        text-decoration: none;
+        transition: 0.2s linear;
+        &:hover {
+           cursor: pointer;
+           color: $bright-color; 
+           text-decoration: underline;
+        }
+        @media (max-width:768px) {
+            display: none;
+        }
+    }
+}
+
+.header__lang:hover .header__langname {
+    transition: 0.2s linear;
+    cursor: pointer;
+    color: $bright-color; 
+    text-decoration: underline;
+    @media (max-width: 768px) {
+        cursor: default;
+        color: $main-color;
+        text-decoration: none;
+    }
+}
+.header__lang:hover .header__checkname {
+    cursor: pointer;
+    border-top: 7px solid $bright-color;
+    transform: rotate(180deg);
+    @media (max-width: 768px) {
+        cursor: default;
+        color: $main-color;
+        text-decoration: none;
+    }
+}
