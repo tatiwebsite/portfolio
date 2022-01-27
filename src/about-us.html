@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <link rel="stylesheet" href="css/swiper.min.css"> 
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__about about-company">
+          <a href="index.html" class="about-company__logo">
+            <img src="icons/logo.svg" alt="logo">
+          </a>
+          <a href="index.html" class="about-company__name">Центр развития
+            профессиональных квалификаций НОЭС
+          </a>
+        </div>
+        <div class="header__info contact-company">
+          <div class="contact-company__contacts">
+            <a href="tel:+79162321657" class="contact-company__tel">
+              +7(916) 232-16-57
+            </a>
+            <a href="tel:+74957866841" class="contact-company__tel">
+              +7-495-786-68-41
+            </a>
+          </div>
+          <button class="contact-company__btn main-button main-button_touch">ЗАКАЗАТЬ ЗВОНОК</button>
+        </div>
+      </div>
+
+      <div class="header__burger burger">
+        <span class="burger__first"></span>
+        <span class="burger__second"></span>
+        <span class="burger__third"></span>
+      </div>
+      <nav class="header__menu menu">
+        <div class="menu__overlay">
+          <div class="menu__close">&times;</div>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="index.html" data-path="index.html" class="menu__link">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a href="training.html" data-path="training.html" class="menu__link">Повышение квалификации</a>
+            </li>
+            <li class="menu__item">
+              <a href="retraining.html" data-path="retraining.html" class="menu__link">Профессиональная переподготовка</a>
+            </li>
+            <li class="menu__item">
+              <a href="admission.html" data-path="admission.html" class="menu__link">Поступающим</a>
+            </li>
+            <li class="menu__item">
+              <a href="about-us.html" data-path="about-us.html" class="menu__link">О нас</a>
+            </li>
+            <li class="menu__item">
+              <a href="index.html#reviews" class="menu__link">Отзывы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    
+    <section class="departments">
+      <div class="container">
+        <h2 class="departments__title section-title">
+          О нас
+        </h2>
+        <div class="departments__wrapper">
+          <div class="departments__point">
+            <div class="departments__info">
+              <h3 class="departments__subtitle">
+                Методический отдел
+              </h3>
+              <div class="departments__text">
+                Методический отдел состоит из ведущих экспертов в своей области, которые работают над актуализацией имеющихся программ повышения квалификации и профессиональной переподготовки               </div>
+            </div>            
+            <div class="departments__photo">
+              <img src="img/about-us/methodical.png" alt="Методический отдел">
+            </div>
+          </div>
+          
+          <div class="departments__point">
+            <div class="departments__info">
+              <h3 class="departments__subtitle">
+                Учебный отдел
+              </h3>
+              <div class="departments__text">
+                Сотрудники учебного отдела помогут Вам решить любой вопрос, связанный с учебным процессом: подача документов, заключение договоров, оплата, консультирование по вопросам обучения              </div>
+            </div> 
+            <div class="departments__photo">
+              <img src="img/about-us/training.png" alt="Учебный отдел">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="license">
+      <div class="container">
+        <h2 class="license__title section-title">
+          Государственная лицензия
+        </h2>
+        <div class="license__wrapper">
+          <div class="license__photo">
+            <img src="img/documents/license.png" alt="Лицензия">
+          </div>
+          <div class="license__photo">
+            <img src="img/documents/license2.png" alt="Лицензия">
+          </div>
+          <div class="license__photo">
+            <img src="img/documents/license3.png" alt="Лицензия">
+          </div>
+          <div class="license__photo">
+            <img src="img/documents/license4.png" alt="Лицензия">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="issued">
+      <div class="container">
+        <h2 class="issued__title section-title">
+          Выдаваемые документы
+        </h2>
+        <div class="issued__wrapper">
+          <div class="issued__photo">
+            <img src="img/about-us/diploma.png" alt="Диплом">
+          </div>
+          
+          <div class="issued__photo">
+            <img src="img/about-us/certificate.png" alt="Сертификат">
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <div class="order-modal" data-modal="call">
+      <div class="order-modal__card">
+        <div class="order-modal__close">&times;	</div>
+        <div class="order-modal__wrapper">
+          <h2 class="order-modal__title">Заказать звонок</h2>
+          <form class="form-order" action="">
+            <input type="text" required class="form-order__input" placeholder="Ваше имя">
+            <input type="text" class="form-order__input" placeholder="+7 (999) 999-999">
+            <button class="form-order__btn main-button">
+              ОСТАВИТЬ ЗАЯВКУ
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__name about-company about-company_footer">
+          <div class="about-company__logo">
+            <img src="icons/logo.svg" alt="logo">
+          </div>
+          <div class="about-company__name about-company__name_footer">Центр развития
+            профессиональных квалификаций НОЭС
+          </div>
+        </div>
+        <div class="footer__address address-company">
+          <div class="address-company__icon">
+            <img src="icons/map.svg" alt="map">
+          </div>
+          <div class="address-company__city">
+            г. Москва <br> Шарикоподшипниковская <br> д.4 к.12
+          </div>
+        </div>
+        <div class="footer__contacts contact-company contact-company_col">
+          <div class="contact-company__inner">
+            <div class="contact-company__contacts">
+              <a href="tel:+79162321657" class="contact-company__tel contact-company__tel_footer">
+                +7(916) 232-16-57
+              </a>
+              <a href="tel:+74957866841" class="contact-company__tel contact-company__tel_footer">
+                +7-495-786-68-41
+              </a>
+            </div>
+            <button class="contact-company__btn main-button main-button_touch">ЗАКАЗАТЬ ЗВОНОК</button>
+          </div>
+          <div class="contact-company__operating">
+            Режим работы: Понедельник-пятница, с 10:00 до 19:00
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/swiper/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  
+</body>
+
+   
+</html>
