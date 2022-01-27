@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">  
+    <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="js/swiper/swiper-bundle.min.js"></script>
+    <script defer src="js/script.js"></script>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="container">
+      <div class="wrapper__container">
+        
+        <aside>
+          <div class="navigation">
+            <a href="#" class="navigation__logo">
+              <img src="icons/logo.svg" alt="logo">
+            </a>
+            <nav class="navigation__menu menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <svg class="menu__icon">
+                    <use xlink:href="icons/sprite.svg#main"></use>
+                  </svg>
+                  <a href="main.html" data-path="main.html" class="menu__link">Главное</a>
+                </li>
+                <li class="menu__item">
+                  <svg class="menu__icon">
+                    <use xlink:href="icons/sprite.svg#goal"></use>
+                  </svg>
+                  <a href="all-goals.html" data-path="all-goals.html" class="menu__link">Цели</a>
+                </li>
+                <li class="menu__item">
+                  <svg class="menu__icon">
+                    <use xlink:href="icons/sprite.svg#risks"></use>
+                  </svg>
+                  <a href="all-risks.html" data-path="all-risks.html" class="menu__link">Риски</a>
+                </li>
+                <li class="menu__item">
+                  <svg class="menu__icon menu__icon_disabled">
+                    <use xlink:href="icons/sprite.svg#actions"></use>
+                  </svg>
+                  <a href="articles.html" data-path="articles.html" class="menu__link menu__link_disabled">Действия</a>
+                </li>
+                <li class="menu__item">
+                  <svg class="menu__icon menu__icon_disabled">
+                    <use xlink:href="icons/sprite.svg#processes"></use>
+                  </svg>
+                  <a href="articles.html" data-path="articles.html" class="menu__link menu__link_disabled">Бизнес- 
+                    процессы</a>
+                </li>
+                <li class="menu__item">
+                  <svg class="menu__icon menu__icon_disabled">
+                    <use xlink:href="icons/sprite.svg#kpi"></use>
+                  </svg>
+                  <a href="articles.html" class="menu__link menu__link_disabled">KPI</a>
+                </li>
+                <li class="menu__item">
+                  <svg class="menu__icon">
+                    <use xlink:href="icons/sprite.svg#contacts"></use>
+                  </svg>
+                  <a href="contacts.html" data-path="contacts.html" class="menu__link">Контакты</a>
+                </li>
+                <li class="menu__item">
+                  <svg class="menu__icon">
+                    <use xlink:href="icons/sprite.svg#settings"></use>
+                  </svg>
+                  <a href="settings.html" data-path="settings.html" class="menu__link">Настройки</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </aside>
+        <section class="main">
+          <div class="main__header main__header_router">
+            <div class="main__control control-bar">
+              <button class="control-bar__ready main-btn_bg">
+                Отправить на согласование
+              </button>
+              <div class="control-bar__router router">
+                <div class="router__title">
+                  Маршрутизатор:
+                </div>
+                <div class="router__inner">
+                  <div class="router__info">
+                    <div class="router__item">
+                      <div class="router__person">
+                        <img src="img/author-photo.png" alt="">
+                        <div class="router__about router-about">
+                          <div class="router-about__name">
+                            Константинопольский К.К.
+                          </div>
+                          <div class="router-about__position">
+                            Наименование должности может быть достаточно большим
+                          </div>
+                          <div class="router-about__footer">
+                            <button class="router-about__contacts main-btn_text">Контакты</button>
+                            <button class="router-about__department main-btn_text">Отдел</button>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="router__plus">
+                     
+                      </button>
+                    </div>
+                    <div class="router__item router__item_disabled">
+                      <div class="router__person">
+                        <img src="img/author-photo.png" alt="">
+                      </div>
+                      <button class="router__plus">
+                     
+                      </button>
+                    </div>
+                    <div class="router__item router__item_disabled">
+                      <div class="router__person">
+                        <img src="img/author-photo.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <button class="router__cart"></button>
+                </div>
+              </div>
+              <div class="overlay-popup hide router__overlay">
+                <div class="pop-up router__popup">
+                  <h2 class="router__popup-title">
+                    Добавить согласующего
+                  </h2>
+                  <input type="text" class="router__popup-search search-input" placeholder="Поиск">
+                  <p class="router__popup-prompt">
+                    Введите в поиск ФИО или должность человека, чтобы сделать его одним из согласующих. Можно одновременно добавлять только одного.  
+                  </p>
+                  <div class="router__popup-footer">
+                    <div class="router__popup-persons">
+                      Выделено: <span>0</span> чел.
+                    </div>
+                    <button class="router__popup-cancel main-btn_text">
+                      Отмена
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main__private private-col">
+              <div class="private-col__notice">
+                <span class="private-col__num">
+                  13
+                </span>
+              </div>
+              <div class="private-col__person person-info">
+                <div class="person-info__photo">
+                  <img src="img/person-photo.png" alt="person-photo">
+                </div>
+                <div class="person-info__details">
+                  <div class="person-info__name">
+                    Константинопольский К.К.
+                  </div>
+                  <div class="person-info__position">
+                    Наименование должности может быть достаточно большим
+                  </div>
+                </div>
+              </div>
+
+              <div class="provate-col__notifications notification">
+                <div class="notification__header">
+                  <button class="notification__close">&times;</button>
+                  <h2 class="notification__title">
+                    Уведомления
+                  </h2>
+                </div>
+                <div class="notification__list">
+                  
+                  <div class="notification__item notification-item">
+                    <div class="notification-item__image">
+                      <img src="img/notification-author.png" alt="">
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__author">
+                        Иван Иванов 
+                      </div>
+                      <div class="notification-item__info">
+                        Равным образом рамки и место обучения кадров влечет за собой
+                      </div>
+                      <div class="notification-item__date">
+                        20 минут назад
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="notification__item notification-item">
+                    <div class="notification-item__icon notification-item__icon_accent">
+                      <svg>
+                        <use xlink:href="icons/sprite.svg#speaker"></use>
+                      </svg>
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__subtitle">
+                        Новая версия риска <span class="notification-item__subtitle_accent">9321</span> утверждена
+                      </div>
+                      <div class="notification-item__date">12 Июля, 2021 в 9:15</div>
+                    </div>
+                  </div>
+
+                  <div class="notification__item notification-item">
+                    <div class="notification-item__icon notification-item__icon_accent">
+                      <svg>
+                        <use xlink:href="icons/sprite.svg#speaker"></use>
+                      </svg>
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__subtitle">
+                        Вас включили в рабочую группу цели <span class="notification-item__subtitle_accent">9331 </span> </div>
+                      <div class="notification-item__date">1 секунду назад</div>
+                    </div>
+                  </div>
+
+                  <div class="notification__item notification-item">
+                    <div class="notification-item__icon notification-item__icon_dangerous">
+                      <svg>
+                        <use xlink:href="icons/sprite.svg#dangerous"></use>
+                      </svg>
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__subtitle">
+                        Фактор риска <span class="notification-item__subtitle_dangerous">9321</span> внепланово окончился 
+                      </div>
+                      <div class="notification-item__date">20 секунд назад</div>
+                    </div>
+                  </div>
+
+                  <div class="notification__item notification-item hide">
+                    <div class="notification-item__image">
+                      <img src="img/notification-author.png" alt="">
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__author">
+                        Иван Иванов 
+                      </div>
+                      <div class="notification-item__info">
+                        Равным образом рамки и место обучения кадров влечет за собой
+                      </div>
+                      <div class="notification-item__date">
+                        20 минут назад
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="notification__item notification-item hide">
+                    <div class="notification-item__icon notification-item__icon_accent">
+                      <svg>
+                        <use xlink:href="icons/sprite.svg#speaker"></use>
+                      </svg>
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__subtitle">
+                        Новая версия риска <span class="notification-item__subtitle_accent">9321</span> утверждена
+                      </div>
+                      <div class="notification-item__date">12 Июля, 2021 в 9:15</div>
+                    </div>
+                  </div>
+
+                  <div class="notification__item notification-item hide">
+                    <div class="notification-item__icon notification-item__icon_accent">
+                      <svg>
+                        <use xlink:href="icons/sprite.svg#speaker"></use>
+                      </svg>
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__subtitle">
+                        Вас включили в рабочую группу цели <span class="notification-item__subtitle_accent">9331 </span> </div>
+                      <div class="notification-item__date">1 секунду назад</div>
+                    </div>
+                  </div>
+
+                  <div class="notification__item notification-item hide">
+                    <div class="notification-item__icon notification-item__icon_dangerous">
+                      <svg>
+                        <use xlink:href="icons/sprite.svg#dangerous"></use>
+                      </svg>
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__subtitle">
+                        Фактор риска <span class="notification-item__subtitle_dangerous">9321</span> внепланово окончился 
+                      </div>
+                      <div class="notification-item__date">20 секунд назад</div>
+                    </div>
+                  </div>
+
+                  <div class="notification__item notification-item hide">
+                    <div class="notification-item__icon notification-item__icon_dangerous">
+                      <svg>
+                        <use xlink:href="icons/sprite.svg#dangerous"></use>
+                      </svg>
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__subtitle">
+                        Фактор риска <span class="notification-item__subtitle_dangerous">9321</span> внепланово окончился 
+                      </div>
+                      <div class="notification-item__date">20 секунд назад</div>
+                    </div>
+                  </div>
+
+                  <div class="notification__item notification-item hide">
+                    <div class="notification-item__icon notification-item__icon_dangerous">
+                      <svg>
+                        <use xlink:href="icons/sprite.svg#dangerous"></use>
+                      </svg>
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__subtitle">
+                        Фактор риска <span class="notification-item__subtitle_dangerous">9321</span> внепланово окончился 
+                      </div>
+                      <div class="notification-item__date">20 секунд назад</div>
+                    </div>
+                  </div>
+
+                </div>
+                <button class="notification__all main-btn_text">
+                  Все уведомления
+                </button>
+
+              </div>
+            </div>
+          </div>
+          <div class="main__wrapper main__wrapper_row">
+            <div class="main__content main__content_narrow">
+
+              <div class="risks-promo risks-promo-add">
+                <!-- <h1 class="risks-promo-add__title">
+                  Завершена установка оборудования линии М-1 в части электролитного цеха ОАО «ОМЗ» по контракту 1234456778966544332267788 от 01.01.2021
+                </h1> -->
+                <input class="risks-promo-add__add-title" type="text" placeholder="Введите наименование цели">
+                <div class="risks-promo-add__footer">
+                  <div class="risks-promo-add__check-period">
+                    <div class="risks-promo-add__period check-select">
+                      Цель на 1 год
+                    </div>
+                    <!-- <div class="risks-promo-add__hidemenu dropdown-select">
+                      <ul class="dropdown-menu__list">
+                        <li class="dropdown-menu__item">
+                          Руководитель по рискам
+                        </li>
+                        <li class="dropdown-menu__item">
+                          Сотрудник
+                        </li>
+                        <li class="dropdown-menu__item">
+                          Специалист по целям
+                        </li>
+                      </ul>
+                    </div> -->
+                  </div>
+                  
+                  <div class="risks-promo-add__status">
+                    Здесь будет статус
+                  </div>
+                </div>
+              </div>
+
+              <div class="risks-info table-block">
+                <div class="risks-info__wrapper">
+                  <div class="risks-info__col">
+                    <h2 class="risks-info__subtitle">
+                      Дата достижения
+                    </h2>
+                    <div class="risks-info__check">
+                      <!-- <div class="risks-info__descr check-select">
+                        14 сентября 2020
+                      </div> -->
+                      <input type="date" class="risks-info__descr">
+                    </div>
+                  </div>
+                  <div class="risks-info__col">
+                    <h2 class="risks-info__subtitle">
+                      Группа цели
+                    </h2>
+                    <div class="risks-info__check">
+                      <div class="risks-info__descr risks-info__descr_disabled check-select">
+                        Не выбрано
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="risks-info__col">
+                    <h2 class="risks-info__subtitle">
+                      Область проявления
+                    </h2>
+                    <div class="risks-info__check">
+                      <div class="risks-info__descr risks-info__descr_disabled check-select">
+                        Не выбрано
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main__risks table-block">
+                <div class="table-block__header">
+                  <h2 class="table-block__subtitle">
+                    Риски достижения целей
+                  </h2>
+                  <div class="table-block__disabled">
+                    Доступно после согласования цели
+                  </div> 
+                </div>
+              </div>
+              
+              <div class="main__progress table-block">
+                <div class="table-block__header">
+                  <h2 class="table-block__subtitle">
+                    Прогресс
+                  </h2>
+                  <div class="table-block__disabled">
+                    Доступно после согласования цели
+                  </div> 
+                </div>
+              </div>
+            
+              <div class="chat">
+                <div class="chat__title">
+                  Чат по цели
+                </div>
+                <div class="chat__wrapper">
+                  <div class="chat__row">
+                    <div class="chat__photo">
+                      <img src="img/chat-author.png" alt="">
+                    </div>
+                    <div class="chat__info">
+                      <div class="chat__author">
+                        Василий Мельников
+                      </div>
+                      <div class="chat__text chat-message">
+                        <p class="chat-message__paragraph">
+                          Равным образом рамки и место обучения кадров влечет за собой
+                        </p>
+                        <p class="chat-message__paragraph">
+                          Разнообразный и богатый опыт постоянный рост 
+                        </p>
+                        <p class="chat-message__paragraph">
+                          Не следует, однако забывать
+                        </p>
+                        <div class="chat-message__time">
+                          16:06
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="chat__row">
+                    <div class="chat__photo">
+                      <img src="img/chat-author-2.png" alt="">
+                    </div>
+                    <div class="chat__info">
+                      <div class="chat__author">
+                        Владимир Олейников 
+                      </div>
+                      <div class="chat__text chat-message">
+                        <p class="chat-message__paragraph">
+                          Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу
+                        </p>
+                        <p class="chat-message__paragraph">
+                          С другой стороны, новая модель 
+                        </p>
+                        <div class="chat-message__time">
+                          16:10
+                        </div>
+                      </div>
+                      <div class="chat__text chat-message">
+                        <p class="chat-message__paragraph">
+                          Значимость этих проблем настолько очевидна
+                        </p>
+                        <div class="chat-message__time">
+                          16:06
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="chat__row">
+                    <div class="chat__photo">
+                      <img src="img/chat-author-3.png" alt="">
+                    </div>
+                    <div class="chat__info">
+                      <div class="chat__author">
+                        Мария Морозова
+                      </div>
+                      <div class="chat__text chat-message">
+                        <div class="chat-message__wrapper document-file">
+                          <div class="document-file__icon">
+                          </div>
+                          <div class="document-file__file">
+                            <div class="document-file__file-name">
+                              Отчет_по_цели_2021
+                            </div>
+                            <div class="document-file__file-info">
+                              <span class="document-file__file-size">
+                                20 Мб
+                              </span>
+                              <span class="document-file__file-point">
+                                &middot;
+                              </span>
+                              <span class="document-file__file-type">
+                                PDF
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="chat-message__time">
+                          16:10
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="chat__row chat__row_right">
+                    <div class="chat__info">
+                      <div class="chat__text chat-message">
+                        <p class="chat-message__paragraph">
+                          Влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.
+                        </p>
+                        <div class="chat-message__time">
+                          16:06
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="chat__writing">
+                    <svg class="chat__write-icon">
+                      <use xlink:href="icons/sprite.svg#download-points"></use>
+                    </svg>
+                    <span>Фёдор печатает</span>
+                  </div>
+                </div>
+                <div class="chat__add">
+                  <button class="chat__file-add"></button>
+                  <input type="text" placeholder="Начни писать" class="chat__input">
+                </div>
+              </div>
+            </div>
+            <div class="main__work-group work-group">
+              <div class="work-group__row">
+                <h2 class="work-group__title">
+                  Ответственный
+                </h2>
+                <button class="work-group__btn main-btn_text">
+                  Выбрать
+                </button>
+                
+              </div>
+              <div class="work-group__row">
+                <h2 class="work-group__title">
+                  Координатор 
+                </h2>
+                <div class="work-group__person coordinator-person-info">
+                  <div class="coordinator-person-info__photo">
+                    <img src="img/work-group.png" alt="person-photo">
+                  </div>
+                  <div class="coordinator-person-info__details">
+                    <div class="coordinator-person-info__name">
+                      Константинопольский К.К.
+                    </div>
+                    <div class="coordinator-person-info__position">
+                      Наименование должности может быть большим
+                    </div>
+                  </div>
+                  <button class="coordinator-person-info__del">
+
+                  </button>
+                </div>
+              </div>
+              <div class="work-group__row">
+                <h2 class="work-group__title">
+                  Рабочая группа 
+                </h2>
+                <div class="work-group__inner">
+                  <div class="work-group__photo">
+                    <img src="img/work-group.png" alt="person-photo">
+                  </div>
+                  <div class="work-group__photo">
+                    <img src="img/work-group.png" alt="person-photo">
+                  </div>
+                  <button class="work-group__add-person">
+                  </button>
+                </div>
+              </div>
+              <div class="work-group__row">
+                <h2 class="work-group__title">
+                  Тэги
+                </h2>
+                <button class="work-group__btn main-btn_text">
+                  Добавить
+                </button>
+                <!-- <div class="work-group__inner">
+                  <span class="work-group__tag">
+                    Lorem ipsum
+                  </span>
+                  <span class="work-group__tag">
+                    Lorem ipsum
+                  </span>
+                  <span class="work-group__tag">
+                    Lorem
+                  </span>
+                  <span class="work-group__tag">
+                    ipsum
+                  </span>
+                </div> -->
+              </div>
+              <div class="work-group__row">
+                <h2 class="work-group__title">
+                  Бизнес-процессы
+                </h2>
+                <button class="work-group__btn main-btn_text">
+                  Добавить
+                </button>
+                <!-- <div class="work-group__inner">
+                  <div class="work-group__processes">
+                    Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum,
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer class="footer" id="contacts">
+    
+  </footer>
+
+
+
+</body>
+
+   
+</html>

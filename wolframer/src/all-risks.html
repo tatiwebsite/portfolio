@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">  
+    <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="js/swiper/swiper-bundle.min.js"></script>
+    <script defer src="js/script.js"></script>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="container">
+      <div class="wrapper__container">
+        
+        <aside>
+          <div class="navigation">
+            <a href="#" class="navigation__logo">
+              <img src="icons/logo.svg" alt="logo">
+            </a>
+            <nav class="navigation__menu menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <svg class="menu__icon">
+                    <use xlink:href="icons/sprite.svg#main"></use>
+                  </svg>
+                  <a href="main.html" data-path="main.html" class="menu__link">Главное</a>
+                </li>
+                <li class="menu__item">
+                  <svg class="menu__icon">
+                    <use xlink:href="icons/sprite.svg#goal"></use>
+                  </svg>
+                  <a href="all-goals.html" data-path="all-goals.html" class="menu__link">Цели</a>
+                </li>
+                <li class="menu__item">
+                  <svg class="menu__icon">
+                    <use xlink:href="icons/sprite.svg#risks"></use>
+                  </svg>
+                  <a href="all-risks.html" data-path="all-risks.html" class="menu__link">Риски</a>
+                </li>
+                <li class="menu__item">
+                  <svg class="menu__icon menu__icon_disabled">
+                    <use xlink:href="icons/sprite.svg#actions"></use>
+                  </svg>
+                  <a href="articles.html" data-path="articles.html" class="menu__link menu__link_disabled">Действия</a>
+                </li>
+                <li class="menu__item">
+                  <svg class="menu__icon menu__icon_disabled">
+                    <use xlink:href="icons/sprite.svg#processes"></use>
+                  </svg>
+                  <a href="articles.html" data-path="articles.html" class="menu__link menu__link_disabled">Бизнес- 
+                    процессы</a>
+                </li>
+                <li class="menu__item">
+                  <svg class="menu__icon menu__icon_disabled">
+                    <use xlink:href="icons/sprite.svg#kpi"></use>
+                  </svg>
+                  <a href="articles.html" class="menu__link menu__link_disabled">KPI</a>
+                </li>
+                <li class="menu__item">
+                  <svg class="menu__icon">
+                    <use xlink:href="icons/sprite.svg#contacts"></use>
+                  </svg>
+                  <a href="contacts.html" data-path="contacts.html" class="menu__link">Контакты</a>
+                </li>
+                <li class="menu__item">
+                  <svg class="menu__icon">
+                    <use xlink:href="icons/sprite.svg#settings"></use>
+                  </svg>
+                  <a href="settings.html" data-path="settings.html" class="menu__link">Настройки</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </aside>
+        <section class="main">
+          <div class="main__header main__header_right-col">
+            
+            <div class="main__private private-col">
+              <button class="private-col__search">
+              </button>
+              <div class="private-col__notice">
+                <span class="private-col__num">
+                  13
+                </span>
+              </div>
+              <div class="private-col__person person-info">
+                <div class="person-info__photo">
+                  <img src="img/person-photo.png" alt="person-photo">
+                </div>
+                <div class="person-info__details">
+                  <div class="person-info__name">
+                    Константинопольский К.К.
+                  </div>
+                  <div class="person-info__position">
+                    Наименование должности может быть достаточно большим
+                  </div>
+                </div>
+              </div>
+
+              <div class="provate-col__notifications notification">
+                <div class="notification__header">
+                  <button class="notification__close">&times;</button>
+                  <h2 class="notification__title">
+                    Уведомления
+                  </h2>
+                </div>
+                <div class="notification__list">
+                  
+                  <div class="notification__item notification-item">
+                    <div class="notification-item__image">
+                      <img src="img/notification-author.png" alt="">
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__author">
+                        Иван Иванов 
+                      </div>
+                      <div class="notification-item__info">
+                        Равным образом рамки и место обучения кадров влечет за собой
+                      </div>
+                      <div class="notification-item__date">
+                        20 минут назад
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="notification__item notification-item">
+                    <div class="notification-item__icon notification-item__icon_accent">
+                      <svg>
+                        <use xlink:href="icons/sprite.svg#speaker"></use>
+                      </svg>
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__subtitle">
+                        Новая версия риска <span class="notification-item__subtitle_accent">9321</span> утверждена
+                      </div>
+                      <div class="notification-item__date">12 Июля, 2021 в 9:15</div>
+                    </div>
+                  </div>
+
+                  <div class="notification__item notification-item">
+                    <div class="notification-item__icon notification-item__icon_accent">
+                      <svg>
+                        <use xlink:href="icons/sprite.svg#speaker"></use>
+                      </svg>
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__subtitle">
+                        Вас включили в рабочую группу цели <span class="notification-item__subtitle_accent">9331 </span> </div>
+                      <div class="notification-item__date">1 секунду назад</div>
+                    </div>
+                  </div>
+
+                  <div class="notification__item notification-item">
+                    <div class="notification-item__icon notification-item__icon_dangerous">
+                      <svg>
+                        <use xlink:href="icons/sprite.svg#dangerous"></use>
+                      </svg>
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__subtitle">
+                        Фактор риска <span class="notification-item__subtitle_dangerous">9321</span> внепланово окончился 
+                      </div>
+                      <div class="notification-item__date">20 секунд назад</div>
+                    </div>
+                  </div>
+
+                  <div class="notification__item notification-item hide">
+                    <div class="notification-item__image">
+                      <img src="img/notification-author.png" alt="">
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__author">
+                        Иван Иванов 
+                      </div>
+                      <div class="notification-item__info">
+                        Равным образом рамки и место обучения кадров влечет за собой
+                      </div>
+                      <div class="notification-item__date">
+                        20 минут назад
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="notification__item notification-item hide">
+                    <div class="notification-item__icon notification-item__icon_accent">
+                      <svg>
+                        <use xlink:href="icons/sprite.svg#speaker"></use>
+                      </svg>
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__subtitle">
+                        Новая версия риска <span class="notification-item__subtitle_accent">9321</span> утверждена
+                      </div>
+                      <div class="notification-item__date">12 Июля, 2021 в 9:15</div>
+                    </div>
+                  </div>
+
+                  <div class="notification__item notification-item hide">
+                    <div class="notification-item__icon notification-item__icon_accent">
+                      <svg>
+                        <use xlink:href="icons/sprite.svg#speaker"></use>
+                      </svg>
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__subtitle">
+                        Вас включили в рабочую группу цели <span class="notification-item__subtitle_accent">9331 </span> </div>
+                      <div class="notification-item__date">1 секунду назад</div>
+                    </div>
+                  </div>
+
+                  <div class="notification__item notification-item hide">
+                    <div class="notification-item__icon notification-item__icon_dangerous">
+                      <svg>
+                        <use xlink:href="icons/sprite.svg#dangerous"></use>
+                      </svg>
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__subtitle">
+                        Фактор риска <span class="notification-item__subtitle_dangerous">9321</span> внепланово окончился 
+                      </div>
+                      <div class="notification-item__date">20 секунд назад</div>
+                    </div>
+                  </div>
+
+                  <div class="notification__item notification-item hide">
+                    <div class="notification-item__icon notification-item__icon_dangerous">
+                      <svg>
+                        <use xlink:href="icons/sprite.svg#dangerous"></use>
+                      </svg>
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__subtitle">
+                        Фактор риска <span class="notification-item__subtitle_dangerous">9321</span> внепланово окончился 
+                      </div>
+                      <div class="notification-item__date">20 секунд назад</div>
+                    </div>
+                  </div>
+
+                  <div class="notification__item notification-item hide">
+                    <div class="notification-item__icon notification-item__icon_dangerous">
+                      <svg>
+                        <use xlink:href="icons/sprite.svg#dangerous"></use>
+                      </svg>
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__subtitle">
+                        Фактор риска <span class="notification-item__subtitle_dangerous">9321</span> внепланово окончился 
+                      </div>
+                      <div class="notification-item__date">20 секунд назад</div>
+                    </div>
+                  </div>
+
+                </div>
+                <button class="notification__all main-btn_text">
+                  Все уведомления
+                </button>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="main__all-risks all-risks">
+            <div class="all-risks__content risks">
+              <div class="risks__header functions-row">
+                <input type="text" class="risks__search search-input" placeholder="Поиск">
+                <div class="risks__actions functions-row__actions functions-actions">
+                  <a href="new-risk.html" class="risks__add functions-actions__add"></a>
+                  <button class="risks__download functions-actions__download"></button>
+                  <button class="risks__filter functions-actions__filter">
+                  </button>
+                </div>
+                <div class="risks__excel checkbox-block download-excel table-block hide">
+                  <div class="checkbox-block__header">
+                    <h2 class="checkbox-block__title">
+                      Сделать выборку в Excel
+                    </h2>
+                    <span class="checkbox-block__type">
+                      .xlsx
+                    </span>
+                  </div>
+                  <div class="checkbox-block__section">
+                    <div class="checkbox-block__row-header">
+                      <div class="checkbox-block__row-title">
+                        Общее
+                      </div>
+                      <button class="checkbox-block__row-btn main-btn_text">
+                        Выбрать все
+                      </button>
+                    </div>
+                    <div class="checkbox-block__content">
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Id 
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Общий уровень
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Название риска
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Группа риска
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Название цели
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Тип риска
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Ответственный по цели
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Область проявления
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Владелец риска
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Бизнес-процессы
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Координатор риска
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Тэги
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Статус
+                      </label>
+                    </div>
+                  </div>
+                  <div class="checkbox-block__section">
+                    <div class="checkbox-block__row-header">
+                      <div class="checkbox-block__row-title">
+                        Последствия
+                      </div>
+                      <button class="checkbox-block__row-btn main-btn_text">
+                        Снять все
+                      </button>
+                    </div>
+                    <div class="checkbox-block__content">
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Наименование 
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Качественная оценка
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Бизнес-процессы
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Количественная оценка
+                      </label>
+                    </div>
+                  </div>
+                  <div class="checkbox-block__section">
+                    <div class="checkbox-block__row-header">
+                      <div class="checkbox-block__row-title">
+                        Факторы
+                      </div>
+                      <button class="checkbox-block__row-btn main-btn_text">
+                        Выбрать все
+                      </button>
+                    </div>
+                    <div class="checkbox-block__content">
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Наименование 
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Статус
+                      </label>
+                    </div>
+                  </div>
+                  <div class="checkbox-block__section">
+                    <div class="checkbox-block__row-header">
+                      <div class="checkbox-block__row-title">
+                        Действия
+                      </div>
+                      <button class="checkbox-block__row-btn main-btn_text">
+                        Выбрать все
+                      </button>
+                    </div>
+                    <div class="checkbox-block__content">
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Id 
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Плановый результат
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Содержание
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Бизнес-процессы
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Плановая дата окончания 
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Комментарий
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Состояние выполнения
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Подтверждающие документы
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Ответственный
+                      </label>
+                    </div>
+                  </div>
+                  <div class="checkbox-block__footer">
+                    <div class="checkbox-block__btns">
+                      <button class="checkbox-block__cancel main-btn_text">Отмена</button>
+                      <a href="#" download class="checkbox-block__export main-btn_bg">Экспорт</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="risks__filter filter-block hide">
+                <div class="filter-block__wrapper">
+                  <div class="filter-block__col">
+                    <div class="filter-block__subtitle">
+                      Ответственный
+                    </div>
+                    <div class="filter-block__search">
+                      <input type="text" class="filter-block__input search-input" placeholder="ФИО ответственного, должность">
+                      <button class="filter-block__add main-btn_bg">Добавить</button>
+                    </div>
+                    <ul class="filter-block__person-list">
+                      <li class="filter-block__person">
+                        <div class="filter-block__person-info filter-person-info">
+                          <div class="filter-person-info__photo">
+                            <img src="img/work-group.png" alt="person-photo">
+                          </div>
+                          <div class="filter-person-info__details">
+                            <div class="filter-person-info__name">
+                              Константинопольский К.К.
+                            </div>
+                            <div class="filter-person-info__position">
+                              Наименование должности
+                            </div>
+                          </div>
+                          <button class="filter-person-info__close">&times;</button>
+                        </div>
+                      </li>
+                      <li class="filter-block__person">
+                        <div class="filter-block__person-info filter-person-info">
+                          <div class="filter-person-info__photo">
+                            <img src="img/work-group.png" alt="person-photo">
+                          </div>
+                          <div class="filter-person-info__details">
+                            <div class="filter-person-info__name">
+                              Константинопольский К.К.
+                            </div>
+                            <div class="filter-person-info__position">
+                              Наименование должности
+                            </div>
+                          </div>
+                          <button class="filter-person-info__close">&times;</button>
+                        </div>
+                      </li>
+                      <li class="filter-block__person">
+                        <div class="filter-block__person-info filter-person-info">
+                          <div class="filter-person-info__photo">
+                            <img src="img/work-group.png" alt="person-photo">
+                          </div>
+                          <div class="filter-person-info__details">
+                            <div class="filter-person-info__name">
+                              Иванов И.И.
+                            </div>
+                            <div class="filter-person-info__position">
+                              Должность
+                            </div>
+                          </div>
+                          <button class="filter-person-info__close">&times;</button>
+                        </div>
+                      </li>
+                      <li class="filter-block__person">
+                        <div class="filter-block__person-info filter-person-info">
+                          <div class="filter-person-info__photo">
+                            <img src="img/work-group.png" alt="person-photo">
+                          </div>
+                          <div class="filter-person-info__details">
+                            <div class="filter-person-info__name">
+                              Константинопольский К.К.
+                            </div>
+                            <div class="filter-person-info__position">
+                              Наименование должности
+                            </div>
+                          </div>
+                          <button class="filter-person-info__close">&times;</button>
+                        </div>
+                      </li>
+                      
+                    </ul>
+
+                    <div class="filter-block__tags settings-tags-filter table-block">
+                      <div class="settings-tags-filter__header">
+                        <div class="settings-tags-filter__subtitle">
+                          Тип риска
+                        </div>
+                      </div>
+                      <div class="settings-tags-filter__section">
+                        <div class="settings-tags-filter__list">
+                          <div class="settings-tags-filter__item">
+                            <div class="settings-tags-filter__tag">Информационные риски</div> 
+                            <span class="settings-tags-filter__close">&times;</span>
+                          </div>
+                          <div class="settings-tags-filter__search-tags">
+                            <input type="text" placeholder="Введите риск" class="settings-tags-filter__add-tag">
+                            <div class="settings-tags-filter__item-prompt">
+                              Транспортные риски
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="filter-block__tags settings-tags-filter table-block">
+                      <div class="settings-tags-filter__header">
+                        <div class="settings-tags-filter__subtitle">
+                          Бизнес-процесс
+                        </div>
+                      </div>
+                      <div class="settings-tags-filter__section">
+                        <div class="settings-tags-filter__list">
+                          <div class="settings-tags-filter__item">
+                            <div class="settings-tags-filter__tag">Бюджетирование разработки продукта на основе информационных технологий</div> 
+                            <span class="settings-tags-filter__close">&times;</span>
+                          </div>
+                          <div class="settings-tags-filter__search-tags">
+                            <input type="text" placeholder="Введите наименование бизнес-процесса " class="settings-tags-filter__add-tag">
+                            <div class="settings-tags-filter__item-prompt">
+                              Разработка сложных действий
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                  <div class="filter-block__col filter-block__col_filter">
+                    <div class="filter-block__row">
+                    <div class="filter-block__sub-col">
+                      
+                        <div class="filter-block__subtitle">
+                          Статус
+                        </div>
+                        <div class="radio-block-mini">
+                          <label class="radio-block-mini__label radio-box">
+                            <input name="status" type="radio" class="radio-block-mini__checkbox radio-box-input">
+                            <span class="radio-block-mini__style radio-box-style"></span>
+                            Все 
+                          </label>
+                          <label class="radio-block-mini__label radio-box">
+                            <input type="radio" name="status" class="radio-block-mini__checkbox radio-box-input">
+                            <span class="radio-block-mini__style radio-box-style"></span>
+                            Только ок 
+                          </label>
+                          <label class="radio-block-mini__label radio-box">
+                            <input type="radio" name="status" class="radio-block-mini__checkbox radio-box-input">
+                            <span class="radio-block-mini__style radio-box-style"></span>
+                            Только не ок
+                          </label>
+                        </div>
+                       
+                      </div>
+                      <div class="filter-block__sub-col">
+                        <div class="filter-block__subtitle">
+                          Актуальность
+                        </div>
+                        <div class="radio-block-mini">
+                          <label class="radio-block-mini__label radio-box">
+                            <input name="actually" type="radio" class="radio-block-mini__checkbox radio-box-input">
+                            <span class="radio-block-mini__style radio-box-style"></span>
+                            Все 
+                          </label>
+                          <label class="radio-block-mini__label radio-box">
+                            <input type="radio" name="actually" class="radio-block-mini__checkbox radio-box-input">
+                            <span class="radio-block-mini__style radio-box-style"></span>
+                            Текущие
+                          </label>
+                          <label class="radio-block-mini__label radio-box">
+                            <input type="radio" name="actually" class="radio-block-mini__checkbox radio-box-input">
+                            <span class="radio-block-mini__style radio-box-style"></span>
+                            Архивные
+                          </label>
+                        </div>
+                      </div>
+                      <div class="filter-block__sub-col">
+                        <div class="filter-block__subtitle">
+                          Активность
+                        </div>
+                        <div class="radio-block-mini">
+                          <label class="radio-block-mini__label radio-box">
+                            <input name="active" type="radio" class="radio-block-mini__checkbox radio-box-input">
+                            <span class="radio-block-mini__style radio-box-style"></span>
+                            Все 
+                          </label>
+                          <label class="radio-block-mini__label radio-box">
+                            <input type="radio" name="active" class="radio-block-mini__checkbox radio-box-input">
+                            <span class="radio-block-mini__style radio-box-style"></span>
+                            Только мои 
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter-block__row">
+                      <div class="filter-block__sub-col">
+                        
+                          <div class="filter-block__subtitle">
+                            Цели на
+                          </div>
+                          <div class="filter-block__checkbox">
+                            <label class="check-box">
+                              <input type="checkbox" class="check-box-input">
+                              <span class="checkbox-block-mini__style check-box-style"></span>
+                              Все 
+                            </label>
+                            <label class="check-box">
+                              <input type="checkbox" class="check-box-input">
+                              <span class="check-box-style"></span>
+                              5 лет
+                            </label>
+                            <label class="check-box">
+                              <input type="checkbox" class="check-box-input">
+                              <span class="checkbox-block-mini__style check-box-style"></span>
+                              1 год 
+                            </label>
+                            <label class="check-box">
+                              <input type="checkbox" class="check-box-input">
+                              <span class="check-box-style"></span>
+                              полгода
+                            </label>
+                            <label class="check-box">
+                              <input type="checkbox" class="check-box-input">
+                              <span class="checkbox-block-mini__style check-box-style"></span>
+                              квартал
+                            </label>
+                          </div>
+                         
+                         
+                        </div>
+                        <div class="filter-block__sub-col">
+                          <div class="filter-block__subtitle">
+                            Группа риска
+                          </div>
+                          <div class="filter-block__checkbox">
+                            <label class="check-box">
+                              <input type="checkbox" class="check-box-input">
+                              <span class="checkbox-block-mini__style check-box-style"></span>
+                              Все 
+                            </label>
+                            <label class="check-box">
+                              <input type="checkbox" class="check-box-input">
+                              <span class="check-box-style"></span>
+                              Финансовая
+                            </label>
+                            <label class="check-box">
+                              <input type="checkbox" class="check-box-input">
+                              <span class="checkbox-block-mini__style check-box-style"></span>
+                              Производственная
+                            </label>
+                            <label class="check-box">
+                              <input type="checkbox" class="check-box-input">
+                              <span class="check-box-style"></span>
+                              Технологическая
+                            </label>
+                          </div>
+                          
+                        </div>
+                        
+                      </div>
+                      
+                    <button class="filter-block__cancel main-btn_text">Сбросить все</button>
+                  </div>
+                </div>
+                
+              
+              </div>
+
+              <div class="risks__info">
+                <ul class="risks__list">
+                  <li class="risks__item risks-item">
+                    <div class="risks-item__id">R0001</div>
+                    <div class="risks-item__info">
+                      <a href="risk.html" class="risks-item__link">
+                        Наименование риска может быть какого угодно  и даже размера, ведь текст  будет располагаться 
+                      </a>
+                      <button class="risks-item__watch main-btn_text">
+                        Посмотреть цель
+                      </button>
+                      <div class="risks-item__goal hide">
+                        Наименование цели может быть какого угодно размера, ведь текст будет располагаться ниже                          </div>
+                    </div>
+                    <div class="risks-item__author">
+                      <div class="risks-item__photo">
+                        <img src="img/author-photo.png" alt="">
+                      </div>
+                      <div class="risks-item__person">Константинопольский К.К.</div>
+                    </div>
+                    <div class="risks-item__status">
+                      <span class="risks-item__status-ok status-ok status-wrong">не ок</span>
+                      <div class="status-level status-level_up">
+                        <span class="status-level__value">1,000,000 ₽</span>
+                        <span class="status-level__grade">6 баллов</span>
+                      </div>
+                    </div>
+                    <button class="risks-item__openmenu open-btn">
+                    </button>
+                    <div class="risks-item__hidemenu dropdown-menu">
+                      <ul class="dropdown-menu__list">
+                        <li class="dropdown-menu__item dropdown-menu__item_archive-icon">
+                          Архивировать риск
+                        </li>
+                        <li class="dropdown-menu__item dropdown-menu__item_edit-icon">
+                          Редактировать риск
+                        </li>
+                        <li class="dropdown-menu__item dropdown-menu__item_del-icon">
+                          Удалить риск
+                        </li>
+                      </ul>
+                    </div>                      
+                  </li>
+                  <li class="risks__item risks-item">
+                    <div class="risks-item__id">R0001</div>
+                    <div class="risks-item__info">
+                      <a href="risk.html" class="risks-item__link">
+                        Наименование риска может быть какого угодно  и даже размера, ведь текст  будет располагаться 
+                      </a>
+                      <button class="risks-item__watch main-btn_text">
+                        Посмотреть цель
+                      </button>
+                      <div class="risks-item__goal hide">
+                        Наименование цели может быть какого угодно размера, ведь текст будет располагаться ниже                          </div>
+                    </div>
+                    <div class="risks-item__author">
+                      <div class="risks-item__photo">
+                        <img src="img/author-photo.png" alt="">
+                      </div>
+                      <div class="risks-item__person">Константинопольский К.К.</div>
+                    </div>
+                    <div class="risks-item__status">
+                      <span class="risks-item__status-ok status-ok status-wrong">не ок</span>
+                      <div class="status-level status-level_up">
+                        <span class="status-level__value">1,000,000 ₽</span>
+                        <span class="status-level__grade">6 баллов</span>
+                      </div>
+                    </div>
+                    <button class="risks-item__openmenu open-btn">
+                    </button>
+                    <div class="risks-item__hidemenu dropdown-menu">
+                      <ul class="dropdown-menu__list">
+                        <li class="dropdown-menu__item dropdown-menu__item_archive-icon">
+                          Архивировать риск
+                        </li>
+                        <li class="dropdown-menu__item dropdown-menu__item_edit-icon">
+                          Редактировать риск
+                        </li>
+                        <li class="dropdown-menu__item dropdown-menu__item_del-icon">
+                          Удалить риск
+                        </li>
+                      </ul>
+                    </div>                       
+                  </li>
+                  <li class="risks__item risks-item">
+                    <div class="risks-item__id">R0001</div>
+                    <div class="risks-item__info">
+                      <a href="risk.html" class="risks-item__link">
+                        Наименование риска может быть какого угодно  и даже размера, ведь текст  будет располагаться 
+                      </a>
+                      <button class="risks-item__watch main-btn_text">
+                        Посмотреть цель
+                      </button>
+                      <div class="risks-item__goal hide">
+                        Наименование цели может быть какого угодно размера, ведь текст будет располагаться ниже                          </div>
+                    </div>
+                    <div class="risks-item__author">
+                      <div class="risks-item__photo">
+                        <img src="img/author-photo.png" alt="">
+                      </div>
+                      <div class="risks-item__person">Константинопольский К.К.</div>
+                    </div>
+                    <div class="risks-item__status">
+                      <span class="risks-item__status-ok status-ok status-correct">ok</span>
+                      <div class="status-level status-level_down">
+                        <span class="status-level__value">1,000,000 ₽</span>
+                        <span class="status-level__grade">6 баллов</span>
+                      </div>
+                    </div>
+                    <button class="risks-item__openmenu open-btn">
+                    </button>
+                    <div class="risks-item__hidemenu dropdown-menu">
+                      <ul class="dropdown-menu__list">
+                        <li class="dropdown-menu__item dropdown-menu__item_archive-icon">
+                          Архивировать риск
+                        </li>
+                        <li class="dropdown-menu__item dropdown-menu__item_edit-icon">
+                          Редактировать риск
+                        </li>
+                        <li class="dropdown-menu__item dropdown-menu__item_del-icon">
+                          Удалить риск
+                        </li>
+                      </ul>
+                    </div>                     
+                  </li>
+                  <li class="risks__item risks-item">
+                    <div class="risks-item__id">R0001</div>
+                    <div class="risks-item__info">
+                      <a href="risk.html" class="risks-item__link">
+                        Наименование риска может быть какого угодно  и даже размера, ведь текст  будет располагаться 
+                      </a>
+                      <button class="risks-item__watch main-btn_text">
+                        Посмотреть цель
+                      </button>
+                      <div class="risks-item__goal hide">
+                        Наименование цели может быть какого угодно размера, ведь текст будет располагаться ниже                          </div>
+                    </div>
+                    <div class="risks-item__author">
+                      <div class="risks-item__photo">
+                        <img src="img/author-photo.png" alt="">
+                      </div>
+                      <div class="risks-item__person">Константинопольский К.К.</div>
+                    </div>
+                    <div class="risks-item__status">
+                      <span class="risks-item__status-ok status-ok status-wrong">не ок</span>
+                      <div class="status-level status-level_up">
+                        <span class="status-level__value">1,000,000 ₽</span>
+                        <span class="status-level__grade">6 баллов</span>
+                      </div>
+                    </div>
+                    <button class="risks-item__openmenu open-btn">
+                    </button>
+                    <div class="risks-item__hidemenu dropdown-menu">
+                      <ul class="dropdown-menu__list">
+                        <li class="dropdown-menu__item dropdown-menu__item_archive-icon">
+                          Архивировать риск
+                        </li>
+                        <li class="dropdown-menu__item dropdown-menu__item_edit-icon">
+                          Редактировать риск
+                        </li>
+                        <li class="dropdown-menu__item dropdown-menu__item_del-icon">
+                          Удалить риск
+                        </li>
+                      </ul>
+                    </div>                     
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <footer class="footer" id="contacts">
+    
+  </footer>
+
+
+
+</body>
+
+   
+</html>

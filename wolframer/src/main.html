@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">  
+    <link rel="preload" href="css/swiper.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="js/swiper/swiper-bundle.min.js"></script>
+    <script defer src="js/script.js"></script>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="container">
+      <div class="wrapper__container">
+        
+        <aside>
+          <div class="navigation">
+            <a href="#" class="navigation__logo">
+              <img src="icons/logo.svg" alt="logo">
+            </a>
+            <nav class="navigation__menu menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <svg class="menu__icon">
+                    <use xlink:href="icons/sprite.svg#main"></use>
+                  </svg>
+                  <a href="main.html" data-path="main.html" class="menu__link">Главное</a>
+                </li>
+                <li class="menu__item">
+                  <svg class="menu__icon">
+                    <use xlink:href="icons/sprite.svg#goal"></use>
+                  </svg>
+                  <a href="all-goals.html" data-path="all-goals.html" class="menu__link">Цели</a>
+                </li>
+                <li class="menu__item">
+                  <svg class="menu__icon">
+                    <use xlink:href="icons/sprite.svg#risks"></use>
+                  </svg>
+                  <a href="all-risks.html" data-path="all-risks.html" class="menu__link">Риски</a>
+                </li>
+                <li class="menu__item">
+                  <svg class="menu__icon menu__icon_disabled">
+                    <use xlink:href="icons/sprite.svg#actions"></use>
+                  </svg>
+                  <a href="articles.html" data-path="articles.html" class="menu__link menu__link_disabled">Действия</a>
+                </li>
+                <li class="menu__item">
+                  <svg class="menu__icon menu__icon_disabled">
+                    <use xlink:href="icons/sprite.svg#processes"></use>
+                  </svg>
+                  <a href="articles.html" data-path="articles.html" class="menu__link menu__link_disabled">Бизнес- 
+                    процессы</a>
+                </li>
+                <li class="menu__item">
+                  <svg class="menu__icon menu__icon_disabled">
+                    <use xlink:href="icons/sprite.svg#kpi"></use>
+                  </svg>
+                  <a href="articles.html" class="menu__link menu__link_disabled">KPI</a>
+                </li>
+                <li class="menu__item">
+                  <svg class="menu__icon">
+                    <use xlink:href="icons/sprite.svg#contacts"></use>
+                  </svg>
+                  <a href="contacts.html" data-path="contacts.html" class="menu__link">Контакты</a>
+                </li>
+                <li class="menu__item">
+                  <svg class="menu__icon">
+                    <use xlink:href="icons/sprite.svg#settings"></use>
+                  </svg>
+                  <a href="settings.html" data-path="settings.html" class="menu__link">Настройки</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </aside>
+        <section class="main">
+          <div class="main__header">
+            <div class="main__summary summary-links">
+              <a href="all-goals.html" class="summary-links__link">
+                <svg class="summary-links__icon">
+                  <use xlink:href="icons/sprite.svg#goal"></use>
+                </svg>
+                <span class="summary-links__text">Мои цели</span>
+                <span class="summary-links__num_correct">13</span>
+              </a>
+              <a href="all-risks.html" class="summary-links__link">
+                <svg class="summary-links__icon">
+                  <use xlink:href="icons/sprite.svg#risks"></use>
+                </svg>
+                <span class="summary-links__text">Мои риски</span>
+                <span class="summary-links__num_wrong">13</span>
+              </a>
+              <a href="#" class="summary-links__link">
+                <svg class="summary-links__icon">
+                  <use xlink:href="icons/sprite.svg#actions"></use>
+                </svg>
+                <span class="summary-links__text">Мои действия</span>
+                <span class="summary-links__num">13</span>
+              </a>
+            </div>
+            <div class="main__private private-col">
+              <button class="private-col__search">
+              </button>
+              <div class="private-col__notice">
+                <span class="private-col__num">
+                  13
+                </span>
+              </div>
+              <div class="private-col__person person-info">
+                <div class="person-info__photo">
+                  <img src="img/person-photo.png" alt="person-photo">
+                </div>
+                <div class="person-info__details">
+                  <div class="person-info__name">
+                    Константинопольский К.К.
+                  </div>
+                  <div class="person-info__position">
+                    Наименование должности может быть достаточно большим
+                  </div>
+                </div>
+              </div>
+
+              <div class="private-col__notifications notification">
+                <div class="notification__header">
+                  <button class="notification__close">&times;</button>
+                  <h2 class="notification__title">
+                    Уведомления
+                  </h2>
+                </div>
+                <div class="notification__list">
+                  
+                  <div class="notification__item notification-item">
+                    <div class="notification-item__image">
+                      <img src="img/notification-author.png" alt="">
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__author">
+                        Иван Иванов 
+                      </div>
+                      <div class="notification-item__info">
+                        Равным образом рамки и место обучения кадров влечет за собой
+                      </div>
+                      <div class="notification-item__date">
+                        20 минут назад
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="notification__item notification-item">
+                    <div class="notification-item__icon notification-item__icon_accent">
+                      <svg>
+                        <use xlink:href="icons/sprite.svg#speaker"></use>
+                      </svg>
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__subtitle">
+                        Новая версия риска <span class="notification-item__subtitle_accent">9321</span> утверждена
+                      </div>
+                      <div class="notification-item__date">12 Июля, 2021 в 9:15</div>
+                    </div>
+                  </div>
+
+                  <div class="notification__item notification-item">
+                    <div class="notification-item__icon notification-item__icon_accent">
+                      <svg>
+                        <use xlink:href="icons/sprite.svg#speaker"></use>
+                      </svg>
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__subtitle">
+                        Вас включили в рабочую группу цели <span class="notification-item__subtitle_accent">9331 </span> </div>
+                      <div class="notification-item__date">1 секунду назад</div>
+                    </div>
+                  </div>
+
+                  <div class="notification__item notification-item">
+                    <div class="notification-item__icon notification-item__icon_dangerous">
+                      <svg>
+                        <use xlink:href="icons/sprite.svg#dangerous"></use>
+                      </svg>
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__subtitle">
+                        Фактор риска <span class="notification-item__subtitle_dangerous">9321</span> внепланово окончился 
+                      </div>
+                      <div class="notification-item__date">20 секунд назад</div>
+                    </div>
+                  </div>
+
+                  <div class="notification__item notification-item hide">
+                    <div class="notification-item__image">
+                      <img src="img/notification-author.png" alt="">
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__author">
+                        Иван Иванов 
+                      </div>
+                      <div class="notification-item__info">
+                        Равным образом рамки и место обучения кадров влечет за собой
+                      </div>
+                      <div class="notification-item__date">
+                        20 минут назад
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="notification__item notification-item hide">
+                    <div class="notification-item__icon notification-item__icon_accent">
+                      <svg>
+                        <use xlink:href="icons/sprite.svg#speaker"></use>
+                      </svg>
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__subtitle">
+                        Новая версия риска <span class="notification-item__subtitle_accent">9321</span> утверждена
+                      </div>
+                      <div class="notification-item__date">12 Июля, 2021 в 9:15</div>
+                    </div>
+                  </div>
+
+                  <div class="notification__item notification-item hide">
+                    <div class="notification-item__icon notification-item__icon_accent">
+                      <svg>
+                        <use xlink:href="icons/sprite.svg#speaker"></use>
+                      </svg>
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__subtitle">
+                        Вас включили в рабочую группу цели <span class="notification-item__subtitle_accent">9331 </span> </div>
+                      <div class="notification-item__date">1 секунду назад</div>
+                    </div>
+                  </div>
+
+                  <div class="notification__item notification-item hide">
+                    <div class="notification-item__icon notification-item__icon_dangerous">
+                      <svg>
+                        <use xlink:href="icons/sprite.svg#dangerous"></use>
+                      </svg>
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__subtitle">
+                        Фактор риска <span class="notification-item__subtitle_dangerous">9321</span> внепланово окончился 
+                      </div>
+                      <div class="notification-item__date">20 секунд назад</div>
+                    </div>
+                  </div>
+
+                  <div class="notification__item notification-item hide">
+                    <div class="notification-item__icon notification-item__icon_dangerous">
+                      <svg>
+                        <use xlink:href="icons/sprite.svg#dangerous"></use>
+                      </svg>
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__subtitle">
+                        Фактор риска <span class="notification-item__subtitle_dangerous">9321</span> внепланово окончился 
+                      </div>
+                      <div class="notification-item__date">20 секунд назад</div>
+                    </div>
+                  </div>
+
+                  <div class="notification__item notification-item hide">
+                    <div class="notification-item__icon notification-item__icon_dangerous">
+                      <svg>
+                        <use xlink:href="icons/sprite.svg#dangerous"></use>
+                      </svg>
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__subtitle">
+                        Фактор риска <span class="notification-item__subtitle_dangerous">9321</span> внепланово окончился 
+                      </div>
+                      <div class="notification-item__date">20 секунд назад</div>
+                    </div>
+                  </div>
+
+                </div>
+                <button class="notification__all main-btn_text">
+                  Все уведомления
+                </button>
+
+              </div>
+            </div>
+          </div>
+          <div class="main__wrapper">
+            <div class="main__content">
+              <div class="main__about about-slider slider">
+                <div class="slider-buttons">
+                  <div class="swiper-button-prev" id="swiperPrev"></div>
+                  <div class="swiper-button-next" id="swiperNext"></div>  
+                </div>
+                
+                <div class="about-slider-wrapper swiper">
+                    <div class="swiper-wrapper">
+                      <div class="about-slider__slide about-slide swiper-slide about-goals">
+                        <article>
+                          <header class="about-slide__header about-goals__header">
+                            <div class="about-slide__photo about-goals__photo">
+                              <img src="img/author-photo.png" alt="автор">
+                            </div>
+                            <div class="about-slide__author about-goals__author">
+                              Константинопольский К.К.
+                            </div>
+                            <div class="about-slide__position about-goals__position">
+                              Генеральный директор   
+                            </div>
+                          </header>
+                          <h2 class="about-slide__title about-goals__title">
+                            О целях на 2021 год 
+                          </h2>
+                          <p class="about-slide__text about-goals__text">
+                            Every large design company whether it's a multi-national branding corporation or a regular down at heel tatty mine publisher needs to fill holes in the workforce.
+                            Every large design company whether it's a multi-national branding corporation or a regular down at heel tatty magazine publisher needs to fill holes in the workforce
+                          </p>
+                          <div class="about-slide__footer about-goals__footer">
+                            <button class="about-slide__more about-goals__btn main-btn_text">
+                              Подробнее
+                            </button>
+                            <div class="about-slide__views views">
+                              <div class="views__icon">
+                                <img src="icons/reviews-icon.svg" alt="просмотры">
+                              </div>
+                              <span class="views__num">
+                                3462
+                              </span>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      
+                      <div class="about-slider__slide about-slide swiper-slide about-goals">
+                        <article>
+                          <header class="about-slide__header about-goals__header">
+                            <div class="about-slide__photo about-goals__photo">
+                              <img src="img/author-photo.png" alt="автор">
+                            </div>
+                            <div class="about-slide__author about-goals__author">
+                              Константинопольский К.К.
+                            </div>
+                            <div class="about-slide__position about-goals__position">
+                              Генеральный директор   
+                            </div>
+                          </header>
+                          <h2 class="about-slide__title about-goals__title">
+                            О целях на 2021 год 
+                          </h2>
+                          <p class="about-slide__text about-goals__text">
+                            Every large design company whether it's a multi-national branding corporation or a regular down at heel tatty mine publisher needs to fill holes in the workforce.
+                            Every large design company whether it's a multi-national branding corporation or a regular down at heel tatty magazine publisher needs to fill holes in the workforce
+                          </p>
+                          <div class="about-slide__footer about-goals__footer">
+                            <button class="about-slide__more about-goals__btn main-btn_text">
+                              Подробнее
+                            </button>
+                            <div class="about-slide__views views">
+                              <div class="views__icon">
+                                <img src="icons/reviews-icon.svg" alt="просмотры">
+                              </div>
+                              <span class="views__num">
+                                3462
+                              </span>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+
+                      <div class="about-slider__slide about-slide swiper-slide about-goals">
+                        <article>
+                          <header class="about-slide__header about-goals__header">
+                            <div class="about-slide__photo about-goals__photo">
+                              <img src="img/author-photo.png" alt="автор">
+                            </div>
+                            <div class="about-slide__author about-goals__author">
+                              Константинопольский К.К.
+                            </div>
+                            <div class="about-slide__position about-goals__position">
+                              Генеральный директор   
+                            </div>
+                          </header>
+                          <h2 class="about-slide__title about-goals__title">
+                            О целях на 2021 год 
+                          </h2>
+                          <p class="about-slide__text about-goals__text">
+                            Every large design company whether it's a multi-national branding corporation or a regular down at heel tatty mine publisher needs to fill holes in the workforce.
+                            Every large design company whether it's a multi-national branding corporation or a regular down at heel tatty magazine publisher needs to fill holes in the workforce
+                          </p>
+                          <div class="about-slide__footer about-goals__footer">
+                            <button class="about-slide__more about-goals__btn main-btn_text">
+                              Подробнее
+                            </button>
+                            <div class="about-slide__views views">
+                              <div class="views__icon">
+                                <img src="icons/reviews-icon.svg" alt="просмотры">
+                              </div>
+                              <span class="views__num">
+                                3462
+                              </span>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </div>             
+                </div>
+              </div>
+
+              <div class="overlay-popup hide">
+                <div class="pop-up about-goals about-goals_popup">
+                  <article>
+                    <header class="about-goals__header about-goals__header_popup">
+                      <div class="about-goals__photo about-goals__photo_popup">
+                        <img src="img/author-photo.png" alt="автор">
+                      </div>
+                      <div class="about-goals__person about-goals__person_popup">
+                        <div class="about-goals__author about-goals__author_popup">
+                          Константинопольский К.К.
+                        </div>
+                        <div class="about-goals__position about-goals__position_popup">
+                          Генеральный директор   
+                        </div>
+                      </div>
+                      <span class="about-goals__close">&times;</span>
+                    </header>
+                    <h2 class="about-goals__title about-goals__title_popup">
+                      О целях на 2021 год 
+                    </h2>
+                    <p class="about-goals__text about-goals__text_popup">
+                      Every large design company whether it's a multi-national branding corporation or a regular down at heel tatty mine publisher needs to fill holes in the workforce.
+                      Every large design company whether it's a multi-national branding corporation or a regular down at heel tatty magazine publisher needs to fill holes in the workforce
+                    </p>
+                    <p class="about-goals__text about-goals__text_popup">
+                      Every large design company whether it's a multi-national branding corporation or a regular down at heel tatty mine publisher needs to fill holes in the workforce.
+                      Every large design company whether it's a multi-national branding corporation or a regular down at heel tatty magazine publisher needs to fill holes in the workforce
+                    </p>
+                    <div class="about-goals__image">
+                    </div>
+                    <p class="about-goals__text about-goals__text_popup">
+                      Every large design company whether it's a multi-national branding corporation or a regular down at heel tatty mine publisher needs to fill holes in the workforce.
+                      Every large design company whether it's a multi-national branding corporation or a regular down at heel tatty magazine publisher needs to fill holes in the workforce
+                    </p>
+                    <p class="about-goals__text about-goals__text_popup">
+                      Every large design company whether it's a multi-national branding corporation or a regular down at heel tatty mine publisher needs to fill holes in the workforce.
+                      Every large design company whether it's a multi-national branding corporation or a regular down at heel tatty magazine publisher needs to fill holes in the workforce
+                    </p>
+                    <div class="about-goals__footer">
+                      <button class="about-goals__btn about-goals__btn_edit main-btn_text">
+                        Изменить
+                      </button>
+                    </div>
+                  </article>
+                </div>
+              </div>
+
+              <div class="main__goals table-block">
+                <div class="table-block__header">
+                  <h2 class="table-block__title">
+                    Избранные цели 
+                  </h2>
+                  <button class="table-block__openmenu open-btn">
+                    
+                  </button>
+                  <div class="table-block__hidemenu dropdown-menu">
+                    <ul class="dropdown-menu__list">
+                      <li class="dropdown-menu__item dropdown-menu__item_add">
+                        Добавить цель
+                      </li>
+                      <li class="dropdown-menu__item dropdown-menu__item_edit">
+                        Изменить цель
+                      </li>
+                      <li class="dropdown-menu__item dropdown-menu__item_del">
+                        Удалить цель
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <div class="table-block__info table-info">
+                  <div class="table-info__name column-name">
+                    <div class="column-name__id">Id</div>
+                    <div class="column-name__name">Цель</div>
+                    <div class="column-name__risks">Риски</div>
+                    <div class="column-name__progress">Прогресс</div>
+                    <div class="column-name__date">Дата достижения</div>
+                    <div class="column-name__status">Статус</div>
+                  </div>
+                  
+                  <ul class="table-info__content rows-content"> 
+                    <li class="rows-content__item goal-row">
+                      <div class="goal-row__id">R0001</div>
+                      <a href="goal.html" class="goal-row__name">Наименование цели может быть любой длины, совершенно любой</a>
+                      <div class="goal-row__risks_correct risk-num_correct">
+                        <span>5</span>
+                      </div>
+                      <div class="goal-row__progress">50%</div>
+                      <div class="goal-row__date">14 апреля 2020</div>
+                      <div class="goal-row__status">
+                        <span class="status-correct">
+                          не ок
+                        </span>
+                      </div>
+                    </li>
+                    <li class="rows-content__item goal-row">
+                      <div class="goal-row__id">R0001</div>
+                      <a href="goal.html" class="goal-row__name">Наименование цели может быть любой длины, совершенно любой</a>
+                      <div class="goal-row__risks risk-num">
+                        <span>7</span>
+                      </div>
+                      <div class="goal-row__progress">исполнена</div>
+                      <div class="goal-row__date">14 апреля 2020</div>
+                      <div class="goal-row__status">
+                       
+                      </div>
+                    </li>
+                    <li class="rows-content__item goal-row">
+                      <div class="goal-row__id">R0001</div>
+                      <a href="goal.html" class="goal-row__name">Наименование цели может быть любой длины, совершенно любой</a>
+                      <div class="goal-row__risks_wrong risk-num_wrong">
+                        <span>13</span>
+                      </div>
+                      <div class="goal-row__progress">80%</div>
+                      <div class="goal-row__date">14 апреля 2020</div>
+                      <div class="goal-row__status">
+                        <span class="status-wrong">
+                          не ок
+                       </span>
+                      </div>
+                    </li>
+                    <li class="rows-content__item goal-row">
+                      <div class="goal-row__id">R0001</div>
+                      <a href="goal.html" class="goal-row__name">Наименование цели может быть любой длины, совершенно любой</a>
+                      <div class="goal-row__risks risk-num">
+                        <span>7</span>
+                      </div>
+                      <div class="goal-row__progress">исполнена</div>
+                      <div class="goal-row__date">14 апреля 2020</div>
+                      <div class="goal-row__status">
+                        
+                      </div>
+                    </li>
+                    <li class="rows-content__item goal-row">
+                      <div class="goal-row__id">R0001</div>
+                      <a href="goal.html" class="goal-row__name">Наименование цели может быть любой длины, совершенно любой</a>
+                      <div class="goal-row__risks_correct risk-num_correct">
+                        <span>5</span>
+                      </div>
+                      <div class="goal-row__progress">50%</div>
+                      <div class="goal-row__date">14 апреля 2020</div>
+                      <div class="goal-row__status">
+                        <span class="status-correct">
+                          не ок
+                       </span>
+                     </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="main__risks table-block">
+                <div class="table-block__header">
+                  <h2 class="table-block__title">
+                    Избранные риски 
+                  </h2>
+                  <button class="table-block__openmenu open-btn">
+                  </button>
+                  <div class="table-block__hidemenu dropdown-menu">
+                    <ul class="dropdown-menu__list">
+                      <li class="dropdown-menu__item dropdown-menu__item_add">
+                        Добавить цель
+                      </li>
+                      <li class="dropdown-menu__item dropdown-menu__item_edit">
+                        Изменить цель
+                      </li>
+                      <li class="dropdown-menu__item dropdown-menu__item_del">
+                        Удалить цель
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <div class="table-block__info table-info">
+                  <div class="table-info__name column-name">
+                    <div class="column-name__id">Id</div>
+                    <div class="column-name__name_long">Риск</div>
+                    <div class="column-name__level">Уровень</div>
+                    <div class="column-name__status">Действия</div>
+                  </div>
+                  
+                  <ul class="table-info__content rows-content"> 
+                    <li class="rows-content__item goal-row">
+                      <div class="goal-row__id">R0001</div>
+                      <a href="risk.html" class="goal-row__name_long">Наименование риска может быть любой длины, совершенно любой</a>
+                      <div class="goal-row__level">
+                        150 млн ₽ / 8 баллов
+                      </div>
+                      <div class="goal-row__status">
+                        <span class="status-correct">
+                          ок
+                        </span>
+                      </div>
+                    </li>
+                    <li class="rows-content__item goal-row">
+                      <div class="goal-row__id">R0001</div>
+                      <a href="risk.html" class="goal-row__name_long">Наименование риска</a>
+                      <div class="goal-row__level_down">
+                        150,000 ₽ / 3 баллов
+                      </div>
+                      <div class="goal-row__status">
+                        <span class="status-correct">
+                          ок
+                        </span>
+                      </div>
+                    </li>
+                    <li class="rows-content__item goal-row">
+                      <div class="goal-row__id">R0001</div>
+                      <a href="risk.html" class="goal-row__name_long">Наименование риска</a>
+                      <div class="goal-row__level_up">
+                        1,000,000 ₽ / 6 баллов
+                      </div>
+                      <div class="goal-row__status">
+                        <span class="status-wrong">
+                           не ок
+                        </span>
+                      </div>
+                    </li>
+                    <li class="rows-content__item goal-row">
+                      <div class="goal-row__id">R0001</div>
+                      <a href="risk.html" class="goal-row__name_long">Наименование риска</a>
+                      <div class="goal-row__level">
+                        150 млн ₽ / 8 баллов
+                      </div>
+                      <div class="goal-row__status">
+                        <span class="status-wrong">
+                          не ок
+                       </span>
+                      </div>
+                    </li>
+                    <li class="rows-content__item goal-row">
+                      <div class="goal-row__id">R0001</div>
+                      <a href="risk.html" class="goal-row__name_long">Наименование риска</a>
+                      <div class="goal-row__level">
+                        150,000 ₽ / 3 баллов
+                      </div>
+                      <div class="goal-row__status">
+                        <span class="status-wrong">
+                          не ок
+                       </span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="main__activity table-block">
+                <div class="table-block__header">
+                  <div class="table-block__item">
+                    <h2 class="table-block__title">
+                      Активность по вашей роли
+                    </h2>
+                    <div class="table-block__select">
+                      <div class="table-block__position check-select">
+                        Риск-Менеджер
+                      </div>
+                      <div class="table-block__hidemenu dropdown-select">
+                        <ul class="dropdown-menu__list">
+                          <li class="dropdown-menu__item">
+                            Руководитель по рискам
+                          </li>
+                          <li class="dropdown-menu__item">
+                            Сотрудник
+                          </li>
+                          <li class="dropdown-menu__item">
+                            Специалист по целям
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                   
+                  </div>
+                  <button class="table-block__openmenu open-btn">
+                  </button>
+                  <div class="table-block__hidemenu dropdown-menu">
+                    <ul class="dropdown-menu__list">
+                      <li class="dropdown-menu__item dropdown-menu__item_add">
+                        Добавить цель
+                      </li>
+                      <li class="dropdown-menu__item dropdown-menu__item_edit">
+                        Изменить цель
+                      </li>
+                      <li class="dropdown-menu__item dropdown-menu__item_del">
+                        Удалить цель
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <div class="table-block__info table-info">
+                  <div class="table-info__name column-name common-col">
+                    <div class="column-name__id common-col__id">Id</div>
+                    <div class="column-name__name_short common-col__name_short">Цель</div>
+                    <div class="column-name__type common-col__type">Тип утверждения</div>
+                    <div class="column-name__author common-col__author">Иницатор</div>
+                    <div class="column-name__settings common-col__settings"></div>
+                  </div>
+                  
+                  <ul class="table-info__content rows-content"> 
+                    <li class="rows-content__item goal-row">
+                      <div class="goal-row__id">R0001</div>
+                      <div class="goal-row__name_short">Наименование риска может быть любой длины, совершенно любой</div>
+                      <div class="goal-row__type">
+                        Редактирование
+                      </div>
+                      <div class="goal-row__author">
+                        <div class="goal-row__author-details">
+                          <div class="goal-row__photo">
+                            <img src="img/author-photo.png" alt="">
+                          </div>
+                          <div class="goal-row__person">Константинопольский К.К.</div>
+                        </div>
+                      </div>
+                      <div class="goal-row__settings">
+                        <button class="goal-row__confirm">
+                          <img src="icons/confirm-icon.svg" alt="">
+                        </button>
+                        <a href="goal.html" class="goal-row__edit">
+                        </a>
+                      </div>
+                    </li>
+                    <li class="rows-content__item goal-row">
+                      <div class="goal-row__id">R0001</div>
+                      <div class="goal-row__name_short goal-row__name_point">Наименование риска</div>
+                      <div class="goal-row__type">
+                        Новый
+                      </div>
+                      <div class="goal-row__author">
+                        <div class="goal-row__author-details">
+                          <div class="goal-row__photo">
+                            <img src="img/author-photo.png" alt="">
+                          </div>
+                          <div class="goal-row__person">Константинопольский К.К.</div>
+                        </div>
+                      </div>
+                      <div class="goal-row__settings">
+                        <button class="goal-row__confirm">
+                          <img src="icons/confirm-icon.svg" alt="">
+                        </button>
+                        <a href="goal.html" class="goal-row__edit">
+                        </a>
+                      </div>
+                    </li>
+                    <li class="rows-content__item goal-row">
+                      <div class="goal-row__id">R0001</div>
+                      <div class="goal-row__name_short goal-row__name_point">Наименование риска</div>
+                      <div class="goal-row__type">
+                        Правки
+                      </div>
+                      <div class="goal-row__author">
+                        <div class="goal-row__author-details">
+                          <div class="goal-row__photo">
+                            <img src="img/author-photo.png" alt="">
+                          </div>
+                          <div class="goal-row__person">Константинопольский К.К.</div>
+                        </div>
+                      </div>
+                      <div class="goal-row__settings">
+                        <button class="goal-row__look">
+                          <img src="icons/look-icon.svg" alt="">
+                        </button>
+                      </div>
+                    </li>
+                    <li class="rows-content__item goal-row">
+                      <div class="goal-row__id">R0001</div>
+                      <div class="goal-row__name_short">Наименование риска может быть любой длины, совершенно любой</div>
+                      <div class="goal-row__type">
+                        Редактирование
+                      </div>
+                      <div class="goal-row__author">
+                        <div class="goal-row__author-details">
+                          <div class="goal-row__photo">
+                            <img src="img/author-photo.png" alt="">
+                          </div>
+                          <div class="goal-row__person">Константинопольский К.К.</div>
+                        </div>
+                      </div>
+                      <div class="goal-row__settings">
+                        <button class="goal-row__confirm">
+                          <img src="icons/confirm-icon.svg" alt="">
+                        </button>
+                        <a href="goal.html" class="goal-row__edit">
+                        </a>
+                      </div>
+                    </li>
+                    <li class="rows-content__item goal-row">
+                      <div class="goal-row__id">R0001</div>
+                      <div class="goal-row__name_short">Наименование риска может быть любой длины, совершенно любой</div>
+                      <div class="goal-row__type">
+                        Редактирование
+                      </div>
+                      <div class="goal-row__author">
+                        <div class="goal-row__author-details">
+                          <div class="goal-row__photo">
+                            <img src="img/author-photo.png" alt="">
+                          </div>
+                          <div class="goal-row__person">Константинопольский К.К.</div>
+                        </div>
+                      </div>
+                      <div class="goal-row__settings">
+                        <button class="goal-row__confirm">
+                          <img src="icons/confirm-icon.svg" alt="">
+                        </button>
+                        <a href="goal.html" class="goal-row__edit">
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <button class="table-block__loadmore">загрузить еще 5 из 10</button>
+                </div>
+              </div>
+
+            </div>
+            <div class="main__schedules">
+              <div class="achievement-shedule shedule-block">
+                <div class="shedule-block__header">
+                  <div class="shedule-block__title">
+                    Достижения
+                  </div>
+                  <div class="shedule-block__date">
+                    <div class="shedule-block__preview">
+                      2020 год , По кварталам
+                    </div>
+                    <div class="shedule-block__more">
+                      <img src="icons/simple-arrow.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="shedule-block__shedule">
+                  <img src="img/achievement-schedule.png" alt="">
+                </div>
+              </div>
+              <div class="realized-risk-shedule shedule-block">
+                <div class="shedule-block__header">
+                  <div class="shedule-block__title">
+                    Реализовавшиеся риски
+                  </div>
+                  <div class="shedule-block__date">
+                    <div class="shedule-block__preview">
+                      2020 год , По кварталам
+                    </div>
+                    <div class="shedule-block__more">
+                      <img src="icons/simple-arrow.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="shedule-block__shedule">
+                  <img src="img/realized-risks.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer class="footer" id="contacts">
+    
+  </footer>
+
+
+
+</body>
+
+   
+</html>

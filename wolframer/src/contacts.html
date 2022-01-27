@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">  
+    <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="js/swiper/swiper-bundle.min.js"></script>
+    <script defer src="js/script.js"></script>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="container">
+      <div class="wrapper__container">
+        
+        <aside>
+          <div class="navigation">
+            <a href="#" class="navigation__logo">
+              <img src="icons/logo.svg" alt="logo">
+            </a>
+            <nav class="navigation__menu menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <svg class="menu__icon">
+                    <use xlink:href="icons/sprite.svg#main"></use>
+                  </svg>
+                  <a href="main.html" data-path="main.html" class="menu__link">Главное</a>
+                </li>
+                <li class="menu__item">
+                  <svg class="menu__icon">
+                    <use xlink:href="icons/sprite.svg#goal"></use>
+                  </svg>
+                  <a href="all-goals.html" data-path="all-goals.html" class="menu__link">Цели</a>
+                </li>
+                <li class="menu__item">
+                  <svg class="menu__icon">
+                    <use xlink:href="icons/sprite.svg#risks"></use>
+                  </svg>
+                  <a href="all-risks.html" data-path="all-risks.html" class="menu__link">Риски</a>
+                </li>
+                <li class="menu__item">
+                  <svg class="menu__icon menu__icon_disabled">
+                    <use xlink:href="icons/sprite.svg#actions"></use>
+                  </svg>
+                  <a href="articles.html" data-path="articles.html" class="menu__link menu__link_disabled">Действия</a>
+                </li>
+                <li class="menu__item">
+                  <svg class="menu__icon menu__icon_disabled">
+                    <use xlink:href="icons/sprite.svg#processes"></use>
+                  </svg>
+                  <a href="articles.html" data-path="articles.html" class="menu__link menu__link_disabled">Бизнес- 
+                    процессы</a>
+                </li>
+                <li class="menu__item">
+                  <svg class="menu__icon menu__icon_disabled">
+                    <use xlink:href="icons/sprite.svg#kpi"></use>
+                  </svg>
+                  <a href="articles.html" class="menu__link menu__link_disabled">KPI</a>
+                </li>
+                <li class="menu__item">
+                  <svg class="menu__icon">
+                    <use xlink:href="icons/sprite.svg#contacts"></use>
+                  </svg>
+                  <a href="contacts.html" data-path="contacts.html" class="menu__link">Контакты</a>
+                </li>
+                <li class="menu__item">
+                  <svg class="menu__icon">
+                    <use xlink:href="icons/sprite.svg#settings"></use>
+                  </svg>
+                  <a href="settings.html" data-path="settings.html" class="menu__link">Настройки</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </aside>
+        <section class="main">
+          <div class="main__header main__header_right-col">
+            <div class="main__private private-col">
+              <button class="private-col__search">
+              </button>
+              <div class="private-col__notice">
+                <span class="private-col__num">
+                  13
+                </span>
+              </div>
+              <div class="private-col__person person-info">
+                <div class="person-info__photo">
+                  <img src="img/person-photo.png" alt="person-photo">
+                </div>
+                <div class="person-info__details">
+                  <div class="person-info__name">
+                    Константинопольский К.К.
+                  </div>
+                  <div class="person-info__position">
+                    Наименование должности может быть достаточно большим
+                  </div>
+                </div>
+              </div>
+  
+              <div class="provate-col__notifications notification">
+                <div class="notification__header">
+                  <button class="notification__close">&times;</button>
+                  <h2 class="notification__title">
+                    Уведомления
+                  </h2>
+                </div>
+                <div class="notification__list">
+                  
+                  <div class="notification__item notification-item">
+                    <div class="notification-item__image">
+                      <img src="img/notification-author.png" alt="">
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__author">
+                        Иван Иванов 
+                      </div>
+                      <div class="notification-item__info">
+                        Равным образом рамки и место обучения кадров влечет за собой
+                      </div>
+                      <div class="notification-item__date">
+                        20 минут назад
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="notification__item notification-item">
+                    <div class="notification-item__icon notification-item__icon_accent">
+                      <svg>
+                        <use xlink:href="icons/sprite.svg#speaker"></use>
+                      </svg>
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__subtitle">
+                        Новая версия риска <span class="notification-item__subtitle_accent">9321</span> утверждена
+                      </div>
+                      <div class="notification-item__date">12 Июля, 2021 в 9:15</div>
+                    </div>
+                  </div>
+  
+                  <div class="notification__item notification-item">
+                    <div class="notification-item__icon notification-item__icon_accent">
+                      <svg>
+                        <use xlink:href="icons/sprite.svg#speaker"></use>
+                      </svg>
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__subtitle">
+                        Вас включили в рабочую группу цели <span class="notification-item__subtitle_accent">9331 </span> </div>
+                      <div class="notification-item__date">1 секунду назад</div>
+                    </div>
+                  </div>
+  
+                  <div class="notification__item notification-item">
+                    <div class="notification-item__icon notification-item__icon_dangerous">
+                      <svg>
+                        <use xlink:href="icons/sprite.svg#dangerous"></use>
+                      </svg>
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__subtitle">
+                        Фактор риска <span class="notification-item__subtitle_dangerous">9321</span> внепланово окончился 
+                      </div>
+                      <div class="notification-item__date">20 секунд назад</div>
+                    </div>
+                  </div>
+  
+                  <div class="notification__item notification-item hide">
+                    <div class="notification-item__image">
+                      <img src="img/notification-author.png" alt="">
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__author">
+                        Иван Иванов 
+                      </div>
+                      <div class="notification-item__info">
+                        Равным образом рамки и место обучения кадров влечет за собой
+                      </div>
+                      <div class="notification-item__date">
+                        20 минут назад
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="notification__item notification-item hide">
+                    <div class="notification-item__icon notification-item__icon_accent">
+                      <svg>
+                        <use xlink:href="icons/sprite.svg#speaker"></use>
+                      </svg>
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__subtitle">
+                        Новая версия риска <span class="notification-item__subtitle_accent">9321</span> утверждена
+                      </div>
+                      <div class="notification-item__date">12 Июля, 2021 в 9:15</div>
+                    </div>
+                  </div>
+  
+                  <div class="notification__item notification-item hide">
+                    <div class="notification-item__icon notification-item__icon_accent">
+                      <svg>
+                        <use xlink:href="icons/sprite.svg#speaker"></use>
+                      </svg>
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__subtitle">
+                        Вас включили в рабочую группу цели <span class="notification-item__subtitle_accent">9331 </span> </div>
+                      <div class="notification-item__date">1 секунду назад</div>
+                    </div>
+                  </div>
+  
+                  <div class="notification__item notification-item hide">
+                    <div class="notification-item__icon notification-item__icon_dangerous">
+                      <svg>
+                        <use xlink:href="icons/sprite.svg#dangerous"></use>
+                      </svg>
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__subtitle">
+                        Фактор риска <span class="notification-item__subtitle_dangerous">9321</span> внепланово окончился 
+                      </div>
+                      <div class="notification-item__date">20 секунд назад</div>
+                    </div>
+                  </div>
+  
+                  <div class="notification__item notification-item hide">
+                    <div class="notification-item__icon notification-item__icon_dangerous">
+                      <svg>
+                        <use xlink:href="icons/sprite.svg#dangerous"></use>
+                      </svg>
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__subtitle">
+                        Фактор риска <span class="notification-item__subtitle_dangerous">9321</span> внепланово окончился 
+                      </div>
+                      <div class="notification-item__date">20 секунд назад</div>
+                    </div>
+                  </div>
+  
+                  <div class="notification__item notification-item hide">
+                    <div class="notification-item__icon notification-item__icon_dangerous">
+                      <svg>
+                        <use xlink:href="icons/sprite.svg#dangerous"></use>
+                      </svg>
+                    </div>
+                    <div class="notification-item__content">
+                      <div class="notification-item__subtitle">
+                        Фактор риска <span class="notification-item__subtitle_dangerous">9321</span> внепланово окончился 
+                      </div>
+                      <div class="notification-item__date">20 секунд назад</div>
+                    </div>
+                  </div>
+  
+                </div>
+                <button class="notification__all main-btn_text">
+                  Все уведомления
+                </button>
+  
+              </div>
+            </div>
+          </div>
+          
+          <div class="main__search">
+            <div class="search-company">
+              <div class="search-company__header functions-row">
+                <input type="text" class="search-company__search search-input" placeholder="Поиск">
+                <div class="search-company__actions functions-row__actions functions-actions">
+                  <a href="#" class="search-company__add functions-actions__add"></a>
+                  <button class="search-company__download functions-actions__download"></button>
+                  <button class="search-company__filter functions-actions__menu"></button>
+                </div>
+                <div class="search-company__excel checkbox-block download-excel table-block hide">
+                  <div class="checkbox-block__header">
+                    <h2 class="checkbox-block__title">
+                      Сделать выборку в Excel
+                    </h2>
+                    <span class="checkbox-block__type">
+                      .xlsx
+                    </span>
+                  </div>
+                  <div class="checkbox-block__section">
+                    <div class="checkbox-block__row-header">
+                      <div class="checkbox-block__row-title">
+                        Общее
+                      </div>
+                      <button class="checkbox-block__row-btn main-btn_text">
+                        Выбрать все
+                      </button>
+                    </div>
+                    <div class="checkbox-block__content">
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Id 
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Общий уровень
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Название риска
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Группа риска
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Название цели
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Тип риска
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Ответственный по цели
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Область проявления
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Владелец риска
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Бизнес-процессы
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Координатор риска
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Тэги
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Статус
+                      </label>
+                    </div>
+                  </div>
+                  <div class="checkbox-block__section">
+                    <div class="checkbox-block__row-header">
+                      <div class="checkbox-block__row-title">
+                        Последствия
+                      </div>
+                      <button class="checkbox-block__row-btn main-btn_text">
+                        Снять все
+                      </button>
+                    </div>
+                    <div class="checkbox-block__content">
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Наименование 
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Качественная оценка
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Бизнес-процессы
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Количественная оценка
+                      </label>
+                    </div>
+                  </div>
+                  <div class="checkbox-block__section">
+                    <div class="checkbox-block__row-header">
+                      <div class="checkbox-block__row-title">
+                        Факторы
+                      </div>
+                      <button class="checkbox-block__row-btn main-btn_text">
+                        Выбрать все
+                      </button>
+                    </div>
+                    <div class="checkbox-block__content">
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Наименование 
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Статус
+                      </label>
+                    </div>
+                  </div>
+                  <div class="checkbox-block__section">
+                    <div class="checkbox-block__row-header">
+                      <div class="checkbox-block__row-title">
+                        Действия
+                      </div>
+                      <button class="checkbox-block__row-btn main-btn_text">
+                        Выбрать все
+                      </button>
+                    </div>
+                    <div class="checkbox-block__content">
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Id 
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Плановый результат
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Содержание
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Бизнес-процессы
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Плановая дата окончания 
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Комментарий
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Состояние выполнения
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Подтверждающие документы
+                      </label>
+                      <label class="checkbox-block__label check-box">
+                        <input type="checkbox" class="checkbox-block__checkbox check-box-input">
+                        <span class="checkbox-block__style check-box-style"></span>
+                        Ответственный
+                      </label>
+                    </div>
+                  </div>
+                  <div class="checkbox-block__footer">
+                    <div class="checkbox-block__btns">
+                      <button class="checkbox-block__cancel main-btn_text">Отмена</button>
+                      <a href="#" download class="checkbox-block__export main-btn_bg">Экспорт</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <ul class="search-company__list">
+                <li class="search-company__item">
+                  ПАО “Lorem ipsum sit dolor amet Lorem ipsum sit dolor amet”
+                  <ul class="search-company__sub-list">
+                    <li class="search-company__sub-item">
+                      ООО “Lorem ipsum sit dolor amet”
+                    </li>
+                    <li class="search-company__sub-item">
+                      ЗАО “Lorem ipsum sit dolor amet”
+                      <ul class="search-company__sub-sub-list">
+                        <li class="search-company__sub-sub-item">
+                          Lorem ipsum sit dolor amet Lorem ipsum
+                        </li>
+                        <li class="search-company__sub-sub-item">
+                          Lorem ipsum sit dolor amet Lorem ipsum sit dol
+                        </li>
+                        <li class="search-company__sub-sub-item">
+                          Lorem ipsum sit dolor a
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="search-company__sub-item">
+                      ОАО “Lorem ipsum sit dolor amet”
+                      <ul class="search-company__sub-sub-list">
+                        <li class="search-company__sub-sub-item">
+                          Lorem ipsum sit dolor amet Lorem ipsum sit dol
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="search-company__item">
+                  OOО “Lorem ipsum sit dolor amet Lorem ipsum sit dolor amet”
+                </li>
+              </ul>
+              <div class="search-company__details table-block">
+                <div class="table-block__header">
+                  <h2 class="table-block__subtitle">
+                    ПАО “Lorem ipsum sit dolor amet Lorem ipsum sit dolor amet”
+                  </h2>
+                  <div class="table-block__disabled">
+                    120 сотрудников
+                  </div> 
+                </div>
+                <button class="main-btn_text">Показать все бизнес-процессы</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__wrapper">
+            <div class="search-person">
+              <div class="search-person__header functions-row">
+                <input type="text" class="search-person__search search-input" placeholder="Введите ФИО, должность или бизнес-процесс сотрудника">
+                <div class="search-person__filter">
+                  <div class="search-person__filter-select">
+                    <div class="search-person__filter-level check-select">
+                      Уровень
+                    </div>
+                    <div class="search-person__filter-check checkbox-block-mini table-block dropdown-select">
+                      <div class="checkbox-block-mini__content">
+                          <label class="checkbox-block-mini__label check-box">
+                            <input type="checkbox" class="checkbox-block-mini__checkbox check-box-input">
+                            <span class="checkbox-block-mini__style check-box-style"></span>
+                            Генеральный директор 
+                          </label>
+                          <label class="checkbox-block-mini__label check-box">
+                            <input type="checkbox" class="checkbox-block-mini__checkbox check-box-input">
+                            <span class="checkbox-block-mini__style check-box-style"></span>
+                            Первый заместитель генерального директора
+                          </label>
+                          <label class="checkbox-block-mini__label check-box">
+                            <input type="checkbox" class="checkbox-block-mini__checkbox check-box-input">
+                            <span class="checkbox-block-mini__style check-box-style"></span>
+                            2-й заместитель генерального директора
+                          </label>
+                          <label class="checkbox-block-mini__label check-box">
+                            <input type="checkbox" class="checkbox-block-mini__checkbox check-box-input">
+                            <span class="checkbox-block-mini__style check-box-style"></span>
+                            3-й заместитель генерального директора
+                          </label>
+                          <label class="checkbox-block-mini__label check-box">
+                            <input type="checkbox" class="checkbox-block-mini__checkbox check-box-input">
+                            <span class="checkbox-block-mini__style check-box-style"></span>
+                            4-й заместитель генерального директора
+                          </label>
+                          <label class="checkbox-block-mini__label check-box">
+                            <input type="checkbox" class="checkbox-block-mini__checkbox check-box-input">
+                            <span class="checkbox-block-mini__style check-box-style"></span>
+                            Дирекция
+                          </label>
+                          <label class="checkbox-block-mini__label check-box">
+                            <input type="checkbox" class="checkbox-block-mini__checkbox check-box-input">
+                            <span class="checkbox-block-mini__style check-box-style"></span>
+                            Департамент
+                          </label>
+                          <label class="checkbox-block-mini__label check-box">
+                            <input type="checkbox" class="checkbox-block-mini__checkbox check-box-input">
+                            <span class="checkbox-block-mini__style check-box-style"></span>
+                            Управление
+                          </label>
+                          <label class="checkbox-block-mini__label check-box">
+                            <input type="checkbox" class="checkbox-block-mini__checkbox check-box-input">
+                            <span class="checkbox-block-mini__style check-box-style"></span>
+                            Отдел
+                          </label>
+                        
+                      </div>
+                      <div class="checkbox-block__footer">
+                        <div class="checkbox-block__btns">
+                          <button class="checkbox-block__cancel main-btn_text">Выбрать все</button>
+                          <button class="checkbox-block__disable main-btn_text">Снять все</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="search-person__filter-select">
+                    <div class="search-person__filter-position check-select">
+                      Должность
+                    </div>
+                    <div class="search-person__filter-check checkbox-block-mini table-block dropdown-select">
+                      <input type="text" placeholder="Быстрый поиск" class="checkbox-block-mini__search">
+                      <div class="checkbox-block-mini__content">
+                        <label class="checkbox-block-mini__label check-box">
+                          <input type="checkbox" class="checkbox-block-mini__checkbox check-box-input">
+                          <span class="checkbox-block-mini__style check-box-style"></span>
+                          Генеральный директор 
+                        </label>
+                        <label class="checkbox-block-mini__label check-box">
+                          <input type="checkbox" class="checkbox-block-mini__checkbox check-box-input">
+                          <span class="checkbox-block-mini__style check-box-style"></span>
+                          Первый заместитель генерального директора
+                        </label>
+                        <label class="checkbox-block-mini__label check-box">
+                          <input type="checkbox" class="checkbox-block-mini__checkbox check-box-input">
+                          <span class="checkbox-block-mini__style check-box-style"></span>
+                          2-й заместитель генерального директора
+                        </label>
+                        <label class="checkbox-block-mini__label check-box">
+                          <input type="checkbox" class="checkbox-block-mini__checkbox check-box-input">
+                          <span class="checkbox-block-mini__style check-box-style"></span>
+                          3-й заместитель генерального директора
+                        </label>
+                        <label class="checkbox-block-mini__label check-box">
+                          <input type="checkbox" class="checkbox-block-mini__checkbox check-box-input">
+                          <span class="checkbox-block-mini__style check-box-style"></span>
+                          3-й заместитель генерального директора
+                        </label>
+                        <label class="checkbox-block-mini__label check-box">
+                          <input type="checkbox" class="checkbox-block-mini__checkbox check-box-input">
+                          <span class="checkbox-block-mini__style check-box-style"></span>
+                          Генеральный директор
+                        </label>
+                        <label class="checkbox-block-mini__label check-box">
+                          <input type="checkbox" class="checkbox-block-mini__checkbox check-box-input">
+                          <span class="checkbox-block-mini__style check-box-style"></span>
+                          Генеральный директор
+                        </label>
+                        <label class="checkbox-block-mini__label check-box">
+                          <input type="checkbox" class="checkbox-block-mini__checkbox check-box-input">
+                          <span class="checkbox-block-mini__style check-box-style"></span>
+                          Первый заместитель генерального директора
+                        </label>
+                        <label class="checkbox-block-mini__label check-box">
+                          <input type="checkbox" class="checkbox-block-mini__checkbox check-box-input">
+                          <span class="checkbox-block-mini__style check-box-style"></span>
+                          2-й заместитель генерального директора
+                        </label>
+                        <label class="checkbox-block-mini__label check-box">
+                          <input type="checkbox" class="checkbox-block-mini__checkbox check-box-input">
+                          <span class="checkbox-block-mini__style check-box-style"></span>
+                          3-й заместитель генерального директора
+                        </label>
+                        <label class="checkbox-block-mini__label check-box">
+                          <input type="checkbox" class="checkbox-block-mini__checkbox check-box-input">
+                          <span class="checkbox-block-mini__style check-box-style"></span>
+                          3-й заместитель генерального директора
+                        </label>
+                        <label class="checkbox-block-mini__label check-box">
+                          <input type="checkbox" class="checkbox-block-mini__checkbox check-box-input">
+                          <span class="checkbox-block-mini__style check-box-style"></span>
+                          Генеральный директор
+                        </label>
+                      </div>
+                      <div class="checkbox-block__footer">
+                        <div class="checkbox-block__btns">
+                          <button class="checkbox-block__cancel main-btn_text">Выбрать все</button>
+                          <button class="checkbox-block__disable main-btn_text">Снять все</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="search-person__content">
+                <div class="search-person__info">
+                  <div class="search-person__info-block person-info-block table-block">
+                    <div class="person-info-block__header">
+                      <div class="person-info-block__photo">
+                        <img src="img/work-group.png" alt="person-photo">
+                      </div>
+                      <div class="person-info-block__details">
+                        <div class="person-info-block__name">
+                          Константин Константинович Константинопольский 
+                        </div>
+                        <div class="person-info-block__position">
+                          Генеральный директор
+                        </div>
+                      </div>
+                    </div>
+                    <div class="person-info-block__contacts person-contacts">
+                      <div class="person-contacts__item person-contacts__item_wide">
+                        <div class="person-contacts__subtitle">
+                          Отдел
+                        </div>
+                        <div class="person-contacts__info">
+                          Департамент рисков
+                        </div>
+                      </div>
+                      <div class="person-contacts__item person-contacts__item_wide">
+                        <div class="person-contacts__subtitle">
+                          Email
+                        </div>
+                        <div class="person-contacts__info">
+                          konstantin.konstantinopolsky@yandex.ru
+                        </div>
+                      </div>
+                      <div class="person-contacts__item">
+                        <div class="person-contacts__subtitle">
+                          Телефон рабочий
+                        </div>
+                        <div class="person-contacts__info">
+                          +7 912 345 67 89
+                        </div>
+                      </div>
+                      <div class="person-contacts__item">
+                        <div class="person-contacts__subtitle">
+                          Телефон личный
+                        </div>
+                        <div class="person-contacts__info">
+                          +7 912 345 67 89
+                        </div>
+                      </div>
+                      <div class="person-contacts__item person-contacts__item_wide">
+                        <div class="person-contacts__subtitle">
+                          Адрес офисного места
+                        </div>
+                        <div class="person-contacts__info">
+                          Санкт-Петербург, проспект Просвещения, д. 11
+                        </div>
+                      </div>
+                      <div class="person-contacts__item-business">
+                        <div class="person-contacts__subtitle">
+                          Бизнес-процессы
+                        </div>
+                        <div class="person-contacts__tags">
+                          <div class="person-contacts__tag">
+                            Разработка продукта на основе информационных технологий
+                          </div>
+                          <div class="person-contacts__tag">
+                            Формирование госзакупок
+                          </div>
+                          <div class="person-contacts__tag">
+                            Формирование госзакупок
+                          </div>
+                          <div class="person-contacts__tag">
+                            Разработка продукта на основе информационных технологий HIT5
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="search-person__info-block person-info-block table-block">
+                    <div class="person-info-block__header">
+                      <div class="person-info-block__photo">
+                        <img src="img/work-group.png" alt="person-photo">
+                      </div>
+                      <div class="person-info-block__details">
+                        <div class="person-info-block__name">
+                          Константин Константинович Константинопольский 
+                        </div>
+                        <div class="person-info-block__position">
+                          Первый заместитель генерального директора
+                        </div>
+                      </div>
+                    </div>
+                    <div class="person-info-block__contacts person-contacts">
+                      <div class="person-contacts__item person-contacts__item_wide">
+                        <div class="person-contacts__subtitle">
+                          Отдел
+                        </div>
+                        <button class="person-contacts__info person-contacts__info_accent main-btn_text">
+                          Управления мероприятиями и рисками
+                        </button>
+                      </div>
+                      <div class="person-contacts__item person-contacts__item_wide">
+                        <div class="person-contacts__subtitle">
+                          Email
+                        </div>
+                        <div class="person-contacts__info">
+                          konstantin.konstantinopolsky@yandex.ru
+                        </div>
+                      </div>
+                      <div class="person-contacts__item">
+                        <div class="person-contacts__subtitle">
+                          Телефон рабочий
+                        </div>
+                        <div class="person-contacts__info">
+                          +7 912 345 67 89
+                        </div>
+                      </div>
+                      <div class="person-contacts__item">
+                        <div class="person-contacts__subtitle">
+                          Телефон личный
+                        </div>
+                        <div class="person-contacts__info">
+                          +7 912 345 67 89
+                        </div>
+                      </div>
+                      <div class="person-contacts__item person-contacts__item_wide">
+                        <div class="person-contacts__subtitle">
+                          Адрес офисного места
+                        </div>
+                        <div class="person-contacts__info">
+                          Санкт-Петербург, проспект Просвещения, д. 11
+                        </div>
+                      </div>
+                      <div class="person-contacts__item-business">
+                        <div class="person-contacts__subtitle">
+                          Бизнес-процессы
+                        </div>
+                        <div class="person-contacts__tags">
+                          <div class="person-contacts__tag">
+                            Разработка продукта на основе информационных технологий
+                          </div>
+                          <div class="person-contacts__tag">
+                            Формирование госзакупок
+                          </div>
+                          <div class="person-contacts__tag">
+                            Формирование госзакупок
+                          </div>
+                          <div class="person-contacts__tag">
+                            Разработка продукта на основе информационных технологий HIT5
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="search-person__department person-department table-block">
+                    <div class="person-department__row">
+                      <div class="person-department__subtitle">
+                        Отдел
+                      </div>
+                      <h2 class="person-department__name">
+                        Управление мероприятиями и рисками
+                      </h2>
+                    </div>  
+                    <div class="person-department__row">
+                      <div class="person-department__subtitle">
+                        Вышестоящее подразделение
+                      </div>
+                      <h2 class="person-department__sub-name">
+                        Департамент целей
+                      </h2>
+                    </div>  
+                    <div class="person-department__row">
+                      <div class="person-department__subtitle">
+                        Начальник
+                      </div>
+                      <div class="person-department__inner">
+                        <div class="person-department__person director-person-info">
+                          <div class="director-person-info__photo">
+                            <img src="img/work-group.png" alt="person-photo">
+                          </div>
+                          <div class="director-person-info__details">
+                            <div class="director-person-info__name">
+                              Константинопольский К.К.
+                            </div>
+                            <div class="director-person-info__position">
+                              Наименование должности может быть большим
+                            </div>
+                          </div>
+                        </div>
+                        <button class="person-department__contact-btn main-btn_text">
+                          Контакты
+                        </button>
+                      </div>
+                    </div> 
+
+                    <div class="person-department__row">
+                      <div class="person-department__subtitle">
+                        Сотрудники
+                      </div>
+                      <div class="person-department__inner">
+                        <div class="person-department__person other-person-info">
+                          <div class="other-person-info__photo">
+                            <img src="img/work-group.png" alt="person-photo">
+                          </div>
+                          <div class="other-person-info__details">
+                            <div class="other-person-info__name">
+                              Константинопольский К.К.
+                            </div>
+                            <div class="other-person-info__position">
+                              Наименование должности может быть большим
+                            </div>
+                          </div>
+                        </div>
+                        <button class="person-department__contact-btn main-btn_text">
+                          Контакты
+                        </button>
+                      </div>
+                      <div class="person-department__inner">
+                        <div class="person-department__person other-person-info">
+                          <div class="other-person-info__photo">
+                            <img src="img/work-group.png" alt="person-photo">
+                          </div>
+                          <div class="other-person-info__details">
+                            <div class="other-person-info__name">
+                              Константинопольский К.К.
+                            </div>
+                            <div class="other-person-info__position">
+                              Наименование должности может быть большим
+                            </div>
+                          </div>
+                        </div>
+                        <button class="person-department__contact-btn main-btn_text">
+                          Контакты
+                        </button>
+                      </div>
+                      <div class="person-department__inner">
+                        <div class="person-department__person other-person-info">
+                          <div class="other-person-info__photo">
+                            <img src="img/work-group.png" alt="person-photo">
+                          </div>
+                          <div class="other-person-info__details">
+                            <div class="other-person-info__name">
+                              Константинопольский К.К.
+                            </div>
+                            <div class="other-person-info__position">
+                              Наименование должности может быть большим
+                            </div>
+                          </div>
+                        </div>
+                        <button class="person-department__contact-btn main-btn_text">
+                          Контакты
+                        </button>
+                      </div>
+                      <div class="person-department__inner">
+                        <div class="person-department__person other-person-info">
+                          <div class="other-person-info__photo">
+                            <img src="img/work-group.png" alt="person-photo">
+                          </div>
+                          <div class="other-person-info__details">
+                            <div class="other-person-info__name">
+                              Константинопольский К.К.
+                            </div>
+                            <div class="other-person-info__position">
+                              Наименование должности может быть большим
+                            </div>
+                          </div>
+                        </div>
+                        <button class="person-department__contact-btn main-btn_text">
+                          Контакты
+                        </button>
+                      </div>
+                      <button class="person-department__load-more main-btn_text">
+                        Ещё 12 сотрудников
+                      </button>
+                    </div> 
+                    <div class="person-department__row">
+                      <div class="person-department__subtitle">
+                        Бизнес-процессы
+                      </div>
+                      <div class="person-department__tags">
+                        Разработка продукта на основе информационных технологий • 
+                          • формирование госзакупок • Разработка продукта на основе информационных технологий HIT5
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer class="footer" id="contacts">
+    
+  </footer>
+
+
+
+</body>
+
+   
+</html>
