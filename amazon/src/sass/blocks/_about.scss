@@ -1,0 +1,219 @@
+
+
+//ABOUT-US// 
+
+
+.about-us {
+    background-color: #ffffff;
+    padding: 80px 0 40px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__content {
+        flex-basis: 60%;
+    }
+    &__title {
+        font-size: 42px;
+        color: $third-color;
+        &_red {
+            color: $fourth-color;
+        }
+        &_yellow {
+            color: $second-color;
+        }
+        &_green {
+            color: $first-color;
+        }
+    }
+    &__descr {
+        font-size: 18px;
+        letter-spacing: 0.2px;
+        font-weight: 300;
+        line-height: 23px;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    &__image {
+        flex-basis: 40%;
+        img {
+            max-width: 120%;
+        }
+    }
+}
+
+// //OUR-TEAM//
+
+.our-team {
+    background-color: #ffffff;
+    &__line {
+        @include line;
+    }
+    &__title {
+        @include titleInLine;
+    } 
+    &__wrapper {
+        padding-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__person {
+        flex: 0 1 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    &__photo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-basis: 25%;
+        margin-right: 25px;
+    }
+    &__image {
+        display: flex;
+        justify-content: center;
+        
+        margin-bottom: 15px;
+        img {
+            max-width: 100%;
+            border-radius: 100%;
+
+        }
+    }
+    &__mobileimage {
+        display: none;
+    }
+    &__info {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    &__name {
+        margin-bottom: 15px;
+        width: 85%;
+        color: $first-color;
+
+        }
+    &__position {
+        font-size: 17px;
+        line-height: 19px;
+        font-weight: 300;
+        margin-bottom: 15px;
+        flex: 1 0 auto;
+    }
+    &__social {
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        display: block;
+        text-decoration: none;
+        border: 1px solid $first-color;
+        span {
+            color: $first-color;
+
+        }
+    }
+}
+
+//REVIEWS//
+.reviews {
+    background-color: #ffffff;
+    padding: 20px 0;
+    &__line {
+        @include line;
+        &:before {
+            background-color: $third-color;
+        }
+    }
+    &__title {
+        @include titleInLine;
+        background-color: $third-color;
+    } 
+    &__content {
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__subtitle {
+        margin-bottom: 25px;
+        text-align: left;
+        flex-basis: 25%;
+        font-size: 30px;
+        margin-top: 25px;
+    }
+    &__company {
+        flex-basis: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        width: 30%;
+        img {
+            max-width: 100%;
+        }
+    }
+    &__btn {
+        @include main-button;
+        @include main-button_hover;
+        width: 170px;
+        height: 37px;
+    }
+}
+
+.mission {
+    background-color: #ffffff;
+    padding: 20px 0;
+    &__line {
+        @include line;
+        &:before {
+            background-color: $first-color;
+        }
+    }
+    &__title {
+        @include titleInLine;
+        background-color: $first-color;
+    }
+    &__wrapper {
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__content {
+        flex-basis: 60%;
+    }
+    &__subtitle {
+        font-size: 42px;
+        margin-bottom: 25px;
+        span {
+            color: $first-color;
+        }
+    }
+    &__descr {
+        font-size: 18px;
+        letter-spacing: 0.2px;
+        font-weight: 300;
+        line-height: 23px;
+        width: 90%;
+        margin-bottom: 15px;
+    }
+    &__button {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        @include main-button;
+        @include main-button_hover;
+    }
+    &__image {
+        flex: 1 1 40%;
+        img {
+            max-width: 100%;
+        }
+    }
+}
