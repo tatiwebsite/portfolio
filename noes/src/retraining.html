@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <link rel="stylesheet" href="css/swiper.min.css"> 
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__about about-company">
+          <a href="index.html" class="about-company__logo">
+            <img src="icons/logo.svg" alt="logo">
+          </a>
+          <a href="index.html" class="about-company__name">Центр развития
+            профессиональных квалификаций НОЭС
+          </a>
+        </div>
+        <div class="header__info contact-company">
+          <div class="contact-company__contacts">
+            <a href="tel:+79162321657" class="contact-company__tel">
+              +7(916) 232-16-57
+            </a>
+            <a href="tel:+74957866841" class="contact-company__tel">
+              +7-495-786-68-41
+            </a>
+          </div>
+          <button class="contact-company__btn main-button main-button_touch">ЗАКАЗАТЬ ЗВОНОК</button>
+        </div>
+      </div>
+
+      <div class="header__burger burger">
+        <span class="burger__first"></span>
+        <span class="burger__second"></span>
+        <span class="burger__third"></span>
+      </div>
+      <nav class="header__menu menu">
+        <div class="menu__overlay">
+          <div class="menu__close">&times;</div>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="index.html" data-path="index.html" class="menu__link">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a href="training.html" data-path="training.html" class="menu__link">Повышение квалификации</a>
+            </li>
+            <li class="menu__item">
+              <a href="retraining.html" data-path="retraining.html" class="menu__link">Профессиональная переподготовка</a>
+            </li>
+            <li class="menu__item">
+              <a href="admission.html" data-path="admission.html" class="menu__link">Поступающим</a>
+            </li>
+            <li class="menu__item">
+              <a href="about-us.html" data-path="about-us.html" class="menu__link">О нас</a>
+            </li>
+            <li class="menu__item">
+              <a href="index.html#reviews" class="menu__link">Отзывы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="training-tabs tabs">
+      <div class="container">
+        <div class="tabs__container">
+          <div class="tabs__header tabsheader">
+            <div class="tabsheader__items">
+                <div class="tabsheader__item tabsheader__item_active">Педагоги</div>
+                <div class="tabsheader__item">Юристы</div>
+                <div class="tabsheader__item">Психологи</div>
+                <div class="tabsheader__item">Строительство</div>
+                <div class="tabsheader__item">Закупки / Госзакупки</div>
+                <div class="tabsheader__item">Воспитатели</div>
+                <div class="tabsheader__item">Бухгалтерия</div>
+                <div class="tabsheader__item">Государственные служащие</div>
+                <div class="tabsheader__item">Физическая культура / Тренеры</div>
+                <div class="tabsheader__item">Управление персоналом / кадровое делопроизводство</div>
+                <div class="tabsheader__item">Лаборатории</div>
+                <div class="tabsheader__item">Руководители в различных сферах</div>
+            </div>
+          </div>
+
+          <input class="tabsheader__search search" placeholder="Введите название программы">
+
+          <div class="tabs__content tabcontent">
+            <div class="tabcontent__inner">
+              <div class="tabcontent__col1">
+                <h2 class="tabcontent__title">
+                  Дистанционные курсы по педагогическим профессиям
+                  и профессиональным темам
+                </h2>
+                <a href="#" class="tabcontent__link">Учитель начальных классов</a>
+                <a href="#" class="tabcontent__link">Воспитатель, младший воспитатель, старший воспитатель</a>
+                <a href="#" class="tabcontent__link">Педагог дошкольного образования</a>
+                <a href="#" class="tabcontent__link">Педагог дополнительного образования</a>
+                <a href="#" class="tabcontent__link">Методист</a>
+                <a href="#" class="tabcontent__link">Вожатый</a>
+              </div>
+              <div class="tabcontent__col2">
+                <h2 class="tabcontent__title">
+                  Дистанционные программы для учителей и преподавателей учебных предметов
+                </h2>
+                <div class="tabcontent__colinner">
+                  <div class="tabcontent__column">
+                    <a href="teachers.html" target="_blank" class="tabcontent__link">Английский язык</a>
+                    <a href="teachers.html" class="tabcontent__link">Астрономия</a>
+                    <a href="teachers.html" class="tabcontent__link">Биология</a>
+                    <a href="teachers.html" class="tabcontent__link">География ИЗО</a>
+                    <a href="teachers.html" class="tabcontent__link">Информатика</a>
+                    <a href="teachers.html" class="tabcontent__link">Испанский язык</a>
+                  </div>
+                  <div class="tabcontent__column">
+                    <a href="#" class="tabcontent__link">Музыка</a>
+                    <a href="#" class="tabcontent__link">МХК</a>
+                    <a href="#" class="tabcontent__link">Немецкий язык</a>
+                    <a href="#" class="tabcontent__link">Обществознание</a>
+                  </div>
+                </div>
+                
+              </div>
+            </div> 
+          </div>
+
+          <div class="tabs__content tabcontent">
+              <div class="tabcontent__item tab-program">
+                <h2 class="tab-program__title">Административные правонарушения в РФ</h2>
+                <div class="tab-program__duration">Продолжительность обучения: 72 ч., 144 ч.</div>
+                <div class="tab-program__inner">
+                  <button class="tab-program__btn main-button">ЗАПИСАТЬСЯ</button>
+                  <div class="tab-program__tariffs">
+                    <span class="tab-program__tariff">72ч — 1 400р</span>
+                    <span class="tab-program__tariff">144 ч. — 2 200р</span>
+                  </div>
+                </div>
+              </div>
+              <div class="tabcontent__item tab-program">
+                <h2 class="tab-program__title">Актуальные вопросы в сделках и обязательствах</h2>
+                <div class="tab-program__duration">Продолжительность обучения: 72 ч., 144 ч.</div>
+                <div class="tab-program__inner">
+                  <button class="tab-program__btn main-button">ЗАПИСАТЬСЯ</button>
+                  <div class="tab-program__tariffs">
+                    <span class="tab-program__tariff">72ч — 1 400р</span>
+                    <span class="tab-program__tariff">144 ч. — 2 200р</span>
+                  </div>
+                </div>
+              </div>
+              <div class="tabcontent__item tab-program">
+                <h2 class="tab-program__title">Актуальные вопросы процессуального права</h2>
+                <div class="tab-program__duration">Продолжительность обучения: 72 ч., 144 ч.</div>
+                <div class="tab-program__inner">
+                  <button class="tab-program__btn main-button">ЗАПИСАТЬСЯ</button>
+                  <div class="tab-program__tariffs">
+                    <span class="tab-program__tariff">72ч — 1 400р</span>
+                    <span class="tab-program__tariff">144 ч. — 2 200р</span>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="tabs__content tabcontent">
+            <div class="tabcontent__item tab-program">
+              <h2 class="tab-program__title">Нейропсихология детского возраста </h2>
+              <div class="tab-program__duration">Продолжительность обучения: 72 ч., 144 ч.</div>
+              <div class="tab-program__inner">
+                <button class="tab-program__btn main-button">ЗАПИСАТЬСЯ</button>
+                <div class="tab-program__tariffs">
+                  <span class="tab-program__tariff">72ч — 1 400р</span>
+                  <span class="tab-program__tariff">144 ч. — 2 200р</span>
+                </div>
+              </div>
+            </div>
+            <div class="tabcontent__item tab-program">
+              <h2 class="tab-program__title">Сексология в психологическом консультировании </h2>
+              <div class="tab-program__duration">Продолжительность обучения: 72 ч., 144 ч.</div>
+              <div class="tab-program__inner">
+                <button class="tab-program__btn main-button">ЗАПИСАТЬСЯ</button>
+                <div class="tab-program__tariffs">
+                  <span class="tab-program__tariff">72ч — 1 400р</span>
+                  <span class="tab-program__tariff">144 ч. — 2 200р</span>
+                </div>
+              </div>
+            </div>
+            <div class="tabcontent__item tab-program">
+              <h2 class="tab-program__title">Психолого-педагогическое сопровождение развития эмоционального интеллекта детей дошкольного возраста</h2>
+              <div class="tab-program__duration">Продолжительность обучения: 72 ч., 144 ч.</div>
+              <div class="tab-program__inner">
+                <button class="tab-program__btn main-button">ЗАПИСАТЬСЯ</button>
+                <div class="tab-program__tariffs">
+                  <span class="tab-program__tariff">72ч — 1 400р</span>
+                  <span class="tab-program__tariff">144 ч. — 2 200р</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tabs__content tabcontent">
+            <div class="tabcontent__item tab-program">
+              <h2 class="tab-program__title">Промышленное и гражданское строительство</h2>
+              <div class="tab-program__duration">Продолжительность обучения: 72 ч., 144 ч.</div>
+              <div class="tab-program__inner">
+                <button class="tab-program__btn main-button">ЗАПИСАТЬСЯ</button>
+                <div class="tab-program__tariffs">
+                  <span class="tab-program__tariff">72ч — 1 400р</span>
+                  <span class="tab-program__tariff">144 ч. — 2 200р</span>
+                </div>
+              </div>
+            </div>
+            <div class="tabcontent__item tab-program">
+              <h2 class="tab-program__title">Проектирование зданий и сооружений</h2>
+              <div class="tab-program__duration">Продолжительность обучения: 72 ч., 144 ч.</div>
+              <div class="tab-program__inner">
+                <button class="tab-program__btn main-button">ЗАПИСАТЬСЯ</button>
+                <div class="tab-program__tariffs">
+                  <span class="tab-program__tariff">72ч — 1 400р</span>
+                  <span class="tab-program__tariff">144 ч. — 2 200р</span>
+                </div>
+              </div>
+            </div>
+            <div class="tabcontent__item tab-program">
+              <h2 class="tab-program__title">Безопасность строительства и качество выполнения общестроительных работ (БС-ОСР)</h2>
+              <div class="tab-program__duration">Продолжительность обучения: 72 ч., 144 ч.</div>
+              <div class="tab-program__inner">
+                <button class="tab-program__btn main-button">ЗАПИСАТЬСЯ</button>
+                <div class="tab-program__tariffs">
+                  <span class="tab-program__tariff">72ч — 1 400р</span>
+                  <span class="tab-program__tariff">144 ч. — 2 200р</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tabs__content tabcontent">
+            <div class="tabcontent__item tab-program">
+              <h2 class="tab-program__title">Управление закупочной деятельностью. Актуальные вопросы применения и практика реализации 44-ФЗ</h2>
+              <div class="tab-program__duration">Продолжительность обучения: 72 ч., 144 ч.</div>
+              <div class="tab-program__inner">
+                <button class="tab-program__btn main-button">ЗАПИСАТЬСЯ</button>
+                <div class="tab-program__tariffs">
+                  <span class="tab-program__tariff">72ч — 1 400р</span>
+                  <span class="tab-program__tariff">144 ч. — 2 200р</span>
+                </div>
+              </div>
+            </div>
+            <div class="tabcontent__item tab-program">
+              <h2 class="tab-program__title">Нормативно-правовое регулирование и практика применения 44 и 223-ФЗ</h2>
+              <div class="tab-program__duration">Продолжительность обучения: 72 ч., 144 ч.</div>
+              <div class="tab-program__inner">
+                <button class="tab-program__btn main-button">ЗАПИСАТЬСЯ</button>
+                <div class="tab-program__tariffs">
+                  <span class="tab-program__tariff">72ч — 1 400р</span>
+                  <span class="tab-program__tariff">144 ч. — 2 200р</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tabs__content tabcontent">
+            <div class="tabcontent__item tab-program">
+              <h2 class="tab-program__title">Актуальные педагогические технологии и практика работы педагога-воспитателя группы продленного дня в условиях реализации ФГОС</h2>
+              <div class="tab-program__duration">Продолжительность обучения: 72 ч., 144 ч.</div>
+              <div class="tab-program__inner">
+                <button class="tab-program__btn main-button">ЗАПИСАТЬСЯ</button>
+                <div class="tab-program__tariffs">
+                  <span class="tab-program__tariff">72ч — 1 400р</span>
+                  <span class="tab-program__tariff">144 ч. — 2 200р</span>
+                </div>
+              </div>
+            </div>
+            <div class="tabcontent__item tab-program">
+              <h2 class="tab-program__title">Воспитательная работа и технологии активного обучения в условиях реализации ФГОС ДО</h2>
+              <div class="tab-program__duration">Продолжительность обучения: 72 ч., 144 ч.</div>
+              <div class="tab-program__inner">
+                <button class="tab-program__btn main-button">ЗАПИСАТЬСЯ</button>
+                <div class="tab-program__tariffs">
+                  <span class="tab-program__tariff">72ч — 1 400р</span>
+                  <span class="tab-program__tariff">144 ч. — 2 200р</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tabs__content tabcontent">
+            <div class="tabcontent__item tab-program">
+              <h2 class="tab-program__title">1С: Зарплата и управление персоналом  </h2>
+              <div class="tab-program__duration">Продолжительность обучения: 72 ч., 144 ч.</div>
+              <div class="tab-program__inner">
+                <button class="tab-program__btn main-button">ЗАПИСАТЬСЯ</button>
+                <div class="tab-program__tariffs">
+                  <span class="tab-program__tariff">72ч — 1 400р</span>
+                  <span class="tab-program__tariff">144 ч. — 2 200р</span>
+                </div>
+              </div>
+            </div>
+            <div class="tabcontent__item tab-program">
+              <h2 class="tab-program__title">1С: Бухгалтерия предприятия  </h2>
+              <div class="tab-program__duration">Продолжительность обучения: 72 ч., 144 ч.</div>
+              <div class="tab-program__inner">
+                <button class="tab-program__btn main-button">ЗАПИСАТЬСЯ</button>
+                <div class="tab-program__tariffs">
+                  <span class="tab-program__tariff">72ч — 1 400р</span>
+                  <span class="tab-program__tariff">144 ч. — 2 200р</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tabs__content tabcontent">
+            <div class="tabcontent__item tab-program">
+              <h2 class="tab-program__title">Управление государственной и муниципальной собственностью</h2>
+              <div class="tab-program__duration">Продолжительность обучения: 72 ч., 144 ч.</div>
+              <div class="tab-program__inner">
+                <button class="tab-program__btn main-button">ЗАПИСАТЬСЯ</button>
+                <div class="tab-program__tariffs">
+                  <span class="tab-program__tariff">72ч — 1 400р</span>
+                  <span class="tab-program__tariff">144 ч. — 2 200р</span>
+                </div>
+              </div>
+            </div>
+            <div class="tabcontent__item tab-program">
+              <h2 class="tab-program__title">Государственное регулирование миграционных процессов</h2>
+              <div class="tab-program__duration">Продолжительность обучения: 72 ч., 144 ч.</div>
+              <div class="tab-program__inner">
+                <button class="tab-program__btn main-button">ЗАПИСАТЬСЯ</button>
+                <div class="tab-program__tariffs">
+                  <span class="tab-program__tariff">72ч — 1 400р</span>
+                  <span class="tab-program__tariff">144 ч. — 2 200р</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tabs__content tabcontent">
+            <div class="tabcontent__item tab-program">
+              <h2 class="tab-program__title">Актуальные методики продаж фитнес-услуг</h2>
+              <div class="tab-program__duration">Продолжительность обучения: 72 ч., 144 ч.</div>
+              <div class="tab-program__inner">
+                <button class="tab-program__btn main-button">ЗАПИСАТЬСЯ</button>
+                <div class="tab-program__tariffs">
+                  <span class="tab-program__tariff">72ч — 1 400р</span>
+                  <span class="tab-program__tariff">144 ч. — 2 200р</span>
+                </div>
+              </div>
+            </div>
+            <div class="tabcontent__item tab-program">
+              <h2 class="tab-program__title">Спортивная диетология и нутрициология</h2>
+              <div class="tab-program__duration">Продолжительность обучения: 72 ч., 144 ч.</div>
+              <div class="tab-program__inner">
+                <button class="tab-program__btn main-button">ЗАПИСАТЬСЯ</button>
+                <div class="tab-program__tariffs">
+                  <span class="tab-program__tariff">72ч — 1 400р</span>
+                  <span class="tab-program__tariff">144 ч. — 2 200р</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tabs__content tabcontent">
+            <div class="tabcontent__item tab-program">
+              <h2 class="tab-program__title">Подбор и адаптация персонала в организации: классический рекрутмент, массовый подбор, технология хедхантинга  </h2>
+              <div class="tab-program__duration">Продолжительность обучения: 72 ч., 144 ч.</div>
+              <div class="tab-program__inner">
+                <button class="tab-program__btn main-button">ЗАПИСАТЬСЯ</button>
+                <div class="tab-program__tariffs">
+                  <span class="tab-program__tariff">72ч — 1 400р</span>
+                  <span class="tab-program__tariff">144 ч. — 2 200р</span>
+                </div>
+              </div>
+            </div>
+            <div class="tabcontent__item tab-program">
+              <h2 class="tab-program__title">Современные методы оценки персонала: технология центра оценки (Assessment Centre), разработки и внедрения системы KPI и управления по целям (Management by Objectives)</h2>
+              <div class="tab-program__duration">Продолжительность обучения: 72 ч., 144 ч.</div>
+              <div class="tab-program__inner">
+                <button class="tab-program__btn main-button">ЗАПИСАТЬСЯ</button>
+                <div class="tab-program__tariffs">
+                  <span class="tab-program__tariff">72ч — 1 400р</span>
+                  <span class="tab-program__tariff">144 ч. — 2 200р</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tabs__content tabcontent">
+            <div class="tabcontent__item tab-program">
+              <h2 class="tab-program__title">Внутрилабораторный контроль</h2>
+              <div class="tab-program__duration">Продолжительность обучения: 72 ч., 144 ч.</div>
+              <div class="tab-program__inner">
+                <button class="tab-program__btn main-button">ЗАПИСАТЬСЯ</button>
+                <div class="tab-program__tariffs">
+                  <span class="tab-program__tariff">72ч — 1 400р</span>
+                  <span class="tab-program__tariff">144 ч. — 2 200р</span>
+                </div>
+              </div>
+            </div>
+            <div class="tabcontent__item tab-program">
+              <h2 class="tab-program__title">Внутренний аудит испытательных лабораторий по межгосударственному стандарту ГОСТ ISO / IEC 17025-2019</h2>
+              <div class="tab-program__duration">Продолжительность обучения: 72 ч., 144 ч.</div>
+              <div class="tab-program__inner">
+                <button class="tab-program__btn main-button">ЗАПИСАТЬСЯ</button>
+                <div class="tab-program__tariffs">
+                  <span class="tab-program__tariff">72ч — 1 400р</span>
+                  <span class="tab-program__tariff">144 ч. — 2 200р</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tabs__content tabcontent">
+            <div class="tabcontent__item tab-program">
+              <h2 class="tab-program__title">Государственное и муниципальное управление</h2>
+              <div class="tab-program__duration">Продолжительность обучения: 72 ч., 144 ч.</div>
+              <div class="tab-program__inner">
+                <button class="tab-program__btn main-button">ЗАПИСАТЬСЯ</button>
+                <div class="tab-program__tariffs">
+                  <span class="tab-program__tariff">72ч — 1 400р</span>
+                  <span class="tab-program__tariff">144 ч. — 2 200р</span>
+                </div>
+              </div>
+            </div>
+            <div class="tabcontent__item tab-program">
+              <h2 class="tab-program__title">Логистический менеджмент</h2>
+              <div class="tab-program__duration">Продолжительность обучения: 72 ч., 144 ч.</div>
+              <div class="tab-program__inner">
+                <button class="tab-program__btn main-button">ЗАПИСАТЬСЯ</button>
+                <div class="tab-program__tariffs">
+                  <span class="tab-program__tariff">72ч — 1 400р</span>
+                  <span class="tab-program__tariff">144 ч. — 2 200р</span>
+                </div>
+              </div>
+            </div>
+          </div>
+ 
+        </div>
+      
+      </div>
+    </div>
+  </main>
+
+  <div class="order-modal" data-modal="order">
+    <div class="order-modal__card">
+      <div class="order-modal__close">&times;	</div>
+      <div class="order-modal__wrapper">
+        <h2 class="order-modal__title">Записаться на программу</h2>
+        <form class="form-order" action="">
+          <input type="text" required class="form-order__input" placeholder="ФИО">
+          <input type="text" class="form-order__input" placeholder="+7 (999) 999-999">
+          <input type="text" required class="form-order__input" placeholder="E-mail">
+          <label for="date">Выберите старт обучения &#8595;</label>
+          <input name="date" type="date" class="form-order__date" placeholder="Выберите старт обучения">
+          <button class="form-order__btn main-button">
+            ОСТАВИТЬ ЗАЯВКУ
+          </button>
+
+          <input type="text" required class="form-order__input" id="inputWP">
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="order-modal" data-modal="call">
+    <div class="order-modal__card">
+      <div class="order-modal__close">&times;	</div>
+      <div class="order-modal__wrapper">
+        <h2 class="order-modal__title">Заказать звонок</h2>
+        <form class="form-order" action="">
+          <input type="text" required class="form-order__input" placeholder="Ваше имя">
+          <input type="text" class="form-order__input" placeholder="+7 (999) 999-999">
+          <button class="form-order__btn main-button">
+            ОСТАВИТЬ ЗАЯВКУ
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__name about-company about-company_footer">
+          <div class="about-company__logo">
+            <img src="icons/logo.svg" alt="logo">
+          </div>
+          <div class="about-company__name about-company__name_footer">Центр развития
+            профессиональных квалификаций НОЭС
+          </div>
+        </div>
+        <div class="footer__address address-company">
+          <div class="address-company__icon">
+            <img src="icons/map.svg" alt="map">
+          </div>
+          <div class="address-company__city">
+            г. Москва <br> Шарикоподшипниковская <br> д.4 к.12
+          </div>
+        </div>
+        <div class="footer__contacts contact-company contact-company_col">
+          <div class="contact-company__inner">
+            <div class="contact-company__contacts">
+              <a href="tel:+79162321657" class="contact-company__tel contact-company__tel_footer">
+                +7(916) 232-16-57
+              </a>
+              <a href="tel:+74957866841" class="contact-company__tel contact-company__tel_footer">
+                +7-495-786-68-41
+              </a>
+            </div>
+            <button class="contact-company__btn main-button main-button_touch">ЗАКАЗАТЬ ЗВОНОК</button>
+          </div>
+          <div class="contact-company__operating">
+            Режим работы: Понедельник-пятница, с 10:00 до 19:00
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="js/swiper/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  
+</body>
+
+   
+</html>

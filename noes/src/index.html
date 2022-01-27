@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <link rel="preload" href="css/swiper.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="js/swiper/swiper-bundle.min.js"></script>
+    <script defer src="js/script.js"></script>
+
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__about about-company">
+          <a href="index.html" class="about-company__logo">
+            <img src="icons/logo.svg" alt="logo">
+          </a>
+          <a href="index.html" class="about-company__name">Центр развития
+            профессиональных квалификаций НОЭС
+          </a>
+        </div>
+        <div class="header__info contact-company">
+          <div class="contact-company__contacts">
+            <a href="tel:+79162321657" class="contact-company__tel">
+              +7(916) 232-16-57
+            </a>
+            <a href="tel:+74957866841" class="contact-company__tel">
+              +7-495-786-68-41
+            </a>
+          </div>
+          <button class="contact-company__btn main-button main-button_touch">ЗАКАЗАТЬ ЗВОНОК</button>
+        </div>
+      </div>
+
+      <div class="header__burger burger">
+        <span class="burger__first"></span>
+        <span class="burger__second"></span>
+        <span class="burger__third"></span>
+      </div>
+      <nav class="header__menu menu">
+        <div class="menu__overlay">
+          <div class="menu__close">&times;</div>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="index.html" data-path="index.html" class="menu__link">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a href="training.html" data-path="training.html" class="menu__link">Повышение квалификации</a>
+            </li>
+            <li class="menu__item">
+              <a href="retraining.html" data-path="retraining.html" class="menu__link">Профессиональная переподготовка</a>
+            </li>
+            <li class="menu__item">
+              <a href="admission.html" data-path="admission.html" class="menu__link">Поступающим</a>
+            </li>
+            <li class="menu__item">
+              <a href="about-us.html" data-path="about-us.html" class="menu__link">О нас</a>
+            </li>
+            <li class="menu__item">
+              <a href="#reviews" class="menu__link">Отзывы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="promo">
+      <div class="container">
+        <div class="promo__wrapper">
+          <div class="promo__info">
+            <h1 class="promo__title">
+              Повышение квалификации и профессиональная переподготовка дистанционно
+            </h1>
+            <div class="promo__descr">
+              Получите <span>качественное образование</span> и диплом установленного образца в удобное для Вас время
+            </div>
+            <div class="promo__price">
+              ОТ <span class="promo__price_old">5.500 руб.</span><span class="promo__price_new">1.500 руб.</span>
+            </div>
+            <a href="#types" class="promo__btn main-button">ПОСМОТРЕТЬ НАПРАВЛЕНИЯ</a>
+            <div class="promo__features">
+              <div class="promo__feature promo-feature">
+                <div class="promo-feature__img">
+                  <img src="img/promofeature.png" alt="everydaystart">
+                </div>
+                <div class="promo-feature__text">
+                  Набор групп каждый день
+                </div>
+              </div>
+              <div class="promo__feature promo-feature">
+                <div class="promo-feature__img">
+                  <img src="img/promofeature2.png" alt="online-education">
+                </div>
+                <div class="promo-feature__text">
+                  Дистанционное обучение
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="promo__photo">
+            <img src="img/main-photo.png" alt="main-photo">
+          </div> -->
+        </div>
+      </div>
+    </div>
+    
+    <section class="types" id="types">
+      <div class="container">
+        <h2 class="types__title section-title">
+          Виды обучения
+        </h2>
+        <div class="types__wrapper">
+          <div class="types__point">
+            <div class="types__inner">
+              <div class="types__photo">
+                <img src="img/types/training.png" alt="повышение квалификации">
+              </div>
+              <div class="types__info">
+                <h3 class="types__subtitle">
+                  Повышение квалификации
+                </h3>
+                <ul class="types__list">
+                  <li class="types__item">
+                    Позволяет развить имеющуюся квалификацию
+                  </li>
+                  <li class="types__item">
+                    Выдается удостоверение
+                  </li>
+                  <li class="types__item">
+                    Трудоемкость от 72 до 144 ак.ч.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <a href="training.html" class="types__btn main-button">
+              ПОСМОТРЕТЬ ПРОГРАММЫ
+            </a>
+          </div>
+          <div class="types__point">
+            <div class="types__inner">
+              <div class="types__photo">
+                <img src="img/types/retraining.png" alt="профессиональная переподготовка">
+              </div>
+              <div class="types__info">
+                <h3 class="types__subtitle">
+                  Профессиональная переподготовка
+                </h3>
+                <ul class="types__list">
+                  <li class="types__item">
+                    Позволяет приобрести новую квалификацию
+                  </li>
+                  <li class="types__item">
+                    Выдается диплом, приложение
+                  </li>
+                  <li class="types__item">
+                    Требуется прохождение обучения единожды
+                  </li>
+                  <li class="types__item">
+                    Трудоемкость от 250 ак.ч.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <a href="retraining.html" class="types__btn main-button">
+              ПОСМОТРЕТЬ ПРОГРАММЫ
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <h2 class="features__title section-title">
+          Преимущества
+        </h2>
+        <div class="features__wrapper">
+          <div class="features__point">
+            <div class="features__image">
+              <img src="img/features/feature-comfortable.png" alt="удобство">
+            </div>
+            <div class="features__details">
+              <h3 class="features__subtitle">
+                Удобство в деталях
+              </h3>
+              <ul class="features__list">
+                <li class="features__item">
+                  Учитесь дистанционно где и когда угодно
+                </li>
+                <li class="features__item">
+                  Ежедневная поддержка по телефону электронной почте
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="features__point">
+            <span>Нажмите, чтобы увеличить изображение</span>
+            <div class="features__image features__image_wide" id="scale-document">
+              <img src="img/features/feature-documents.png" alt="престижные документы">
+            </div>
+            <div class="features__details">
+              <h3 class="features__subtitle">
+                Престижные московские документы
+              </h3>
+              <ul class="features__list">
+                <li class="features__item">
+                  Престижные московские дипломы и удостоверения
+                </li>
+                <li class="features__item">
+                  Документы признаются во всех регионах РФ и за рубежом
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="features__point">
+            <div class="features__image">
+              <img src="img/features/feature-payment.png" alt="нет лишних оплат">
+
+            </div>
+            <div class="features__details">
+              <h3 class="features__subtitle">
+                Не платите лишнего
+              </h3>
+              <ul class="features__list">
+                <li class="features__item">
+                  Полный комплект учебных материалов – не нужно ничего дополнительно приобретать
+                </li>
+                <li class="features__item">
+                  Доставка документов Почтой России (по России и за рубеж)
+                </li>
+                <li class="features__item">
+                  Пересдачи бесплатно
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="features__point">
+            <div class="features__image">
+              <img src="img/features/feature-quality.png" alt="качество">
+
+            </div>
+            <div class="features__details">
+              <h3 class="features__subtitle">
+                Качественное обучение
+              </h3>
+              <ul class="features__list">
+                <li class="features__item">
+                  Курсы по актуальным в 2021 г. ФГОСам
+                </li>
+                <li class="features__item">
+                  Программы составлены по профстандартам
+                </li>
+                <li class="features__item">
+                  Преподаватели – кандидаты и доктора наук, доценты, профессора ведущих вузов
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="features__point">
+            <div class="features__image features__image_wide">
+              <img src="img/features/feature-economy.png" alt="экономия времени">
+
+            </div>
+            <div class="features__details">
+              <h3 class="features__subtitle">
+                Экономим Ваше время
+              </h3>
+              <ul class="features__list">
+                <li class="features__item">
+                  Начните обучение прямо сейчас (начало обучения в любой день)
+                </li>
+                <li class="features__item">Разумные сроки обучения</li>
+              </ul>
+            </div>
+          </div>
+          <div class="features__point">
+            <div class="features__image">
+              <img src="img/features/feature-sale.png" alt="выгода">
+
+            </div>
+            <div class="features__details">
+              <h3 class="features__subtitle">
+                Ваша дополнительная выгода
+              </h3>
+              <p class="features__list">
+                Выгодные скидки при зачислении на курс от двух человек
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <h2 class="reviews__title section-title">
+          Отзывы
+        </h2>
+        <div class="reviews__another">
+          <svg width="26" height="32" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.5765 11.357L14.7587 7.49063C14.7587 6.76164 14.1654 6.16737 13.4296 6.16737C13.1964 6.16737 12.9774 6.22763 12.7873 6.33543C12.7016 5.68826 12.145 5.18755 11.4699 5.18755C11.2372 5.18804 11.0182 5.2483 10.8276 5.3546C10.7409 4.70841 10.1849 4.20721 9.51025 4.20771C9.28194 4.20771 9.06738 4.26551 8.87973 4.36791L8.87973 2.63163C8.87973 1.90263 8.28643 1.30837 7.55059 1.30837C6.82111 1.30789 6.22733 1.90167 6.22733 2.63163L6.22733 9.30233L3.93845 7.63465C3.32751 7.17657 2.45987 7.23781 1.91949 7.7782C1.51432 8.18337 1.51432 8.84278 1.91949 9.24795L6.53892 13.8674C7.25862 14.5871 8.21542 14.9834 9.23346 14.9834L10.7747 14.9834C11.7913 14.9839 12.7471 14.5875 13.4658 13.8688C14.137 13.1976 14.5314 12.3055 14.5765 11.357ZM10.7747 14.2906L9.23346 14.2906C8.40061 14.2906 7.61772 13.9663 7.02883 13.3774L2.4094 8.758C2.27418 8.62278 2.27418 8.40328 2.4094 8.26806C2.70728 7.97019 3.18591 7.93638 3.52689 8.19212L6.3699 10.263C6.47524 10.3399 6.61436 10.3507 6.73098 10.2919C6.84658 10.2331 6.92009 10.1136 6.92007 9.98326L6.92007 2.63161C6.92007 2.28378 7.20325 2.0006 7.55647 2.00012C7.73038 2.0006 7.88815 2.07115 8.00231 2.18531C8.11647 2.29947 8.18699 2.45721 8.18702 2.63163L8.18702 7.53376C8.18702 7.72483 8.34233 7.88014 8.5334 7.88014C8.62893 7.87963 8.71565 7.84096 8.77836 7.77825C8.84108 7.71553 8.87978 7.62884 8.87978 7.5328V5.53099C8.87978 5.18317 9.16247 4.90047 9.51618 4.90047C9.86304 4.90047 10.1467 5.18413 10.1467 5.53099L10.1467 7.53376C10.1467 7.72483 10.302 7.88014 10.4931 7.88014C10.5886 7.87964 10.6753 7.84096 10.738 7.77825C10.8008 7.71553 10.8395 7.62884 10.8395 7.5328L10.8395 6.51081C10.8395 6.16299 11.1222 5.88029 11.4759 5.88029C11.8227 5.88029 12.1064 6.16395 12.1064 6.51081L12.1064 7.53767C12.1069 7.53913 12.1064 7.53863 12.1064 7.53863V7.53959C12.1064 7.54056 12.1064 7.54056 12.1064 7.54056C12.1064 7.54152 12.1064 7.54152 12.1064 7.54152L12.1069 7.54201C12.1074 7.54249 12.1069 7.54297 12.1069 7.54297C12.1118 7.73011 12.2656 7.88005 12.4532 7.87954C12.6443 7.87954 12.7996 7.72423 12.7996 7.53316L12.7996 7.49105C12.7996 7.32253 12.8653 7.16377 12.9843 7.04472C13.1034 6.92567 13.2611 6.86002 13.4355 6.86004C13.7834 6.86103 14.0651 7.1437 14.0666 7.4744L13.8848 11.3247C13.8475 12.0997 13.5251 12.8297 12.9759 13.3789C12.388 13.9668 11.6066 14.2906 10.7747 14.2906Z" fill="black"/>
+          </svg>
+          <span>листайте, чтобы <br> посмотреть все отзывы</span>
+        </div>
+        <div class="slider">
+            <div class="swiper-button-prev" id="swiperPrev"></div>
+            <div class="swiper-button-next" id="swiperNext"></div>  
+          
+        <div class="reviews-wrapper swiper">
+
+          
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="review swiper-slide">
+              <div class="review__photo">
+                <img src="img/reviews/reviewVlad.png" alt="Автор отзыва">
+              </div>
+              <div class="review__inner">
+                <div class="review__header">
+                  <span class="review__author">Журин Владислав</span>
+                  <div class="review__program">
+                    Программа “Инновационные подходы к организации учебного процесса в условиях реализации в ФГОС”
+                  </div>
+                  <div class="review__data">
+                    29 февраля 2019 г.
+                  </div>
+                  <div class="review__grade">
+                    <span class="review__point icon-star"></span>
+                    <span class="review__point icon-star"></span>
+                    <span class="review__point icon-star"></span>
+                    <span class="review__point icon-star"></span>
+                    <span class="review__point icon-star"></span>
+                  </div>
+                </div>
+                <p class="review__text">
+                  Несмотря на некоторые опасения, пройденными курсами остался доволен. Во–первых, получил–таки диплом с присвоенной квалификацией (чего не было у других учебных заведений), во–вторых, очень понравилась система изложения материала – конкретно по дисциплине. В–третьих, возможность заниматься в удобное время, для работающего человека – это самое главное. Спасибо!
+                </p>
+              </div>
+              
+            </div>
+
+            <div class="review swiper-slide">
+              <div class="review__photo">
+                <img src="img/reviews/reviewVas.png" alt="Автор отзыва">
+              </div>
+              <div class="review__inner">
+                <div class="review__header">
+                  <span class="review__author">Баранова Василиса</span>
+                  <div class="review__program">
+                    Программа “Система менеджмента качества по ИСО”
+                  </div>
+                  <div class="review__data">
+                    01 августа 2020 г.
+                  </div>
+                  <div class="review__grade">
+                    <span class="review__point icon-star"></span>
+                    <span class="review__point icon-star"></span>
+                    <span class="review__point icon-star"></span>
+                    <span class="review__point icon-star"></span>
+                    <span class="review__point icon-star"></span>
+                  </div>
+                </div>
+                <p class="review__text">
+                  Прекрасная организация для обогащения педагогических знаний и умений. Присутствует много необходимой информации по выбранным вами курсам.
+                </p>
+              </div>
+             
+            </div>
+
+            <div class="review swiper-slide">
+              <div class="review__inner">
+                <div class="review__header">
+                  <div class="review__photo">
+                    <img src="img/reviews/reviewAlina.png" alt="Автор отзыва">
+                  </div>
+                  <span class="review__author">Розанова Алиса</span>
+                  <div class="review__program">
+                    Программа “Государственное регулирование миграционных процессов”
+                  </div>
+                  <div class="review__data">
+                    29 февраля 2019 г.
+                  </div>
+                  <div class="review__grade">
+                    <span class="review__point icon-star"></span>
+                    <span class="review__point icon-star"></span>
+                    <span class="review__point icon-star"></span>
+                    <span class="review__point icon-star"></span>
+                    <span class="review__point icon-star"></span>
+                  </div>
+                </div>
+                <p class="review__text">
+                  Курс очень интенсивный и дает достаточный объем знаний. Просматривала перед обучением многие программы, в результате остановилась на вашем курсе, о чем не жалею. Спасибо за курс обучения.
+                </p>
+              </div>
+            </div>
+
+            <div class="review swiper-slide">
+              <div class="review__inner">
+                <div class="review__header">
+                  <div class="review__photo">
+                    <img src="img/reviews/reviewAnn.png" alt="Автор отзыва">
+                  </div>
+                  <span class="review__author">Мартынова Анна</span>
+                  <div class="review__program">
+                    Программа “Педагогическое образование”
+                  </div>
+                  <div class="review__data">
+                    15 ноября 2019 г.
+                  </div>
+                  <div class="review__grade">
+                    <span class="review__point icon-star"></span>
+                    <span class="review__point icon-star"></span>
+                    <span class="review__point icon-star"></span>
+                    <span class="review__point icon-star"></span>
+                    <span class="review__point icon-star"></span>
+                  </div>
+                </div>
+                <p class="review__text">
+                  Мне очень понравилось учиться. Материал изложен доступно. Вебинары подобраны по изучаемой теме. Слушала их с удовольствием. Вот при выполнении практических заданий столкнулась с тем, что таблички при копировании расползаются. Преподаватель всегда оперативно оценивал выполнение моих заданий. На сообщения тоже реагировал быстро. В целом всё отлично. Я очень довольна. Спасибо.
+                </p>
+              </div>
+              </div>
+
+            <div class="review swiper-slide">
+              <div class="review__inner">
+                <div class="review__header">
+                  <div class="review__photo">
+                    <img src="img/reviews/reviewPolina.png" alt="Автор отзыва">
+                  </div>
+                  <span class="review__author">Уткина Полина</span>
+                  <div class="review__program">
+                    Программа “Управление закупочной деятельностью”
+                  </div>
+                  <div class="review__data">
+                    19 декабря 2020 г.
+                  </div>
+                  <div class="review__grade">
+                    <span class="review__point icon-star"></span>
+                    <span class="review__point icon-star"></span>
+                    <span class="review__point icon-star"></span>
+                    <span class="review__point icon-star"></span>
+                    <span class="review__point icon-star"></span>
+                  </div>
+                </div>
+                <p class="review__text">
+                  Мне очень понравилось. Лекции были доступны и понятны. Я не пожалела, что прошла учебу в вашем заведении. Надеюсь, в дальнейшем смогу воплотить полученные знания и навыки в дальнейшем на практике. Советую всем обучать здесь.
+                </p>  
+              </div>
+              </div>
+
+            <div class="review swiper-slide">
+              <div class="review__photo">
+                <img src="img/reviews/reviewVera.png" alt="Автор отзыва">
+              </div>
+              <div class="review__inner">
+                <div class="review__header">
+                  <span class="review__author">Егорова Вера</span>
+                  <div class="review__program">
+                    Программа “Психосоматика и телесная психотерапия”
+                  </div>
+                  <div class="review__data">
+                    15 июня 2019 г.
+                  </div>
+                  <div class="review__grade">
+                    <span class="review__point icon-star"></span>
+                    <span class="review__point icon-star"></span>
+                    <span class="review__point icon-star"></span>
+                    <span class="review__point icon-star"></span>
+                    <span class="review__point icon-star"></span>
+                  </div>
+                </div>
+                <p class="review__text">
+                  Очень хороший курс по психосоматике, материалов для обучения дано в полной мере, все легко и доступно для пользователя. Сайт разработан отлично, работать на нем очень удобно. Спасибо за обучение.
+                </p>
+              </div>
+              
+            </div>
+          </div>             
+        </div>
+        </div>
+        
+
+         
+      </div>
+    </section>
+
+    <section class="questions">
+      <div class="container">
+        <h2 class="questions__title section-title">
+          Вопрос/ответ
+        </h2>
+        <div class="questions__accordeon">
+          <div class="questions__item">
+            <div class="questions__content">
+              <h3 class="questions__subtitle">Как я могу оплатить обучение?</h3>
+              <div class="questions__plus" id="plus">
+                <img src="icons/down.svg" alt="раскрыть ответ">
+              </div>
+            </div>
+              <!-- <div class="questions__underline"></div> -->
+              <div class="questions__answer">
+                <p>
+                  Вы можете оплатить обучение по счёту в банке, счёт будет предоставлен вам нашим специалистом приёмной комиссии.
+                  Также вы можете оплатить обучение с помощью банковской карты (VISA, MasterCard, Мир) по ссылке (интернет-эквайринг ПАО "Сбербанк"), ссылку предоставит специалист нашей приёмной комиссии – оплата происходит на стороне банка, без комиссии, по защищённому протоколу. Мы принимаем к оплате как дебетовые, так и кредитные карты.
+                </p>
+              </div>
+            </div>
+          <div class="questions__item">
+            <div class="questions__content">
+              <h3 class="questions__subtitle">
+                Какое оборудование нужно для обучения в дистанционном формате?
+              </h3>
+              <!-- <div class="questions__underline"></div> -->
+              <div class="questions__plus" id="plus">
+                <img src="icons/down.svg" alt="раскрыть ответ">
+              </div>
+            </div>
+              <div class="questions__answer">
+                <p>
+                  Компьютер с доступом в интернет.
+                </p>
+              </div>
+          </div>
+          <div class="questions__item">
+            <div class="questions__content">
+              <h3 class="questions__subtitle">
+                Кто может учиться и как поступить?
+              </h3>
+              <!-- <div class="questions__underline"></div> -->
+              <div class="questions__plus" id="plus">
+                <img src="icons/down.svg" alt="раскрыть ответ">
+              </div>
+            </div>
+              <div class="questions__answer">
+                <p>
+                  К освоению программ повышения квалификации и профессиональной переподготовки допускаются:<br>
+                  1) лица, имеющие среднее профессиональное и (или) высшее образование;
+                  <br><br>
+                  2) лица, получающие среднее профессиональное и (или) высшее образование.
+                  <br><br>
+                  Для поступления  гражданам Российской Федерации  необходимо предоставить:
+                  Диплом о высшем образовании (диплом бакалавра, специалиста, магистра) или диплом о среднем профессиональном образовании
+                  Для студентов - справку с места учёбы
+                  Документ, удостоверяющий личность и гражданство
+                  Свидетельства об изменении фамилии, имени, отчества (при необходимости).
+                  </p>
+              </div>
+          </div>
+          <div class="questions__item">
+            <div class="questions__content">
+              <h3 class="questions__subtitle">
+                Когда можно начать обучение?
+              </h3>
+              <div class="questions__plus" id="plus">
+                <img src="icons/down.svg" alt="раскрыть ответ">
+              </div>
+            </div>
+              <div class="questions__answer"> 
+                <p>
+                  Группы по разным программам формируются каждую неделю. Дату обучения вы можете выбрать, оставив заявку на нашем сайте.
+                </p> 
+              </div>
+          </div>
+          <div class="questions__item">
+            <div class="questions__content">
+              <h3 class="questions__subtitle">
+                Какой документ я получу по окончании обучения?
+              </h3>
+              <div class="questions__plus" id="plus">
+                <img src="icons/down.svg" alt="раскрыть ответ">
+              </div>
+            </div>
+              <!-- <div class="questions__underline"></div> -->
+              <div class="questions__answer"> 
+                <p>
+                  По окончании программы профессиональной переподготовки (свыше 250 часов)  Вы получите диплом о профессиональной переподготовке.
+                  После окончания программы повышения квалификации (от 16 часов) Вы получите удостоверение о повышении квалификации.
+                </p> 
+              </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <div class="documents">
+      <div class="container">
+        <div class="slider-doc">
+          <div class="documents__slider">
+            <div class="documents-wrapper swiper-doc">
+              <!-- Additional required wrapper -->
+                <div id="swiper-docs" class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="document swiper-slide">
+                    <div class="document__photo">
+                      <img class="document__image" src="img/documents/license.png" alt="Автор отзыва">
+                    </div>
+                    <div class="document__photo">
+                      <img class="document__image" src="img/documents/license2.png" alt="Автор отзыва">
+                    </div>
+                  </div>
+                  <div class="document swiper-slide">
+                    <div class="document__photo">
+                      <img class="document__image" src="img/documents/license3.png" alt="Автор отзыва">
+                    </div>
+                    <div class="document__photo">
+                      <img class="document__image" src="img/documents/license4.png" alt="Автор отзыва">
+                    </div>
+                  </div>
+                </div>             
+              </div>
+          </div>
+          
+          <div class="documents__info">
+            <h2 class="documents__subtitle">
+              Государственная лицензия
+            </h2>
+            <p class="documents__descr">
+              ЧУ ДПО «Центр развития профессиональных квалификаций «НОЭС» - это современный учебный центр, специализирующийся на подготовке специалистов из разных направлений трудовой деятельности.
+            </p>
+            <div class="documents__buttons">
+              <div class="swiper-button-prev" id="swiperPrevDoc"></div>
+              <div class="swiper-button-next" id="swiperNextDoc"></div>  
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+      
+    </div>
+
+      <div class="feedback">
+        <div class="container">
+          <div class="feedback__wrapper">
+            <div class="feedback__photo">
+                <img src="img/feedback/feedback-photo.png" alt="Остались вопросы?">
+            </div>
+            <div class="feedback__form">
+              <div class="feedback__title">
+                Остались вопросы?
+              </div>
+              <div class="feedback__text">
+                Заполните короткую форму ниже, и мы вам перезвоним
+              </div>
+              <div class="feedback__form form-feedback">
+                <form action="post">
+                  <label for="question">Ваш вопрос</label>
+                  <input name="question" class="form-feedback__question" type="text">
+                  <div class="form-feedback__inner">
+                    <div class="form-feedback__input">
+                      <label for="name">Ваше имя</label>
+                      <input name="name" class="form-feedback__name" type="text">
+                    </div>
+                    <div class="form-feedback__input">
+                      <label for="telephon">Ваш телефон</label>
+                      <input name="telephon" placeholder="+7(999) 999-99-99" class="form-feedback__tel" type="text">
+                    </div>
+                  </div>
+                  <button class="form-feedback__btn main-button">Отправить</button>
+                </form>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+
+
+
+  <div class="order-modal" data-modal="call">
+    <div class="order-modal__card">
+      <div class="order-modal__close">&times;	</div>
+      <div class="order-modal__wrapper">
+        <h2 class="order-modal__title">Заказать звонок</h2>
+        <form class="form-order" action="">
+          <input type="text" required class="form-order__input" placeholder="Ваше имя">
+          <input type="text" class="form-order__input" placeholder="+7 (999) 999-999">
+          <button class="form-order__btn main-button">
+            ОСТАВИТЬ ЗАЯВКУ
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__name about-company about-company_footer">
+          <div class="about-company__logo">
+            <img src="icons/logo.svg" alt="logo">
+          </div>
+          <div class="about-company__name about-company__name_footer">Центр развития
+            профессиональных квалификаций НОЭС
+          </div>
+        </div>
+        <div class="footer__address address-company">
+          <div class="address-company__icon">
+            <img src="icons/map.svg" alt="map">
+          </div>
+          <div class="address-company__city">
+            г. Москва <br> Шарикоподшипниковская <br> д.4 к.12
+          </div>
+        </div>
+        <div class="footer__contacts contact-company contact-company_col">
+          <div class="contact-company__inner">
+            <div class="contact-company__contacts">
+              <a href="tel:+79162321657" class="contact-company__tel contact-company__tel_footer">
+                +7(916) 232-16-57
+              </a>
+              <a href="tel:+74957866841" class="contact-company__tel contact-company__tel_footer">
+                +7-495-786-68-41
+              </a>
+            </div>
+            <button class="contact-company__btn main-button main-button_touch">ЗАКАЗАТЬ ЗВОНОК</button>
+          </div>
+          <div class="contact-company__operating">
+            Режим работы: Понедельник-пятница, с 9:00 до 18:00
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>  
+</body>
+
+   
+</html>

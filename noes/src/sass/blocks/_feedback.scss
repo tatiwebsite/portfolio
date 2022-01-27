@@ -1,0 +1,106 @@
+.feedback {
+    padding-top: 52px;
+    background: rgba(255, 255, 255, 0.61) url(../img/feedback/feedback-bg.png) no-repeat;
+    background-size: cover;
+    @media(max-width:1200px){
+        padding-top: 32px;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media(max-width:991px){
+            justify-content: center;
+        }
+    }
+    &__photo {
+        flex: 0 1 48%;
+        img {
+            max-width: 100%;
+        }
+        @media(max-width:991px){
+            display: none;
+        }
+    }
+    &__form {
+        padding-bottom: 20px;
+        flex: 0 1 40%;
+        @media(max-width:1200px){
+            flex: 0 1 50%;
+        }
+        @media(max-width:991px){
+            flex: 0 1 80%;
+        }
+        @media(max-width:576px){
+            flex: 0 1 100%;
+        }
+    }
+    &__title {
+        margin-bottom: 16px;
+        font-size: 35px;
+        font-family: $additional-font;
+        @media(max-width:576px){
+            text-align: center;
+            font-size: 25px;
+        }
+    }
+    &__text {
+        margin-bottom: 19px;
+        font-size: 20px;
+        @media(max-width:576px){
+            text-align: center;
+            font-size: 18px;
+        }
+    }
+    &__call {
+        margin-top: 27px;
+        span {
+            display: block;
+            margin-bottom: 5px;
+        }
+    }
+    
+}
+
+.form-feedback {
+    &__inner {
+        margin-bottom: 35px;
+        display: flex;
+        justify-content: space-between;
+        @media(max-width:576px){
+            flex-direction: column;
+        }
+    }
+    label {
+        margin-bottom: 13px;
+        display: block;
+        opacity: 0.7;
+    }
+    input {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 12px 26px;
+        font-size: 13px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+    }
+    &__input {
+        width: 45%;
+        @media(max-width:576px){
+            width: 100%;
+        }
+    }
+    &__question {
+        padding: 12px;
+        height: 84px;
+        width: 100%;
+    }
+    &::placeholder{
+        font-size: 13px;
+        opacity: 0.4;
+    }
+    &__btn {
+        width: 100%;
+    }
+}

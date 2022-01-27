@@ -1,0 +1,123 @@
+.reviews{
+    position: relative;
+    background-color: #fff;
+    padding-bottom: 100px;
+    &__title {
+        margin-bottom: 82px;
+    }
+    &-wrapper {
+        position: relative;
+        display: flex;
+        width: 80%;
+        align-items: stretch;
+        @media(max-width:991px){
+            width: 100%;
+        }
+    }
+    &__another {
+        display: none;
+        position: absolute;
+        top: 54px;
+        right: 10px;
+        text-align: left;
+        opacity: .5;
+        span {
+            display: inline-block;
+            margin-left: 10px;
+        }
+        @media(max-width: 991px){
+            display: flex;
+        }
+    }
+}
+
+.review {
+    position: relative;
+    padding-top: 70px;
+    display: flex;
+    height: auto;
+    &__photo {
+        width: 121px;
+        height: 113px;
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+        border-radius: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 100%;
+        }
+    }
+    &__inner {
+        padding: 60px 22px 30px 22px;
+        background-color: $main-bg;
+        border-radius: 5px;
+        height: auto;
+    }
+    &__author {
+        margin-bottom: 8px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    &__program {
+        margin-bottom: 12px;
+        font-size: 10px;
+        line-height: 12px;
+        opacity: 50%;
+    }
+    &__data {
+        margin-bottom: 8px;
+        font-size: 15px;
+        opacity: 80%;
+    }
+    &__grade {
+        margin-bottom: 13px;
+    }
+    &__point {
+        width: 13px;
+        height: 13px;
+        color: #FFF500;
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+
+#swiperPrev {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-image: url(../icons/left.svg);
+    background-repeat: no-repeat;
+    &:after{
+        content: ''
+    }
+    @media(max-width:991px){
+        display: none;
+    }
+}
+
+#swiperNext {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-image: url(../icons/right.svg);
+    background-repeat: no-repeat;
+    &:after{
+        content: ''
+    }
+    @media(max-width:991px){
+        display: none;
+    }
+}
+
+.slider {
+    position: relative;
+
+}

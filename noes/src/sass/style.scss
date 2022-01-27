@@ -1,0 +1,117 @@
+@import 'libs/normalize';
+@import 'base/fonts';
+@import 'base/font-icons';
+@import 'base/variables';
+@import 'base/keyframes';
+
+
+
+
+body {
+    margin: 0;
+    background-color: #fff;
+}
+
+body.locked {
+    overflow: hidden;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    color: $main-color;
+    font-family: 'Circe', sans-serif;
+    font-weight: 350;
+    cursor: default;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.container {
+    max-width: 1182px;
+    margin: 0 auto;
+    padding: 0 20px;
+    // @media(max-width: 576px) {
+    //     padding: 0 17px;
+    // }
+}
+
+.main-button {
+    padding: 22px 26px;
+    position: relative;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: #1376F8;
+    box-shadow: 0px 13px 47px -18px rgba(22, 120, 248, 0.65), inset 0px -10px 12px rgba(255, 255, 255, 0.16), inset 0px 10px 12px rgba(255, 255, 255, 0.1);
+    transition: .3s linear;
+    &:hover {
+        background-color: #1264D0;
+        cursor: pointer;
+    }
+    &:focus {
+        background-color: #0B4797;
+    }
+    &_touch {
+        padding-right: 40px;
+        @media (max-width: 768px){
+            padding: 14px 35px 14px 18px;
+        }
+        &:after {
+            content: '';
+            width: 19px;
+            height: 19px;
+            background-image: url(../icons/touch.svg);
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    
+}
+
+.section-title {
+    font-family: $additional-font;
+    font-size: 35px;
+    color: $title-color;
+    text-align: center;
+    @media(max-width:576px){
+        font-size: 25px;
+    }
+}
+
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/types';
+@import 'blocks/features';
+@import 'blocks/reviews';
+@import 'blocks/questions';
+@import 'blocks/documents';
+@import 'blocks/feedback';
+@import 'blocks/footer';
+@import 'blocks/admission';
+@import 'blocks/about-us';
+@import 'blocks/training';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
